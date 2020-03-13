@@ -1,0 +1,1677 @@
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 c3 01 0a 19  |esourceList.....|
+00000020  61 70 69 72 65 67 69 73  74 72 61 74 69 6f 6e 2e  |apiregistration.|
+00000030  6b 38 73 2e 69 6f 2f 76  31 12 66 0a 0b 61 70 69  |k8s.io/v1.f..api|
+00000040  73 65 72 76 69 63 65 73  10 00 1a 0a 41 50 49 53  |services....APIS|
+00000050  65 72 76 69 63 65 22 43  0a 06 63 72 65 61 74 65  |ervice"C..create|
+00000060  0a 06 64 65 6c 65 74 65  0a 10 64 65 6c 65 74 65  |..delete..delete|
+00000070  63 6f 6c 6c 65 63 74 69  6f 6e 0a 03 67 65 74 0a  |collection..get.|
+00000080  04 6c 69 73 74 0a 05 70  61 74 63 68 0a 06 75 70  |.list..patch..up|
+00000090  64 61 74 65 0a 05 77 61  74 63 68 32 00 42 00 4a  |date..watch2.B.J|
+000000a0  00 12 3e 0a 12 61 70 69  73 65 72 76 69 63 65 73  |..>..apiservices|
+000000b0  2f 73 74 61 74 75 73 10  00 1a 0a 41 50 49 53 65  |/status....APISe|
+000000c0  72 76 69 63 65 22 14 0a  03 67 65 74 0a 05 70 61  |rvice"...get..pa|
+000000d0  74 63 68 0a 06 75 70 64  61 74 65 32 00 42 00 4a  |tch..update2.B.J|
+000000e0  00 1a 00 22 00                                    |...".|
+I0313 02:35:10.750221       1 round_trippers.go:386] curl -k -v -XGET  -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" -H "Accept: application/vnd.kubernetes.protobuf, */*" 'https://127.0.0.1:6443/apis/apiregistration.k8s.io/v1beta1?timeout=32s'
+I0313 02:35:10.750348       1 handler.go:143] kube-aggregator: GET "/apis/apiregistration.k8s.io/v1beta1" satisfied by gorestful with webservice /apis/apiregistration.k8s.io/v1beta1
+I0313 02:35:10.750395       1 wrap.go:42] GET /apis/apiregistration.k8s.io/v1beta1?timeout=32s: (77.906µs) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.750506       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/apiregistration.k8s.io/v1beta1?timeout=32s 200 OK in 0 milliseconds
+I0313 02:35:10.750513       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.750517       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.750522       1 round_trippers.go:414]     Content-Length: 234
+I0313 02:35:10.750526       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.750563       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 c8 01 0a 1e  |esourceList.....|
+00000020  61 70 69 72 65 67 69 73  74 72 61 74 69 6f 6e 2e  |apiregistration.|
+00000030  6b 38 73 2e 69 6f 2f 76  31 62 65 74 61 31 12 66  |k8s.io/v1beta1.f|
+00000040  0a 0b 61 70 69 73 65 72  76 69 63 65 73 10 00 1a  |..apiservices...|
+00000050  0a 41 50 49 53 65 72 76  69 63 65 22 43 0a 06 63  |.APIService"C..c|
+00000060  72 65 61 74 65 0a 06 64  65 6c 65 74 65 0a 10 64  |reate..delete..d|
+00000070  65 6c 65 74 65 63 6f 6c  6c 65 63 74 69 6f 6e 0a  |eletecollection.|
+00000080  03 67 65 74 0a 04 6c 69  73 74 0a 05 70 61 74 63  |.get..list..patc|
+00000090  68 0a 06 75 70 64 61 74  65 0a 05 77 61 74 63 68  |h..update..watch|
+000000a0  32 00 42 00 4a 00 12 3e  0a 12 61 70 69 73 65 72  |2.B.J..>..apiser|
+000000b0  76 69 63 65 73 2f 73 74  61 74 75 73 10 00 1a 0a  |vices/status....|
+000000c0  41 50 49 53 65 72 76 69  63 65 22 14 0a 03 67 65  |APIService"...ge|
+000000d0  74 0a 05 70 61 74 63 68  0a 06 75 70 64 61 74 65  |t..patch..update|
+000000e0  32 00 42 00 4a 00 1a 00  22 00                    |2.B.J...".|
+I0313 02:35:10.750654       1 round_trippers.go:386] curl -k -v -XGET  -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" 'https://127.0.0.1:6443/apis/extensions/v1beta1?timeout=32s'
+I0313 02:35:10.750791       1 handler.go:153] kube-aggregator: GET "/apis/extensions/v1beta1" satisfied by nonGoRestful
+I0313 02:35:10.750801       1 pathrecorder.go:240] kube-aggregator: "/apis/extensions/v1beta1" satisfied by exact match
+I0313 02:35:10.750809       1 handler.go:143] kube-apiserver: GET "/apis/extensions/v1beta1" satisfied by gorestful with webservice /apis/extensions/v1beta1
+I0313 02:35:10.750949       1 wrap.go:42] GET /apis/extensions/v1beta1?timeout=32s: (185.487µs) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.751082       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/extensions/v1beta1?timeout=32s 200 OK in 0 milliseconds
+I0313 02:35:10.751090       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.751094       1 round_trippers.go:414]     Content-Length: 1319
+I0313 02:35:10.751099       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.751103       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.751171       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 13 0a 00  12 0f 41 50 49 52 65 73  |k8s.......APIRes|
+00000010  6f 75 72 63 65 4c 69 73  74 12 87 0a 0a 12 65 78  |ourceList.....ex|
+00000020  74 65 6e 73 69 6f 6e 73  2f 76 31 62 65 74 61 31  |tensions/v1beta1|
+00000030  12 68 0a 0a 64 61 65 6d  6f 6e 73 65 74 73 10 01  |.h..daemonsets..|
+00000040  1a 09 44 61 65 6d 6f 6e  53 65 74 22 43 0a 06 63  |..DaemonSet"C..c|
+00000050  72 65 61 74 65 0a 06 64  65 6c 65 74 65 0a 10 64  |reate..delete..d|
+00000060  65 6c 65 74 65 63 6f 6c  6c 65 63 74 69 6f 6e 0a  |eletecollection.|
+00000070  03 67 65 74 0a 04 6c 69  73 74 0a 05 70 61 74 63  |.get..list..patc|
+00000080  68 0a 06 75 70 64 61 74  65 0a 05 77 61 74 63 68  |h..update..watch|
+00000090  2a 02 64 73 32 00 42 00  4a 00 12 3c 0a 11 64 61  |*.ds2.B.J..<..da|
+000000a0  65 6d 6f 6e 73 65 74 73  2f 73 74 61 74 75 73 10  |emonsets/status.|
+000000b0  01 1a 09 44 61 65 6d 6f  6e 53 65 74 22 14 0a 03  |...DaemonSet"...|
+000000c0  67 65 74 0a 05 70 61 74  63 68 0a 06 75 70 64 61  |get..patch..upda|
+000000d0  74 65 32 00 42 00 4a 00  12 6e 0a 0b 64 65 70 6c  |te2.B.J..n..depl|
+000000e0  6f 79 6d 65 6e 74 73 10  01 1a 0a 44 65 70 6c 6f  |oyments....Deplo|
+000000f0  79 6d 65 6e 74 22 43 0a  06 63 72 65 61 74 65 0a  |yment"C..create.|
+00000100  06 64 65 6c 65 74 65 0a  10 64 65 6c 65 74 65 63  |.delete..deletec|
+00000110  6f 6c 6c 65 63 74 69 6f  6e 0a 03 67 65 74 0a 04  |ollection..get..|
+00000120  6c 69 73 74 0a 05 70 61  74 63 68 0a 06 75 70 64  |list..patch..upd|
+00000130  61 74 65 0a 05 77 61 74  63 68 2a 06 64 65 70 6c  |ate..watch*.depl|
+00000140  6f 79 32 00 42 00 4a 00  12 3c 0a 14 64 65 70 6c  |oy2.B.J..<..depl|
+00000150  6f 79 6d 65 6e 74 73 2f  72 6f 6c 6c 62 61 63 6b  |oyments/rollback|
+00000160  10 01 1a 12 44 65 70 6c  6f 79 6d 65 6e 74 52 6f  |....DeploymentRo|
+00000170  6c 6c 62 61 63 6b 22 08  0a 06 63 72 65 61 74 65  |llback"...create|
+00000180  32 00 42 00 4a 00 12 49  0a 11 64 65 70 6c 6f 79  |2.B.J..I..deploy|
+00000190  6d 65 6e 74 73 2f 73 63  61 6c 65 10 01 1a 05 53  |ments/scale....S|
+000001a0  63 61 6c 65 22 14 0a 03  67 65 74 0a 05 70 61 74  |cale"...get..pat|
+000001b0  63 68 0a 06 75 70 64 61  74 65 32 00 42 0a 65 78  |ch..update2.B.ex|
+000001c0  74 65 6e 73 69 6f 6e 73  4a 07 76 31 62 65 74 61  |tensionsJ.v1beta|
+000001d0  31 12 3e 0a 12 64 65 70  6c 6f 79 6d 65 6e 74 73  |1.>..deployments|
+000001e0  2f 73 74 61 74 75 73 10  01 1a 0a 44 65 70 6c 6f  |/status....Deplo|
+000001f0  79 6d 65 6e 74 22 14 0a  03 67 65 74 0a 05 70 61  |yment"...get..pa|
+00000200  74 63 68 0a 06 75 70 64  61 74 65 32 00 42 00 4a  |tch..update2.B.J|
+00000210  00 12 66 0a 09 69 6e 67  72 65 73 73 65 73 10 01  |..f..ingresses..|
+00000220  1a 07 49 6e 67 72 65 73  73 22 43 0a 06 63 72 65  |..Ingress"C..cre|
+00000230  61 74 65 0a 06 64 65 6c  65 74 65 0a 10 64 65 6c  |ate..delete..del|
+00000240  65 74 65 63 6f 6c 6c 65  63 74 69 6f 6e 0a 03 67  |etecollection..g|
+00000250  65 74 0a 04 6c 69 73 74  0a 05 70 61 74 63 68 0a  |et..list..patch.|
+00000260  06 75 70 64 61 74 65 0a  05 77 61 74 63 68 2a 03  |.update..watch*.|
+00000270  69 6e 67 32 00 42 00 4a  00 12 39 0a 10 69 6e 67  |ing2.B.J..9..ing|
+00000280  72 65 73 73 65 73 2f 73  74 61 74 75 73 10 01 1a  |resses/status...|
+00000290  07 49 6e 67 72 65 73 73  22 14 0a 03 67 65 74 0a  |.Ingress"...get.|
+000002a0  05 70 61 74 63 68 0a 06  75 70 64 61 74 65 32 00  |.patch..update2.|
+000002b0  42 00 4a 00 12 75 0a 0f  6e 65 74 77 6f 72 6b 70  |B.J..u..networkp|
+000002c0  6f 6c 69 63 69 65 73 10  01 1a 0d 4e 65 74 77 6f  |olicies....Netwo|
+000002d0  72 6b 50 6f 6c 69 63 79  22 43 0a 06 63 72 65 61  |rkPolicy"C..crea|
+000002e0  74 65 0a 06 64 65 6c 65  74 65 0a 10 64 65 6c 65  |te..delete..dele|
+000002f0  74 65 63 6f 6c 6c 65 63  74 69 6f 6e 0a 03 67 65  |tecollection..ge|
+00000300  74 0a 04 6c 69 73 74 0a  05 70 61 74 63 68 0a 06  |t..list..patch..|
+00000310  75 70 64 61 74 65 0a 05  77 61 74 63 68 2a 06 6e  |update..watch*.n|
+00000320  65 74 70 6f 6c 32 00 42  00 4a 00 12 7a 0a 13 70  |etpol2.B.J..z..p|
+00000330  6f 64 73 65 63 75 72 69  74 79 70 6f 6c 69 63 69  |odsecuritypolici|
+00000340  65 73 10 00 1a 11 50 6f  64 53 65 63 75 72 69 74  |es....PodSecurit|
+00000350  79 50 6f 6c 69 63 79 22  43 0a 06 63 72 65 61 74  |yPolicy"C..creat|
+00000360  65 0a 06 64 65 6c 65 74  65 0a 10 64 65 6c 65 74  |e..delete..delet|
+00000370  65 63 6f 6c 6c 65 63 74  69 6f 6e 0a 03 67 65 74  |ecollection..get|
+00000380  0a 04 6c 69 73 74 0a 05  70 61 74 63 68 0a 06 75  |..list..patch..u|
+00000390  70 64 61 74 65 0a 05 77  61 74 63 68 2a 03 70 73  |pdate..watch*.ps|
+000003a0  70 32 00 42 00 4a 00 12  6a 0a 0b 72 65 70 6c 69  |p2.B.J..j..repli|
+000003b0  63 61 73 65 74 73 10 01  1a 0a 52 65 70 6c 69 63  |casets....Replic|
+000003c0  61 53 65 74 22 43 0a 06  63 72 65 61 74 65 0a 06  |aSet"C..create..|
+000003d0  64 65 6c 65 74 65 0a 10  64 65 6c 65 74 65 63 6f  |delete..deleteco|
+000003e0  6c 6c 65 63 74 69 6f 6e  0a 03 67 65 74 0a 04 6c  |llection..get..l|
+000003f0  69 73 74 0a 05 70 61 74  63 68 0a 06 75 70 64 61  |ist..patch..upda|
+00000400  74 65 0a 05 77 61 74 63  68 2a 02 72 73 32 00 42  |te..watch*.rs2.B|
+00000410  00 4a 00 12 49 0a 11 72  65 70 6c 69 63 61 73 65  |.J..I..replicase|
+00000420  74 73 2f 73 63 61 6c 65  10 01 1a 05 53 63 61 6c  |ts/scale....Scal|
+00000430  65 22 14 0a 03 67 65 74  0a 05 70 61 74 63 68 0a  |e"...get..patch.|
+00000440  06 75 70 64 61 74 65 32  00 42 0a 65 78 74 65 6e  |.update2.B.exten|
+00000450  73 69 6f 6e 73 4a 07 76  31 62 65 74 61 31 12 3e  |sionsJ.v1beta1.>|
+00000460  0a 12 72 65 70 6c 69 63  61 73 65 74 73 2f 73 74  |..replicasets/st|
+00000470  61 74 75 73 10 01 1a 0a  52 65 70 6c 69 63 61 53  |atus....ReplicaS|
+00000480  65 74 22 14 0a 03 67 65  74 0a 05 70 61 74 63 68  |et"...get..patch|
+00000490  0a 06 75 70 64 61 74 65  32 00 42 00 4a 00 12 3e  |..update2.B.J..>|
+000004a0  0a 16 72 65 70 6c 69 63  61 74 69 6f 6e 63 6f 6e  |..replicationcon|
+000004b0  74 72 6f 6c 6c 65 72 73  10 01 1a 1a 52 65 70 6c  |trollers....Repl|
+000004c0  69 63 61 74 69 6f 6e 43  6f 6e 74 72 6f 6c 6c 65  |icationControlle|
+000004d0  72 44 75 6d 6d 79 22 00  32 00 42 00 4a 00 12 43  |rDummy".2.B.J..C|
+000004e0  0a 1c 72 65 70 6c 69 63  61 74 69 6f 6e 63 6f 6e  |..replicationcon|
+000004f0  74 72 6f 6c 6c 65 72 73  2f 73 63 61 6c 65 10 01  |trollers/scale..|
+00000500  1a 05 53 63 61 6c 65 22  14 0a 03 67 65 74 0a 05  |..Scale"...get..|
+00000510  70 61 74 63 68 0a 06 75  70 64 61 74 65 32 00 42  |patch..update2.B|
+00000520  00 4a 00 1a 00 22 00                              |.J...".|
+I0313 02:35:10.751262       1 round_trippers.go:386] curl -k -v -XGET  -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" 'https://127.0.0.1:6443/apis/apps/v1?timeout=32s'
+I0313 02:35:10.751375       1 handler.go:153] kube-aggregator: GET "/apis/apps/v1" satisfied by nonGoRestful
+I0313 02:35:10.751384       1 pathrecorder.go:240] kube-aggregator: "/apis/apps/v1" satisfied by exact match
+I0313 02:35:10.751391       1 handler.go:143] kube-apiserver: GET "/apis/apps/v1" satisfied by gorestful with webservice /apis/apps/v1
+I0313 02:35:10.751479       1 wrap.go:42] GET /apis/apps/v1?timeout=32s: (130.117µs) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.751604       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/apps/v1?timeout=32s 200 OK in 0 milliseconds
+I0313 02:35:10.751611       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.751616       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.751621       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.751625       1 round_trippers.go:414]     Content-Length: 1090
+I0313 02:35:10.751684       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 a0 08 0a 07  |esourceList.....|
+00000020  61 70 70 73 2f 76 31 12  76 0a 13 63 6f 6e 74 72  |apps/v1.v..contr|
+00000030  6f 6c 6c 65 72 72 65 76  69 73 69 6f 6e 73 10 01  |ollerrevisions..|
+00000040  1a 12 43 6f 6e 74 72 6f  6c 6c 65 72 52 65 76 69  |..ControllerRevi|
+00000050  73 69 6f 6e 22 43 0a 06  63 72 65 61 74 65 0a 06  |sion"C..create..|
+00000060  64 65 6c 65 74 65 0a 10  64 65 6c 65 74 65 63 6f  |delete..deleteco|
+00000070  6c 6c 65 63 74 69 6f 6e  0a 03 67 65 74 0a 04 6c  |llection..get..l|
+00000080  69 73 74 0a 05 70 61 74  63 68 0a 06 75 70 64 61  |ist..patch..upda|
+00000090  74 65 0a 05 77 61 74 63  68 32 00 42 00 4a 00 12  |te..watch2.B.J..|
+000000a0  6d 0a 0a 64 61 65 6d 6f  6e 73 65 74 73 10 01 1a  |m..daemonsets...|
+000000b0  09 44 61 65 6d 6f 6e 53  65 74 22 43 0a 06 63 72  |.DaemonSet"C..cr|
+000000c0  65 61 74 65 0a 06 64 65  6c 65 74 65 0a 10 64 65  |eate..delete..de|
+000000d0  6c 65 74 65 63 6f 6c 6c  65 63 74 69 6f 6e 0a 03  |letecollection..|
+000000e0  67 65 74 0a 04 6c 69 73  74 0a 05 70 61 74 63 68  |get..list..patch|
+000000f0  0a 06 75 70 64 61 74 65  0a 05 77 61 74 63 68 2a  |..update..watch*|
+00000100  02 64 73 32 00 3a 03 61  6c 6c 42 00 4a 00 12 3c  |.ds2.:.allB.J..<|
+00000110  0a 11 64 61 65 6d 6f 6e  73 65 74 73 2f 73 74 61  |..daemonsets/sta|
+00000120  74 75 73 10 01 1a 09 44  61 65 6d 6f 6e 53 65 74  |tus....DaemonSet|
+00000130  22 14 0a 03 67 65 74 0a  05 70 61 74 63 68 0a 06  |"...get..patch..|
+00000140  75 70 64 61 74 65 32 00  42 00 4a 00 12 73 0a 0b  |update2.B.J..s..|
+00000150  64 65 70 6c 6f 79 6d 65  6e 74 73 10 01 1a 0a 44  |deployments....D|
+00000160  65 70 6c 6f 79 6d 65 6e  74 22 43 0a 06 63 72 65  |eployment"C..cre|
+00000170  61 74 65 0a 06 64 65 6c  65 74 65 0a 10 64 65 6c  |ate..delete..del|
+00000180  65 74 65 63 6f 6c 6c 65  63 74 69 6f 6e 0a 03 67  |etecollection..g|
+00000190  65 74 0a 04 6c 69 73 74  0a 05 70 61 74 63 68 0a  |et..list..patch.|
+000001a0  06 75 70 64 61 74 65 0a  05 77 61 74 63 68 2a 06  |.update..watch*.|
+000001b0  64 65 70 6c 6f 79 32 00  3a 03 61 6c 6c 42 00 4a  |deploy2.:.allB.J|
+000001c0  00 12 45 0a 11 64 65 70  6c 6f 79 6d 65 6e 74 73  |..E..deployments|
+000001d0  2f 73 63 61 6c 65 10 01  1a 05 53 63 61 6c 65 22  |/scale....Scale"|
+000001e0  14 0a 03 67 65 74 0a 05  70 61 74 63 68 0a 06 75  |...get..patch..u|
+000001f0  70 64 61 74 65 32 00 42  0b 61 75 74 6f 73 63 61  |pdate2.B.autosca|
+00000200  6c 69 6e 67 4a 02 76 31  12 3e 0a 12 64 65 70 6c  |lingJ.v1.>..depl|
+00000210  6f 79 6d 65 6e 74 73 2f  73 74 61 74 75 73 10 01  |oyments/status..|
+00000220  1a 0a 44 65 70 6c 6f 79  6d 65 6e 74 22 14 0a 03  |..Deployment"...|
+00000230  67 65 74 0a 05 70 61 74  63 68 0a 06 75 70 64 61  |get..patch..upda|
+00000240  74 65 32 00 42 00 4a 00  12 6f 0a 0b 72 65 70 6c  |te2.B.J..o..repl|
+00000250  69 63 61 73 65 74 73 10  01 1a 0a 52 65 70 6c 69  |icasets....Repli|
+00000260  63 61 53 65 74 22 43 0a  06 63 72 65 61 74 65 0a  |caSet"C..create.|
+00000270  06 64 65 6c 65 74 65 0a  10 64 65 6c 65 74 65 63  |.delete..deletec|
+00000280  6f 6c 6c 65 63 74 69 6f  6e 0a 03 67 65 74 0a 04  |ollection..get..|
+00000290  6c 69 73 74 0a 05 70 61  74 63 68 0a 06 75 70 64  |list..patch..upd|
+000002a0  61 74 65 0a 05 77 61 74  63 68 2a 02 72 73 32 00  |ate..watch*.rs2.|
+000002b0  3a 03 61 6c 6c 42 00 4a  00 12 45 0a 11 72 65 70  |:.allB.J..E..rep|
+000002c0  6c 69 63 61 73 65 74 73  2f 73 63 61 6c 65 10 01  |licasets/scale..|
+000002d0  1a 05 53 63 61 6c 65 22  14 0a 03 67 65 74 0a 05  |..Scale"...get..|
+000002e0  70 61 74 63 68 0a 06 75  70 64 61 74 65 32 00 42  |patch..update2.B|
+000002f0  0b 61 75 74 6f 73 63 61  6c 69 6e 67 4a 02 76 31  |.autoscalingJ.v1|
+00000300  12 3e 0a 12 72 65 70 6c  69 63 61 73 65 74 73 2f  |.>..replicasets/|
+00000310  73 74 61 74 75 73 10 01  1a 0a 52 65 70 6c 69 63  |status....Replic|
+00000320  61 53 65 74 22 14 0a 03  67 65 74 0a 05 70 61 74  |aSet"...get..pat|
+00000330  63 68 0a 06 75 70 64 61  74 65 32 00 42 00 4a 00  |ch..update2.B.J.|
+00000340  12 72 0a 0c 73 74 61 74  65 66 75 6c 73 65 74 73  |.r..statefulsets|
+00000350  10 01 1a 0b 53 74 61 74  65 66 75 6c 53 65 74 22  |....StatefulSet"|
+00000360  43 0a 06 63 72 65 61 74  65 0a 06 64 65 6c 65 74  |C..create..delet|
+00000370  65 0a 10 64 65 6c 65 74  65 63 6f 6c 6c 65 63 74  |e..deletecollect|
+00000380  69 6f 6e 0a 03 67 65 74  0a 04 6c 69 73 74 0a 05  |ion..get..list..|
+00000390  70 61 74 63 68 0a 06 75  70 64 61 74 65 0a 05 77  |patch..update..w|
+000003a0  61 74 63 68 2a 03 73 74  73 32 00 3a 03 61 6c 6c  |atch*.sts2.:.all|
+000003b0  42 00 4a 00 12 46 0a 12  73 74 61 74 65 66 75 6c  |B.J..F..stateful|
+000003c0  73 65 74 73 2f 73 63 61  6c 65 10 01 1a 05 53 63  |sets/scale....Sc|
+000003d0  61 6c 65 22 14 0a 03 67  65 74 0a 05 70 61 74 63  |ale"...get..patc|
+000003e0  68 0a 06 75 70 64 61 74  65 32 00 42 0b 61 75 74  |h..update2.B.aut|
+000003f0  6f 73 63 61 6c 69 6e 67  4a 02 76 31 12 40 0a 13  |oscalingJ.v1.@..|
+00000400  73 74 61 74 65 66 75 6c  73 65 74 73 2f 73 74 61  |statefulsets/sta|
+00000410  74 75 73 10 01 1a 0b 53  74 61 74 65 66 75 6c 53  |tus....StatefulS|
+00000420  65 74 22 14 0a 03 67 65  74 0a 05 70 61 74 63 68  |et"...get..patch|
+00000430  0a 06 75 70 64 61 74 65  32 00 42 00 4a 00 1a 00  |..update2.B.J...|
+00000440  22 00                                             |".|
+I0313 02:35:10.751798       1 round_trippers.go:386] curl -k -v -XGET  -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" 'https://127.0.0.1:6443/apis/apps/v1beta2?timeout=32s'
+I0313 02:35:10.751924       1 handler.go:153] kube-aggregator: GET "/apis/apps/v1beta2" satisfied by nonGoRestful
+I0313 02:35:10.751934       1 pathrecorder.go:240] kube-aggregator: "/apis/apps/v1beta2" satisfied by exact match
+I0313 02:35:10.751942       1 handler.go:143] kube-apiserver: GET "/apis/apps/v1beta2" satisfied by gorestful with webservice /apis/apps/v1beta2
+I0313 02:35:10.755705       1 wrap.go:42] GET /apis/apps/v1beta2?timeout=32s: (3.805164ms) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.755905       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/apps/v1beta2?timeout=32s 200 OK in 4 milliseconds
+I0313 02:35:10.755924       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.755929       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.755934       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.755938       1 round_trippers.go:414]     Content-Length: 1089
+I0313 02:35:10.756012       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 9f 08 0a 0c  |esourceList.....|
+00000020  61 70 70 73 2f 76 31 62  65 74 61 32 12 76 0a 13  |apps/v1beta2.v..|
+00000030  63 6f 6e 74 72 6f 6c 6c  65 72 72 65 76 69 73 69  |controllerrevisi|
+00000040  6f 6e 73 10 01 1a 12 43  6f 6e 74 72 6f 6c 6c 65  |ons....Controlle|
+00000050  72 52 65 76 69 73 69 6f  6e 22 43 0a 06 63 72 65  |rRevision"C..cre|
+00000060  61 74 65 0a 06 64 65 6c  65 74 65 0a 10 64 65 6c  |ate..delete..del|
+00000070  65 74 65 63 6f 6c 6c 65  63 74 69 6f 6e 0a 03 67  |etecollection..g|
+00000080  65 74 0a 04 6c 69 73 74  0a 05 70 61 74 63 68 0a  |et..list..patch.|
+00000090  06 75 70 64 61 74 65 0a  05 77 61 74 63 68 32 00  |.update..watch2.|
+000000a0  42 00 4a 00 12 6d 0a 0a  64 61 65 6d 6f 6e 73 65  |B.J..m..daemonse|
+000000b0  74 73 10 01 1a 09 44 61  65 6d 6f 6e 53 65 74 22  |ts....DaemonSet"|
+000000c0  43 0a 06 63 72 65 61 74  65 0a 06 64 65 6c 65 74  |C..create..delet|
+000000d0  65 0a 10 64 65 6c 65 74  65 63 6f 6c 6c 65 63 74  |e..deletecollect|
+000000e0  69 6f 6e 0a 03 67 65 74  0a 04 6c 69 73 74 0a 05  |ion..get..list..|
+000000f0  70 61 74 63 68 0a 06 75  70 64 61 74 65 0a 05 77  |patch..update..w|
+00000100  61 74 63 68 2a 02 64 73  32 00 3a 03 61 6c 6c 42  |atch*.ds2.:.allB|
+00000110  00 4a 00 12 3c 0a 11 64  61 65 6d 6f 6e 73 65 74  |.J..<..daemonset|
+00000120  73 2f 73 74 61 74 75 73  10 01 1a 09 44 61 65 6d  |s/status....Daem|
+00000130  6f 6e 53 65 74 22 14 0a  03 67 65 74 0a 05 70 61  |onSet"...get..pa|
+00000140  74 63 68 0a 06 75 70 64  61 74 65 32 00 42 00 4a  |tch..update2.B.J|
+00000150  00 12 73 0a 0b 64 65 70  6c 6f 79 6d 65 6e 74 73  |..s..deployments|
+00000160  10 01 1a 0a 44 65 70 6c  6f 79 6d 65 6e 74 22 43  |....Deployment"C|
+00000170  0a 06 63 72 65 61 74 65  0a 06 64 65 6c 65 74 65  |..create..delete|
+00000180  0a 10 64 65 6c 65 74 65  63 6f 6c 6c 65 63 74 69  |..deletecollecti|
+00000190  6f 6e 0a 03 67 65 74 0a  04 6c 69 73 74 0a 05 70  |on..get..list..p|
+000001a0  61 74 63 68 0a 06 75 70  64 61 74 65 0a 05 77 61  |atch..update..wa|
+000001b0  74 63 68 2a 06 64 65 70  6c 6f 79 32 00 3a 03 61  |tch*.deploy2.:.a|
+000001c0  6c 6c 42 00 4a 00 12 43  0a 11 64 65 70 6c 6f 79  |llB.J..C..deploy|
+000001d0  6d 65 6e 74 73 2f 73 63  61 6c 65 10 01 1a 05 53  |ments/scale....S|
+000001e0  63 61 6c 65 22 14 0a 03  67 65 74 0a 05 70 61 74  |cale"...get..pat|
+000001f0  63 68 0a 06 75 70 64 61  74 65 32 00 42 04 61 70  |ch..update2.B.ap|
+00000200  70 73 4a 07 76 31 62 65  74 61 32 12 3e 0a 12 64  |psJ.v1beta2.>..d|
+00000210  65 70 6c 6f 79 6d 65 6e  74 73 2f 73 74 61 74 75  |eployments/statu|
+00000220  73 10 01 1a 0a 44 65 70  6c 6f 79 6d 65 6e 74 22  |s....Deployment"|
+00000230  14 0a 03 67 65 74 0a 05  70 61 74 63 68 0a 06 75  |...get..patch..u|
+00000240  70 64 61 74 65 32 00 42  00 4a 00 12 6f 0a 0b 72  |pdate2.B.J..o..r|
+00000250  65 70 6c 69 63 61 73 65  74 73 10 01 1a 0a 52 65  |eplicasets....Re|
+00000260  70 6c 69 63 61 53 65 74  22 43 0a 06 63 72 65 61  |plicaSet"C..crea|
+00000270  74 65 0a 06 64 65 6c 65  74 65 0a 10 64 65 6c 65  |te..delete..dele|
+00000280  74 65 63 6f 6c 6c 65 63  74 69 6f 6e 0a 03 67 65  |tecollection..ge|
+00000290  74 0a 04 6c 69 73 74 0a  05 70 61 74 63 68 0a 06  |t..list..patch..|
+000002a0  75 70 64 61 74 65 0a 05  77 61 74 63 68 2a 02 72  |update..watch*.r|
+000002b0  73 32 00 3a 03 61 6c 6c  42 00 4a 00 12 43 0a 11  |s2.:.allB.J..C..|
+000002c0  72 65 70 6c 69 63 61 73  65 74 73 2f 73 63 61 6c  |replicasets/scal|
+000002d0  65 10 01 1a 05 53 63 61  6c 65 22 14 0a 03 67 65  |e....Scale"...ge|
+000002e0  74 0a 05 70 61 74 63 68  0a 06 75 70 64 61 74 65  |t..patch..update|
+000002f0  32 00 42 04 61 70 70 73  4a 07 76 31 62 65 74 61  |2.B.appsJ.v1beta|
+00000300  32 12 3e 0a 12 72 65 70  6c 69 63 61 73 65 74 73  |2.>..replicasets|
+00000310  2f 73 74 61 74 75 73 10  01 1a 0a 52 65 70 6c 69  |/status....Repli|
+00000320  63 61 53 65 74 22 14 0a  03 67 65 74 0a 05 70 61  |caSet"...get..pa|
+00000330  74 63 68 0a 06 75 70 64  61 74 65 32 00 42 00 4a  |tch..update2.B.J|
+00000340  00 12 72 0a 0c 73 74 61  74 65 66 75 6c 73 65 74  |..r..statefulset|
+00000350  73 10 01 1a 0b 53 74 61  74 65 66 75 6c 53 65 74  |s....StatefulSet|
+00000360  22 43 0a 06 63 72 65 61  74 65 0a 06 64 65 6c 65  |"C..create..dele|
+00000370  74 65 0a 10 64 65 6c 65  74 65 63 6f 6c 6c 65 63  |te..deletecollec|
+00000380  74 69 6f 6e 0a 03 67 65  74 0a 04 6c 69 73 74 0a  |tion..get..list.|
+00000390  05 70 61 74 63 68 0a 06  75 70 64 61 74 65 0a 05  |.patch..update..|
+000003a0  77 61 74 63 68 2a 03 73  74 73 32 00 3a 03 61 6c  |watch*.sts2.:.al|
+000003b0  6c 42 00 4a 00 12 44 0a  12 73 74 61 74 65 66 75  |lB.J..D..statefu|
+000003c0  6c 73 65 74 73 2f 73 63  61 6c 65 10 01 1a 05 53  |lsets/scale....S|
+000003d0  63 61 6c 65 22 14 0a 03  67 65 74 0a 05 70 61 74  |cale"...get..pat|
+000003e0  63 68 0a 06 75 70 64 61  74 65 32 00 42 04 61 70  |ch..update2.B.ap|
+000003f0  70 73 4a 07 76 31 62 65  74 61 32 12 40 0a 13 73  |psJ.v1beta2.@..s|
+00000400  74 61 74 65 66 75 6c 73  65 74 73 2f 73 74 61 74  |tatefulsets/stat|
+00000410  75 73 10 01 1a 0b 53 74  61 74 65 66 75 6c 53 65  |us....StatefulSe|
+00000420  74 22 14 0a 03 67 65 74  0a 05 70 61 74 63 68 0a  |t"...get..patch.|
+00000430  06 75 70 64 61 74 65 32  00 42 00 4a 00 1a 00 22  |.update2.B.J..."|
+00000440  00                                                |.|
+I0313 02:35:10.756137       1 round_trippers.go:386] curl -k -v -XGET  -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" 'https://127.0.0.1:6443/apis/apps/v1beta1?timeout=32s'
+I0313 02:35:10.756386       1 handler.go:153] kube-aggregator: GET "/apis/apps/v1beta1" satisfied by nonGoRestful
+I0313 02:35:10.756403       1 pathrecorder.go:240] kube-aggregator: "/apis/apps/v1beta1" satisfied by exact match
+I0313 02:35:10.756416       1 handler.go:143] kube-apiserver: GET "/apis/apps/v1beta1" satisfied by gorestful with webservice /apis/apps/v1beta1
+I0313 02:35:10.756508       1 wrap.go:42] GET /apis/apps/v1beta1?timeout=32s: (215.586µs) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.756655       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/apps/v1beta1?timeout=32s 200 OK in 0 milliseconds
+I0313 02:35:10.756663       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.756667       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.756672       1 round_trippers.go:414]     Content-Length: 732
+I0313 02:35:10.756676       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.756713       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 ba 05 0a 0c  |esourceList.....|
+00000020  61 70 70 73 2f 76 31 62  65 74 61 31 12 76 0a 13  |apps/v1beta1.v..|
+00000030  63 6f 6e 74 72 6f 6c 6c  65 72 72 65 76 69 73 69  |controllerrevisi|
+00000040  6f 6e 73 10 01 1a 12 43  6f 6e 74 72 6f 6c 6c 65  |ons....Controlle|
+00000050  72 52 65 76 69 73 69 6f  6e 22 43 0a 06 63 72 65  |rRevision"C..cre|
+00000060  61 74 65 0a 06 64 65 6c  65 74 65 0a 10 64 65 6c  |ate..delete..del|
+00000070  65 74 65 63 6f 6c 6c 65  63 74 69 6f 6e 0a 03 67  |etecollection..g|
+00000080  65 74 0a 04 6c 69 73 74  0a 05 70 61 74 63 68 0a  |et..list..patch.|
+00000090  06 75 70 64 61 74 65 0a  05 77 61 74 63 68 32 00  |.update..watch2.|
+000000a0  42 00 4a 00 12 73 0a 0b  64 65 70 6c 6f 79 6d 65  |B.J..s..deployme|
+000000b0  6e 74 73 10 01 1a 0a 44  65 70 6c 6f 79 6d 65 6e  |nts....Deploymen|
+000000c0  74 22 43 0a 06 63 72 65  61 74 65 0a 06 64 65 6c  |t"C..create..del|
+000000d0  65 74 65 0a 10 64 65 6c  65 74 65 63 6f 6c 6c 65  |ete..deletecolle|
+000000e0  63 74 69 6f 6e 0a 03 67  65 74 0a 04 6c 69 73 74  |ction..get..list|
+000000f0  0a 05 70 61 74 63 68 0a  06 75 70 64 61 74 65 0a  |..patch..update.|
+00000100  05 77 61 74 63 68 2a 06  64 65 70 6c 6f 79 32 00  |.watch*.deploy2.|
+00000110  3a 03 61 6c 6c 42 00 4a  00 12 3c 0a 14 64 65 70  |:.allB.J..<..dep|
+00000120  6c 6f 79 6d 65 6e 74 73  2f 72 6f 6c 6c 62 61 63  |loyments/rollbac|
+00000130  6b 10 01 1a 12 44 65 70  6c 6f 79 6d 65 6e 74 52  |k....DeploymentR|
+00000140  6f 6c 6c 62 61 63 6b 22  08 0a 06 63 72 65 61 74  |ollback"...creat|
+00000150  65 32 00 42 00 4a 00 12  43 0a 11 64 65 70 6c 6f  |e2.B.J..C..deplo|
+00000160  79 6d 65 6e 74 73 2f 73  63 61 6c 65 10 01 1a 05  |yments/scale....|
+00000170  53 63 61 6c 65 22 14 0a  03 67 65 74 0a 05 70 61  |Scale"...get..pa|
+00000180  74 63 68 0a 06 75 70 64  61 74 65 32 00 42 04 61  |tch..update2.B.a|
+00000190  70 70 73 4a 07 76 31 62  65 74 61 31 12 3e 0a 12  |ppsJ.v1beta1.>..|
+000001a0  64 65 70 6c 6f 79 6d 65  6e 74 73 2f 73 74 61 74  |deployments/stat|
+000001b0  75 73 10 01 1a 0a 44 65  70 6c 6f 79 6d 65 6e 74  |us....Deployment|
+000001c0  22 14 0a 03 67 65 74 0a  05 70 61 74 63 68 0a 06  |"...get..patch..|
+000001d0  75 70 64 61 74 65 32 00  42 00 4a 00 12 72 0a 0c  |update2.B.J..r..|
+000001e0  73 74 61 74 65 66 75 6c  73 65 74 73 10 01 1a 0b  |statefulsets....|
+000001f0  53 74 61 74 65 66 75 6c  53 65 74 22 43 0a 06 63  |StatefulSet"C..c|
+00000200  72 65 61 74 65 0a 06 64  65 6c 65 74 65 0a 10 64  |reate..delete..d|
+00000210  65 6c 65 74 65 63 6f 6c  6c 65 63 74 69 6f 6e 0a  |eletecollection.|
+00000220  03 67 65 74 0a 04 6c 69  73 74 0a 05 70 61 74 63  |.get..list..patc|
+00000230  68 0a 06 75 70 64 61 74  65 0a 05 77 61 74 63 68  |h..update..watch|
+00000240  2a 03 73 74 73 32 00 3a  03 61 6c 6c 42 00 4a 00  |*.sts2.:.allB.J.|
+00000250  12 44 0a 12 73 74 61 74  65 66 75 6c 73 65 74 73  |.D..statefulsets|
+00000260  2f 73 63 61 6c 65 10 01  1a 05 53 63 61 6c 65 22  |/scale....Scale"|
+00000270  14 0a 03 67 65 74 0a 05  70 61 74 63 68 0a 06 75  |...get..patch..u|
+00000280  70 64 61 74 65 32 00 42  04 61 70 70 73 4a 07 76  |pdate2.B.appsJ.v|
+00000290  31 62 65 74 61 31 12 40  0a 13 73 74 61 74 65 66  |1beta1.@..statef|
+000002a0  75 6c 73 65 74 73 2f 73  74 61 74 75 73 10 01 1a  |ulsets/status...|
+000002b0  0b 53 74 61 74 65 66 75  6c 53 65 74 22 14 0a 03  |.StatefulSet"...|
+000002c0  67 65 74 0a 05 70 61 74  63 68 0a 06 75 70 64 61  |get..patch..upda|
+000002d0  74 65 32 00 42 00 4a 00  1a 00 22 00              |te2.B.J...".|
+I0313 02:35:10.756795       1 round_trippers.go:386] curl -k -v -XGET  -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" 'https://127.0.0.1:6443/apis/events.k8s.io/v1beta1?timeout=32s'
+I0313 02:35:10.756934       1 handler.go:153] kube-aggregator: GET "/apis/events.k8s.io/v1beta1" satisfied by nonGoRestful
+I0313 02:35:10.756945       1 pathrecorder.go:240] kube-aggregator: "/apis/events.k8s.io/v1beta1" satisfied by exact match
+I0313 02:35:10.756953       1 handler.go:143] kube-apiserver: GET "/apis/events.k8s.io/v1beta1" satisfied by gorestful with webservice /apis/events.k8s.io/v1beta1
+I0313 02:35:10.757034       1 wrap.go:42] GET /apis/events.k8s.io/v1beta1?timeout=32s: (128.923µs) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.757144       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/events.k8s.io/v1beta1?timeout=32s 200 OK in 0 milliseconds
+I0313 02:35:10.757154       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.757168       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.757176       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.757183       1 round_trippers.go:414]     Content-Length: 154
+I0313 02:35:10.757219       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 79 0a 15 65  |esourceList.y..e|
+00000020  76 65 6e 74 73 2e 6b 38  73 2e 69 6f 2f 76 31 62  |vents.k8s.io/v1b|
+00000030  65 74 61 31 12 60 0a 06  65 76 65 6e 74 73 10 01  |eta1.`..events..|
+00000040  1a 05 45 76 65 6e 74 22  43 0a 06 63 72 65 61 74  |..Event"C..creat|
+00000050  65 0a 06 64 65 6c 65 74  65 0a 10 64 65 6c 65 74  |e..delete..delet|
+00000060  65 63 6f 6c 6c 65 63 74  69 6f 6e 0a 03 67 65 74  |ecollection..get|
+00000070  0a 04 6c 69 73 74 0a 05  70 61 74 63 68 0a 06 75  |..list..patch..u|
+00000080  70 64 61 74 65 0a 05 77  61 74 63 68 2a 02 65 76  |pdate..watch*.ev|
+00000090  32 00 42 00 4a 00 1a 00  22 00                    |2.B.J...".|
+I0313 02:35:10.757294       1 round_trippers.go:386] curl -k -v -XGET  -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" 'https://127.0.0.1:6443/apis/authentication.k8s.io/v1?timeout=32s'
+I0313 02:35:10.757406       1 handler.go:153] kube-aggregator: GET "/apis/authentication.k8s.io/v1" satisfied by nonGoRestful
+I0313 02:35:10.757416       1 pathrecorder.go:240] kube-aggregator: "/apis/authentication.k8s.io/v1" satisfied by exact match
+I0313 02:35:10.757423       1 handler.go:143] kube-apiserver: GET "/apis/authentication.k8s.io/v1" satisfied by gorestful with webservice /apis/authentication.k8s.io/v1
+I0313 02:35:10.757479       1 wrap.go:42] GET /apis/authentication.k8s.io/v1?timeout=32s: (101.608µs) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.757613       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/authentication.k8s.io/v1?timeout=32s 200 OK in 0 milliseconds
+I0313 02:35:10.757623       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.757630       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.757636       1 round_trippers.go:414]     Content-Length: 106
+I0313 02:35:10.757642       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.757667       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 49 0a 18 61  |esourceList.I..a|
+00000020  75 74 68 65 6e 74 69 63  61 74 69 6f 6e 2e 6b 38  |uthentication.k8|
+00000030  73 2e 69 6f 2f 76 31 12  2d 0a 0c 74 6f 6b 65 6e  |s.io/v1.-..token|
+00000040  72 65 76 69 65 77 73 10  00 1a 0b 54 6f 6b 65 6e  |reviews....Token|
+00000050  52 65 76 69 65 77 22 08  0a 06 63 72 65 61 74 65  |Review"...create|
+00000060  32 00 42 00 4a 00 1a 00  22 00                    |2.B.J...".|
+I0313 02:35:10.757765       1 round_trippers.go:386] curl -k -v -XGET  -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" 'https://127.0.0.1:6443/apis/authentication.k8s.io/v1beta1?timeout=32s'
+I0313 02:35:10.757963       1 handler.go:153] kube-aggregator: GET "/apis/authentication.k8s.io/v1beta1" satisfied by nonGoRestful
+I0313 02:35:10.757978       1 pathrecorder.go:240] kube-aggregator: "/apis/authentication.k8s.io/v1beta1" satisfied by exact match
+I0313 02:35:10.758009       1 handler.go:143] kube-apiserver: GET "/apis/authentication.k8s.io/v1beta1" satisfied by gorestful with webservice /apis/authentication.k8s.io/v1beta1
+I0313 02:35:10.758096       1 wrap.go:42] GET /apis/authentication.k8s.io/v1beta1?timeout=32s: (173.645µs) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.758276       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/authentication.k8s.io/v1beta1?timeout=32s 200 OK in 0 milliseconds
+I0313 02:35:10.758287       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.758295       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.758302       1 round_trippers.go:414]     Content-Length: 111
+I0313 02:35:10.758310       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.758342       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 4e 0a 1d 61  |esourceList.N..a|
+00000020  75 74 68 65 6e 74 69 63  61 74 69 6f 6e 2e 6b 38  |uthentication.k8|
+00000030  73 2e 69 6f 2f 76 31 62  65 74 61 31 12 2d 0a 0c  |s.io/v1beta1.-..|
+00000040  74 6f 6b 65 6e 72 65 76  69 65 77 73 10 00 1a 0b  |tokenreviews....|
+00000050  54 6f 6b 65 6e 52 65 76  69 65 77 22 08 0a 06 63  |TokenReview"...c|
+00000060  72 65 61 74 65 32 00 42  00 4a 00 1a 00 22 00     |reate2.B.J...".|
+I0313 02:35:10.758438       1 round_trippers.go:386] curl -k -v -XGET  -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" 'https://127.0.0.1:6443/apis/authorization.k8s.io/v1?timeout=32s'
+I0313 02:35:10.758643       1 handler.go:153] kube-aggregator: GET "/apis/authorization.k8s.io/v1" satisfied by nonGoRestful
+I0313 02:35:10.758658       1 pathrecorder.go:240] kube-aggregator: "/apis/authorization.k8s.io/v1" satisfied by exact match
+I0313 02:35:10.758670       1 handler.go:143] kube-apiserver: GET "/apis/authorization.k8s.io/v1" satisfied by gorestful with webservice /apis/authorization.k8s.io/v1
+I0313 02:35:10.758757       1 wrap.go:42] GET /apis/authorization.k8s.io/v1?timeout=32s: (153.143µs) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.758939       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/authorization.k8s.io/v1?timeout=32s 200 OK in 0 milliseconds
+I0313 02:35:10.758951       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.758958       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.758964       1 round_trippers.go:414]     Content-Length: 335
+I0313 02:35:10.758971       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.760210       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 ad 02 0a 17  |esourceList.....|
+00000020  61 75 74 68 6f 72 69 7a  61 74 69 6f 6e 2e 6b 38  |authorization.k8|
+00000030  73 2e 69 6f 2f 76 31 12  47 0a 19 6c 6f 63 61 6c  |s.io/v1.G..local|
+00000040  73 75 62 6a 65 63 74 61  63 63 65 73 73 72 65 76  |subjectaccessrev|
+00000050  69 65 77 73 10 01 1a 18  4c 6f 63 61 6c 53 75 62  |iews....LocalSub|
+00000060  6a 65 63 74 41 63 63 65  73 73 52 65 76 69 65 77  |jectAccessReview|
+00000070  22 08 0a 06 63 72 65 61  74 65 32 00 42 00 4a 00  |"...create2.B.J.|
+00000080  12 45 0a 18 73 65 6c 66  73 75 62 6a 65 63 74 61  |.E..selfsubjecta|
+00000090  63 63 65 73 73 72 65 76  69 65 77 73 10 00 1a 17  |ccessreviews....|
+000000a0  53 65 6c 66 53 75 62 6a  65 63 74 41 63 63 65 73  |SelfSubjectAcces|
+000000b0  73 52 65 76 69 65 77 22  08 0a 06 63 72 65 61 74  |sReview"...creat|
+000000c0  65 32 00 42 00 4a 00 12  43 0a 17 73 65 6c 66 73  |e2.B.J..C..selfs|
+000000d0  75 62 6a 65 63 74 72 75  6c 65 73 72 65 76 69 65  |ubjectrulesrevie|
+000000e0  77 73 10 00 1a 16 53 65  6c 66 53 75 62 6a 65 63  |ws....SelfSubjec|
+000000f0  74 52 75 6c 65 73 52 65  76 69 65 77 22 08 0a 06  |tRulesReview"...|
+00000100  63 72 65 61 74 65 32 00  42 00 4a 00 12 3d 0a 14  |create2.B.J..=..|
+00000110  73 75 62 6a 65 63 74 61  63 63 65 73 73 72 65 76  |subjectaccessrev|
+00000120  69 65 77 73 10 00 1a 13  53 75 62 6a 65 63 74 41  |iews....SubjectA|
+00000130  63 63 65 73 73 52 65 76  69 65 77 22 08 0a 06 63  |ccessReview"...c|
+00000140  72 65 61 74 65 32 00 42  00 4a 00 1a 00 22 00     |reate2.B.J...".|
+I0313 02:35:10.760353       1 round_trippers.go:386] curl -k -v -XGET  -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" 'https://127.0.0.1:6443/apis/authorization.k8s.io/v1beta1?timeout=32s'
+I0313 02:35:10.760540       1 handler.go:153] kube-aggregator: GET "/apis/authorization.k8s.io/v1beta1" satisfied by nonGoRestful
+I0313 02:35:10.760551       1 pathrecorder.go:240] kube-aggregator: "/apis/authorization.k8s.io/v1beta1" satisfied by exact match
+I0313 02:35:10.760559       1 handler.go:143] kube-apiserver: GET "/apis/authorization.k8s.io/v1beta1" satisfied by gorestful with webservice /apis/authorization.k8s.io/v1beta1
+I0313 02:35:10.760623       1 wrap.go:42] GET /apis/authorization.k8s.io/v1beta1?timeout=32s: (124.298µs) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.760755       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/authorization.k8s.io/v1beta1?timeout=32s 200 OK in 0 milliseconds
+I0313 02:35:10.760762       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.760767       1 round_trippers.go:414]     Content-Length: 340
+I0313 02:35:10.760772       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.760776       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.760807       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 b2 02 0a 1c  |esourceList.....|
+00000020  61 75 74 68 6f 72 69 7a  61 74 69 6f 6e 2e 6b 38  |authorization.k8|
+00000030  73 2e 69 6f 2f 76 31 62  65 74 61 31 12 47 0a 19  |s.io/v1beta1.G..|
+00000040  6c 6f 63 61 6c 73 75 62  6a 65 63 74 61 63 63 65  |localsubjectacce|
+00000050  73 73 72 65 76 69 65 77  73 10 01 1a 18 4c 6f 63  |ssreviews....Loc|
+00000060  61 6c 53 75 62 6a 65 63  74 41 63 63 65 73 73 52  |alSubjectAccessR|
+00000070  65 76 69 65 77 22 08 0a  06 63 72 65 61 74 65 32  |eview"...create2|
+00000080  00 42 00 4a 00 12 45 0a  18 73 65 6c 66 73 75 62  |.B.J..E..selfsub|
+00000090  6a 65 63 74 61 63 63 65  73 73 72 65 76 69 65 77  |jectaccessreview|
+000000a0  73 10 00 1a 17 53 65 6c  66 53 75 62 6a 65 63 74  |s....SelfSubject|
+000000b0  41 63 63 65 73 73 52 65  76 69 65 77 22 08 0a 06  |AccessReview"...|
+000000c0  63 72 65 61 74 65 32 00  42 00 4a 00 12 43 0a 17  |create2.B.J..C..|
+000000d0  73 65 6c 66 73 75 62 6a  65 63 74 72 75 6c 65 73  |selfsubjectrules|
+000000e0  72 65 76 69 65 77 73 10  00 1a 16 53 65 6c 66 53  |reviews....SelfS|
+000000f0  75 62 6a 65 63 74 52 75  6c 65 73 52 65 76 69 65  |ubjectRulesRevie|
+00000100  77 22 08 0a 06 63 72 65  61 74 65 32 00 42 00 4a  |w"...create2.B.J|
+00000110  00 12 3d 0a 14 73 75 62  6a 65 63 74 61 63 63 65  |..=..subjectacce|
+00000120  73 73 72 65 76 69 65 77  73 10 00 1a 13 53 75 62  |ssreviews....Sub|
+00000130  6a 65 63 74 41 63 63 65  73 73 52 65 76 69 65 77  |jectAccessReview|
+00000140  22 08 0a 06 63 72 65 61  74 65 32 00 42 00 4a 00  |"...create2.B.J.|
+00000150  1a 00 22 00                                       |..".|
+I0313 02:35:10.760884       1 round_trippers.go:386] curl -k -v -XGET  -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" 'https://127.0.0.1:6443/apis/autoscaling/v1?timeout=32s'
+I0313 02:35:10.761046       1 handler.go:153] kube-aggregator: GET "/apis/autoscaling/v1" satisfied by nonGoRestful
+I0313 02:35:10.761057       1 pathrecorder.go:240] kube-aggregator: "/apis/autoscaling/v1" satisfied by exact match
+I0313 02:35:10.761064       1 handler.go:143] kube-apiserver: GET "/apis/autoscaling/v1" satisfied by gorestful with webservice /apis/autoscaling/v1
+I0313 02:35:10.761126       1 wrap.go:42] GET /apis/autoscaling/v1?timeout=32s: (108.91µs) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.761266       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/autoscaling/v1?timeout=32s 200 OK in 0 milliseconds
+I0313 02:35:10.761277       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.761284       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.761290       1 round_trippers.go:414]     Content-Length: 281
+I0313 02:35:10.761297       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.761334       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 f7 01 0a 0e  |esourceList.....|
+00000020  61 75 74 6f 73 63 61 6c  69 6e 67 2f 76 31 12 8a  |autoscaling/v1..|
+00000030  01 0a 18 68 6f 72 69 7a  6f 6e 74 61 6c 70 6f 64  |...horizontalpod|
+00000040  61 75 74 6f 73 63 61 6c  65 72 73 10 01 1a 17 48  |autoscalers....H|
+00000050  6f 72 69 7a 6f 6e 74 61  6c 50 6f 64 41 75 74 6f  |orizontalPodAuto|
+00000060  73 63 61 6c 65 72 22 43  0a 06 63 72 65 61 74 65  |scaler"C..create|
+00000070  0a 06 64 65 6c 65 74 65  0a 10 64 65 6c 65 74 65  |..delete..delete|
+00000080  63 6f 6c 6c 65 63 74 69  6f 6e 0a 03 67 65 74 0a  |collection..get.|
+00000090  04 6c 69 73 74 0a 05 70  61 74 63 68 0a 06 75 70  |.list..patch..up|
+000000a0  64 61 74 65 0a 05 77 61  74 63 68 2a 03 68 70 61  |date..watch*.hpa|
+000000b0  32 00 3a 03 61 6c 6c 42  00 4a 00 12 58 0a 1f 68  |2.:.allB.J..X..h|
+000000c0  6f 72 69 7a 6f 6e 74 61  6c 70 6f 64 61 75 74 6f  |orizontalpodauto|
+000000d0  73 63 61 6c 65 72 73 2f  73 74 61 74 75 73 10 01  |scalers/status..|
+000000e0  1a 17 48 6f 72 69 7a 6f  6e 74 61 6c 50 6f 64 41  |..HorizontalPodA|
+000000f0  75 74 6f 73 63 61 6c 65  72 22 14 0a 03 67 65 74  |utoscaler"...get|
+00000100  0a 05 70 61 74 63 68 0a  06 75 70 64 61 74 65 32  |..patch..update2|
+00000110  00 42 00 4a 00 1a 00 22  00                       |.B.J...".|
+I0313 02:35:10.761428       1 round_trippers.go:386] curl -k -v -XGET  -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" 'https://127.0.0.1:6443/apis/autoscaling/v2beta1?timeout=32s'
+I0313 02:35:10.761571       1 handler.go:153] kube-aggregator: GET "/apis/autoscaling/v2beta1" satisfied by nonGoRestful
+I0313 02:35:10.761590       1 pathrecorder.go:240] kube-aggregator: "/apis/autoscaling/v2beta1" satisfied by exact match
+I0313 02:35:10.761600       1 handler.go:143] kube-apiserver: GET "/apis/autoscaling/v2beta1" satisfied by gorestful with webservice /apis/autoscaling/v2beta1
+I0313 02:35:10.761676       1 wrap.go:42] GET /apis/autoscaling/v2beta1?timeout=32s: (144.201µs) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.761791       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/autoscaling/v2beta1?timeout=32s 200 OK in 0 milliseconds
+I0313 02:35:10.761799       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.761803       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.761808       1 round_trippers.go:414]     Content-Length: 286
+I0313 02:35:10.761814       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.761849       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 fc 01 0a 13  |esourceList.....|
+00000020  61 75 74 6f 73 63 61 6c  69 6e 67 2f 76 32 62 65  |autoscaling/v2be|
+00000030  74 61 31 12 8a 01 0a 18  68 6f 72 69 7a 6f 6e 74  |ta1.....horizont|
+00000040  61 6c 70 6f 64 61 75 74  6f 73 63 61 6c 65 72 73  |alpodautoscalers|
+00000050  10 01 1a 17 48 6f 72 69  7a 6f 6e 74 61 6c 50 6f  |....HorizontalPo|
+00000060  64 41 75 74 6f 73 63 61  6c 65 72 22 43 0a 06 63  |dAutoscaler"C..c|
+00000070  72 65 61 74 65 0a 06 64  65 6c 65 74 65 0a 10 64  |reate..delete..d|
+00000080  65 6c 65 74 65 63 6f 6c  6c 65 63 74 69 6f 6e 0a  |eletecollection.|
+00000090  03 67 65 74 0a 04 6c 69  73 74 0a 05 70 61 74 63  |.get..list..patc|
+000000a0  68 0a 06 75 70 64 61 74  65 0a 05 77 61 74 63 68  |h..update..watch|
+000000b0  2a 03 68 70 61 32 00 3a  03 61 6c 6c 42 00 4a 00  |*.hpa2.:.allB.J.|
+000000c0  12 58 0a 1f 68 6f 72 69  7a 6f 6e 74 61 6c 70 6f  |.X..horizontalpo|
+000000d0  64 61 75 74 6f 73 63 61  6c 65 72 73 2f 73 74 61  |dautoscalers/sta|
+000000e0  74 75 73 10 01 1a 17 48  6f 72 69 7a 6f 6e 74 61  |tus....Horizonta|
+000000f0  6c 50 6f 64 41 75 74 6f  73 63 61 6c 65 72 22 14  |lPodAutoscaler".|
+00000100  0a 03 67 65 74 0a 05 70  61 74 63 68 0a 06 75 70  |..get..patch..up|
+00000110  64 61 74 65 32 00 42 00  4a 00 1a 00 22 00        |date2.B.J...".|
+I0313 02:35:10.761932       1 round_trippers.go:386] curl -k -v -XGET  -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" 'https://127.0.0.1:6443/apis/batch/v1?timeout=32s'
+I0313 02:35:10.762071       1 handler.go:153] kube-aggregator: GET "/apis/batch/v1" satisfied by nonGoRestful
+I0313 02:35:10.762082       1 pathrecorder.go:240] kube-aggregator: "/apis/batch/v1" satisfied by exact match
+I0313 02:35:10.762089       1 handler.go:143] kube-apiserver: GET "/apis/batch/v1" satisfied by gorestful with webservice /apis/batch/v1
+I0313 02:35:10.762152       1 wrap.go:42] GET /apis/batch/v1?timeout=32s: (111.698µs) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.762269       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/batch/v1?timeout=32s 200 OK in 0 milliseconds
+I0313 02:35:10.762276       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.762281       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.762285       1 round_trippers.go:414]     Content-Length: 189
+I0313 02:35:10.762290       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.762313       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 9b 01 0a 08  |esourceList.....|
+00000020  62 61 74 63 68 2f 76 31  12 5d 0a 04 6a 6f 62 73  |batch/v1.]..jobs|
+00000030  10 01 1a 03 4a 6f 62 22  43 0a 06 63 72 65 61 74  |....Job"C..creat|
+00000040  65 0a 06 64 65 6c 65 74  65 0a 10 64 65 6c 65 74  |e..delete..delet|
+00000050  65 63 6f 6c 6c 65 63 74  69 6f 6e 0a 03 67 65 74  |ecollection..get|
+00000060  0a 04 6c 69 73 74 0a 05  70 61 74 63 68 0a 06 75  |..list..patch..u|
+00000070  70 64 61 74 65 0a 05 77  61 74 63 68 32 00 3a 03  |pdate..watch2.:.|
+00000080  61 6c 6c 42 00 4a 00 12  30 0a 0b 6a 6f 62 73 2f  |allB.J..0..jobs/|
+00000090  73 74 61 74 75 73 10 01  1a 03 4a 6f 62 22 14 0a  |status....Job"..|
+000000a0  03 67 65 74 0a 05 70 61  74 63 68 0a 06 75 70 64  |.get..patch..upd|
+000000b0  61 74 65 32 00 42 00 4a  00 1a 00 22 00           |ate2.B.J...".|
+I0313 02:35:10.762379       1 round_trippers.go:386] curl -k -v -XGET  -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" 'https://127.0.0.1:6443/apis/batch/v1beta1?timeout=32s'
+I0313 02:35:10.762490       1 handler.go:153] kube-aggregator: GET "/apis/batch/v1beta1" satisfied by nonGoRestful
+I0313 02:35:10.762500       1 pathrecorder.go:240] kube-aggregator: "/apis/batch/v1beta1" satisfied by exact match
+I0313 02:35:10.762507       1 handler.go:143] kube-apiserver: GET "/apis/batch/v1beta1" satisfied by gorestful with webservice /apis/batch/v1beta1
+I0313 02:35:10.762580       1 wrap.go:42] GET /apis/batch/v1beta1?timeout=32s: (117.497µs) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.762694       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/batch/v1beta1?timeout=32s 200 OK in 0 milliseconds
+I0313 02:35:10.762701       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.762706       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.762711       1 round_trippers.go:414]     Content-Length: 214
+I0313 02:35:10.762715       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.762739       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 b4 01 0a 0d  |esourceList.....|
+00000020  62 61 74 63 68 2f 76 31  62 65 74 61 31 12 69 0a  |batch/v1beta1.i.|
+00000030  08 63 72 6f 6e 6a 6f 62  73 10 01 1a 07 43 72 6f  |.cronjobs....Cro|
+00000040  6e 4a 6f 62 22 43 0a 06  63 72 65 61 74 65 0a 06  |nJob"C..create..|
+00000050  64 65 6c 65 74 65 0a 10  64 65 6c 65 74 65 63 6f  |delete..deleteco|
+00000060  6c 6c 65 63 74 69 6f 6e  0a 03 67 65 74 0a 04 6c  |llection..get..l|
+00000070  69 73 74 0a 05 70 61 74  63 68 0a 06 75 70 64 61  |ist..patch..upda|
+00000080  74 65 0a 05 77 61 74 63  68 2a 02 63 6a 32 00 3a  |te..watch*.cj2.:|
+00000090  03 61 6c 6c 42 00 4a 00  12 38 0a 0f 63 72 6f 6e  |.allB.J..8..cron|
+000000a0  6a 6f 62 73 2f 73 74 61  74 75 73 10 01 1a 07 43  |jobs/status....C|
+000000b0  72 6f 6e 4a 6f 62 22 14  0a 03 67 65 74 0a 05 70  |ronJob"...get..p|
+000000c0  61 74 63 68 0a 06 75 70  64 61 74 65 32 00 42 00  |atch..update2.B.|
+000000d0  4a 00 1a 00 22 00                                 |J...".|
+I0313 02:35:10.762806       1 round_trippers.go:386] curl -k -v -XGET  -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" -H "Accept: application/vnd.kubernetes.protobuf, */*" 'https://127.0.0.1:6443/apis/certificates.k8s.io/v1beta1?timeout=32s'
+I0313 02:35:10.762936       1 handler.go:153] kube-aggregator: GET "/apis/certificates.k8s.io/v1beta1" satisfied by nonGoRestful
+I0313 02:35:10.762948       1 pathrecorder.go:240] kube-aggregator: "/apis/certificates.k8s.io/v1beta1" satisfied by exact match
+I0313 02:35:10.762955       1 handler.go:143] kube-apiserver: GET "/apis/certificates.k8s.io/v1beta1" satisfied by gorestful with webservice /apis/certificates.k8s.io/v1beta1
+I0313 02:35:10.764009       1 wrap.go:42] GET /apis/certificates.k8s.io/v1beta1?timeout=32s: (1.082673ms) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.764150       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/certificates.k8s.io/v1beta1?timeout=32s 200 OK in 1 milliseconds
+I0313 02:35:10.764158       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.764173       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.764178       1 round_trippers.go:414]     Content-Length: 381
+I0313 02:35:10.764182       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.764214       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 db 02 0a 1b  |esourceList.....|
+00000020  63 65 72 74 69 66 69 63  61 74 65 73 2e 6b 38 73  |certificates.k8s|
+00000030  2e 69 6f 2f 76 31 62 65  74 61 31 12 89 01 0a 1a  |.io/v1beta1.....|
+00000040  63 65 72 74 69 66 69 63  61 74 65 73 69 67 6e 69  |certificatesigni|
+00000050  6e 67 72 65 71 75 65 73  74 73 10 00 1a 19 43 65  |ngrequests....Ce|
+00000060  72 74 69 66 69 63 61 74  65 53 69 67 6e 69 6e 67  |rtificateSigning|
+00000070  52 65 71 75 65 73 74 22  43 0a 06 63 72 65 61 74  |Request"C..creat|
+00000080  65 0a 06 64 65 6c 65 74  65 0a 10 64 65 6c 65 74  |e..delete..delet|
+00000090  65 63 6f 6c 6c 65 63 74  69 6f 6e 0a 03 67 65 74  |ecollection..get|
+000000a0  0a 04 6c 69 73 74 0a 05  70 61 74 63 68 0a 06 75  |..list..patch..u|
+000000b0  70 64 61 74 65 0a 05 77  61 74 63 68 2a 03 63 73  |pdate..watch*.cs|
+000000c0  72 32 00 42 00 4a 00 12  52 0a 23 63 65 72 74 69  |r2.B.J..R.#certi|
+000000d0  66 69 63 61 74 65 73 69  67 6e 69 6e 67 72 65 71  |ficatesigningreq|
+000000e0  75 65 73 74 73 2f 61 70  70 72 6f 76 61 6c 10 00  |uests/approval..|
+000000f0  1a 19 43 65 72 74 69 66  69 63 61 74 65 53 69 67  |..CertificateSig|
+00000100  6e 69 6e 67 52 65 71 75  65 73 74 22 08 0a 06 75  |ningRequest"...u|
+00000110  70 64 61 74 65 32 00 42  00 4a 00 12 5c 0a 21 63  |pdate2.B.J..\.!c|
+00000120  65 72 74 69 66 69 63 61  74 65 73 69 67 6e 69 6e  |ertificatesignin|
+00000130  67 72 65 71 75 65 73 74  73 2f 73 74 61 74 75 73  |grequests/status|
+00000140  10 00 1a 19 43 65 72 74  69 66 69 63 61 74 65 53  |....CertificateS|
+00000150  69 67 6e 69 6e 67 52 65  71 75 65 73 74 22 14 0a  |igningRequest"..|
+00000160  03 67 65 74 0a 05 70 61  74 63 68 0a 06 75 70 64  |.get..patch..upd|
+00000170  61 74 65 32 00 42 00 4a  00 1a 00 22 00           |ate2.B.J...".|
+I0313 02:35:10.764289       1 round_trippers.go:386] curl -k -v -XGET  -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" 'https://127.0.0.1:6443/apis/networking.k8s.io/v1?timeout=32s'
+I0313 02:35:10.764401       1 handler.go:153] kube-aggregator: GET "/apis/networking.k8s.io/v1" satisfied by nonGoRestful
+I0313 02:35:10.764411       1 pathrecorder.go:240] kube-aggregator: "/apis/networking.k8s.io/v1" satisfied by exact match
+I0313 02:35:10.764420       1 handler.go:143] kube-apiserver: GET "/apis/networking.k8s.io/v1" satisfied by gorestful with webservice /apis/networking.k8s.io/v1
+I0313 02:35:10.764479       1 wrap.go:42] GET /apis/networking.k8s.io/v1?timeout=32s: (105.161µs) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.764591       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/networking.k8s.io/v1?timeout=32s 200 OK in 0 milliseconds
+I0313 02:35:10.764598       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.764603       1 round_trippers.go:414]     Content-Length: 175
+I0313 02:35:10.764607       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.764611       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.764636       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 8d 01 0a 14  |esourceList.....|
+00000020  6e 65 74 77 6f 72 6b 69  6e 67 2e 6b 38 73 2e 69  |networking.k8s.i|
+00000030  6f 2f 76 31 12 75 0a 0f  6e 65 74 77 6f 72 6b 70  |o/v1.u..networkp|
+00000040  6f 6c 69 63 69 65 73 10  01 1a 0d 4e 65 74 77 6f  |olicies....Netwo|
+00000050  72 6b 50 6f 6c 69 63 79  22 43 0a 06 63 72 65 61  |rkPolicy"C..crea|
+00000060  74 65 0a 06 64 65 6c 65  74 65 0a 10 64 65 6c 65  |te..delete..dele|
+00000070  74 65 63 6f 6c 6c 65 63  74 69 6f 6e 0a 03 67 65  |tecollection..ge|
+00000080  74 0a 04 6c 69 73 74 0a  05 70 61 74 63 68 0a 06  |t..list..patch..|
+00000090  75 70 64 61 74 65 0a 05  77 61 74 63 68 2a 06 6e  |update..watch*.n|
+000000a0  65 74 70 6f 6c 32 00 42  00 4a 00 1a 00 22 00     |etpol2.B.J...".|
+I0313 02:35:10.764701       1 round_trippers.go:386] curl -k -v -XGET  -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" 'https://127.0.0.1:6443/apis/policy/v1beta1?timeout=32s'
+I0313 02:35:10.764810       1 handler.go:153] kube-aggregator: GET "/apis/policy/v1beta1" satisfied by nonGoRestful
+I0313 02:35:10.764820       1 pathrecorder.go:240] kube-aggregator: "/apis/policy/v1beta1" satisfied by exact match
+I0313 02:35:10.764827       1 handler.go:143] kube-apiserver: GET "/apis/policy/v1beta1" satisfied by gorestful with webservice /apis/policy/v1beta1
+I0313 02:35:10.764889       1 wrap.go:42] GET /apis/policy/v1beta1?timeout=32s: (109.519µs) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.765020       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/policy/v1beta1?timeout=32s 200 OK in 0 milliseconds
+I0313 02:35:10.765028       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.765033       1 round_trippers.go:414]     Content-Length: 383
+I0313 02:35:10.765037       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.765042       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.765068       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 dd 02 0a 0e  |esourceList.....|
+00000020  70 6f 6c 69 63 79 2f 76  31 62 65 74 61 31 12 7d  |policy/v1beta1.}|
+00000030  0a 14 70 6f 64 64 69 73  72 75 70 74 69 6f 6e 62  |..poddisruptionb|
+00000040  75 64 67 65 74 73 10 01  1a 13 50 6f 64 44 69 73  |udgets....PodDis|
+00000050  72 75 70 74 69 6f 6e 42  75 64 67 65 74 22 43 0a  |ruptionBudget"C.|
+00000060  06 63 72 65 61 74 65 0a  06 64 65 6c 65 74 65 0a  |.create..delete.|
+00000070  10 64 65 6c 65 74 65 63  6f 6c 6c 65 63 74 69 6f  |.deletecollectio|
+00000080  6e 0a 03 67 65 74 0a 04  6c 69 73 74 0a 05 70 61  |n..get..list..pa|
+00000090  74 63 68 0a 06 75 70 64  61 74 65 0a 05 77 61 74  |tch..update..wat|
+000000a0  63 68 2a 03 70 64 62 32  00 42 00 4a 00 12 50 0a  |ch*.pdb2.B.J..P.|
+000000b0  1b 70 6f 64 64 69 73 72  75 70 74 69 6f 6e 62 75  |.poddisruptionbu|
+000000c0  64 67 65 74 73 2f 73 74  61 74 75 73 10 01 1a 13  |dgets/status....|
+000000d0  50 6f 64 44 69 73 72 75  70 74 69 6f 6e 42 75 64  |PodDisruptionBud|
+000000e0  67 65 74 22 14 0a 03 67  65 74 0a 05 70 61 74 63  |get"...get..patc|
+000000f0  68 0a 06 75 70 64 61 74  65 32 00 42 00 4a 00 12  |h..update2.B.J..|
+00000100  7a 0a 13 70 6f 64 73 65  63 75 72 69 74 79 70 6f  |z..podsecuritypo|
+00000110  6c 69 63 69 65 73 10 00  1a 11 50 6f 64 53 65 63  |licies....PodSec|
+00000120  75 72 69 74 79 50 6f 6c  69 63 79 22 43 0a 06 63  |urityPolicy"C..c|
+00000130  72 65 61 74 65 0a 06 64  65 6c 65 74 65 0a 10 64  |reate..delete..d|
+00000140  65 6c 65 74 65 63 6f 6c  6c 65 63 74 69 6f 6e 0a  |eletecollection.|
+00000150  03 67 65 74 0a 04 6c 69  73 74 0a 05 70 61 74 63  |.get..list..patc|
+00000160  68 0a 06 75 70 64 61 74  65 0a 05 77 61 74 63 68  |h..update..watch|
+00000170  2a 03 70 73 70 32 00 42  00 4a 00 1a 00 22 00     |*.psp2.B.J...".|
+I0313 02:35:10.765136       1 round_trippers.go:386] curl -k -v -XGET  -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" 'https://127.0.0.1:6443/apis/rbac.authorization.k8s.io/v1?timeout=32s'
+I0313 02:35:10.765288       1 handler.go:153] kube-aggregator: GET "/apis/rbac.authorization.k8s.io/v1" satisfied by nonGoRestful
+I0313 02:35:10.765299       1 pathrecorder.go:240] kube-aggregator: "/apis/rbac.authorization.k8s.io/v1" satisfied by exact match
+I0313 02:35:10.765306       1 handler.go:143] kube-apiserver: GET "/apis/rbac.authorization.k8s.io/v1" satisfied by gorestful with webservice /apis/rbac.authorization.k8s.io/v1
+I0313 02:35:10.765374       1 wrap.go:42] GET /apis/rbac.authorization.k8s.io/v1?timeout=32s: (112.11µs) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.765529       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/rbac.authorization.k8s.io/v1?timeout=32s 200 OK in 0 milliseconds
+I0313 02:35:10.765536       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.765541       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.765545       1 round_trippers.go:414]     Content-Length: 488
+I0313 02:35:10.765550       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.765584       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 c6 03 0a 1c  |esourceList.....|
+00000020  72 62 61 63 2e 61 75 74  68 6f 72 69 7a 61 74 69  |rbac.authorizati|
+00000030  6f 6e 2e 6b 38 73 2e 69  6f 2f 76 31 12 76 0a 13  |on.k8s.io/v1.v..|
+00000040  63 6c 75 73 74 65 72 72  6f 6c 65 62 69 6e 64 69  |clusterrolebindi|
+00000050  6e 67 73 10 00 1a 12 43  6c 75 73 74 65 72 52 6f  |ngs....ClusterRo|
+00000060  6c 65 42 69 6e 64 69 6e  67 22 43 0a 06 63 72 65  |leBinding"C..cre|
+00000070  61 74 65 0a 06 64 65 6c  65 74 65 0a 10 64 65 6c  |ate..delete..del|
+00000080  65 74 65 63 6f 6c 6c 65  63 74 69 6f 6e 0a 03 67  |etecollection..g|
+00000090  65 74 0a 04 6c 69 73 74  0a 05 70 61 74 63 68 0a  |et..list..patch.|
+000000a0  06 75 70 64 61 74 65 0a  05 77 61 74 63 68 32 00  |.update..watch2.|
+000000b0  42 00 4a 00 12 68 0a 0c  63 6c 75 73 74 65 72 72  |B.J..h..clusterr|
+000000c0  6f 6c 65 73 10 00 1a 0b  43 6c 75 73 74 65 72 52  |oles....ClusterR|
+000000d0  6f 6c 65 22 43 0a 06 63  72 65 61 74 65 0a 06 64  |ole"C..create..d|
+000000e0  65 6c 65 74 65 0a 10 64  65 6c 65 74 65 63 6f 6c  |elete..deletecol|
+000000f0  6c 65 63 74 69 6f 6e 0a  03 67 65 74 0a 04 6c 69  |lection..get..li|
+00000100  73 74 0a 05 70 61 74 63  68 0a 06 75 70 64 61 74  |st..patch..updat|
+00000110  65 0a 05 77 61 74 63 68  32 00 42 00 4a 00 12 68  |e..watch2.B.J..h|
+00000120  0a 0c 72 6f 6c 65 62 69  6e 64 69 6e 67 73 10 01  |..rolebindings..|
+00000130  1a 0b 52 6f 6c 65 42 69  6e 64 69 6e 67 22 43 0a  |..RoleBinding"C.|
+00000140  06 63 72 65 61 74 65 0a  06 64 65 6c 65 74 65 0a  |.create..delete.|
+00000150  10 64 65 6c 65 74 65 63  6f 6c 6c 65 63 74 69 6f  |.deletecollectio|
+00000160  6e 0a 03 67 65 74 0a 04  6c 69 73 74 0a 05 70 61  |n..get..list..pa|
+00000170  74 63 68 0a 06 75 70 64  61 74 65 0a 05 77 61 74  |tch..update..wat|
+00000180  63 68 32 00 42 00 4a 00  12 5a 0a 05 72 6f 6c 65  |ch2.B.J..Z..role|
+00000190  73 10 01 1a 04 52 6f 6c  65 22 43 0a 06 63 72 65  |s....Role"C..cre|
+000001a0  61 74 65 0a 06 64 65 6c  65 74 65 0a 10 64 65 6c  |ate..delete..del|
+000001b0  65 74 65 63 6f 6c 6c 65  63 74 69 6f 6e 0a 03 67  |etecollection..g|
+000001c0  65 74 0a 04 6c 69 73 74  0a 05 70 61 74 63 68 0a  |et..list..patch.|
+000001d0  06 75 70 64 61 74 65 0a  05 77 61 74 63 68 32 00  |.update..watch2.|
+000001e0  42 00 4a 00 1a 00 22 00                           |B.J...".|
+I0313 02:35:10.765661       1 round_trippers.go:386] curl -k -v -XGET  -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" 'https://127.0.0.1:6443/apis/rbac.authorization.k8s.io/v1beta1?timeout=32s'
+I0313 02:35:10.765766       1 handler.go:153] kube-aggregator: GET "/apis/rbac.authorization.k8s.io/v1beta1" satisfied by nonGoRestful
+I0313 02:35:10.765776       1 pathrecorder.go:240] kube-aggregator: "/apis/rbac.authorization.k8s.io/v1beta1" satisfied by exact match
+I0313 02:35:10.765786       1 handler.go:143] kube-apiserver: GET "/apis/rbac.authorization.k8s.io/v1beta1" satisfied by gorestful with webservice /apis/rbac.authorization.k8s.io/v1beta1
+I0313 02:35:10.765857       1 wrap.go:42] GET /apis/rbac.authorization.k8s.io/v1beta1?timeout=32s: (116.489µs) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.765971       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/rbac.authorization.k8s.io/v1beta1?timeout=32s 200 OK in 0 milliseconds
+I0313 02:35:10.765979       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.766001       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.766007       1 round_trippers.go:414]     Content-Length: 493
+I0313 02:35:10.766012       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.766051       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 cb 03 0a 21  |esourceList....!|
+00000020  72 62 61 63 2e 61 75 74  68 6f 72 69 7a 61 74 69  |rbac.authorizati|
+00000030  6f 6e 2e 6b 38 73 2e 69  6f 2f 76 31 62 65 74 61  |on.k8s.io/v1beta|
+00000040  31 12 76 0a 13 63 6c 75  73 74 65 72 72 6f 6c 65  |1.v..clusterrole|
+00000050  62 69 6e 64 69 6e 67 73  10 00 1a 12 43 6c 75 73  |bindings....Clus|
+00000060  74 65 72 52 6f 6c 65 42  69 6e 64 69 6e 67 22 43  |terRoleBinding"C|
+00000070  0a 06 63 72 65 61 74 65  0a 06 64 65 6c 65 74 65  |..create..delete|
+00000080  0a 10 64 65 6c 65 74 65  63 6f 6c 6c 65 63 74 69  |..deletecollecti|
+00000090  6f 6e 0a 03 67 65 74 0a  04 6c 69 73 74 0a 05 70  |on..get..list..p|
+000000a0  61 74 63 68 0a 06 75 70  64 61 74 65 0a 05 77 61  |atch..update..wa|
+000000b0  74 63 68 32 00 42 00 4a  00 12 68 0a 0c 63 6c 75  |tch2.B.J..h..clu|
+000000c0  73 74 65 72 72 6f 6c 65  73 10 00 1a 0b 43 6c 75  |sterroles....Clu|
+000000d0  73 74 65 72 52 6f 6c 65  22 43 0a 06 63 72 65 61  |sterRole"C..crea|
+000000e0  74 65 0a 06 64 65 6c 65  74 65 0a 10 64 65 6c 65  |te..delete..dele|
+000000f0  74 65 63 6f 6c 6c 65 63  74 69 6f 6e 0a 03 67 65  |tecollection..ge|
+00000100  74 0a 04 6c 69 73 74 0a  05 70 61 74 63 68 0a 06  |t..list..patch..|
+00000110  75 70 64 61 74 65 0a 05  77 61 74 63 68 32 00 42  |update..watch2.B|
+00000120  00 4a 00 12 68 0a 0c 72  6f 6c 65 62 69 6e 64 69  |.J..h..rolebindi|
+00000130  6e 67 73 10 01 1a 0b 52  6f 6c 65 42 69 6e 64 69  |ngs....RoleBindi|
+00000140  6e 67 22 43 0a 06 63 72  65 61 74 65 0a 06 64 65  |ng"C..create..de|
+00000150  6c 65 74 65 0a 10 64 65  6c 65 74 65 63 6f 6c 6c  |lete..deletecoll|
+00000160  65 63 74 69 6f 6e 0a 03  67 65 74 0a 04 6c 69 73  |ection..get..lis|
+00000170  74 0a 05 70 61 74 63 68  0a 06 75 70 64 61 74 65  |t..patch..update|
+00000180  0a 05 77 61 74 63 68 32  00 42 00 4a 00 12 5a 0a  |..watch2.B.J..Z.|
+00000190  05 72 6f 6c 65 73 10 01  1a 04 52 6f 6c 65 22 43  |.roles....Role"C|
+000001a0  0a 06 63 72 65 61 74 65  0a 06 64 65 6c 65 74 65  |..create..delete|
+000001b0  0a 10 64 65 6c 65 74 65  63 6f 6c 6c 65 63 74 69  |..deletecollecti|
+000001c0  6f 6e 0a 03 67 65 74 0a  04 6c 69 73 74 0a 05 70  |on..get..list..p|
+000001d0  61 74 63 68 0a 06 75 70  64 61 74 65 0a 05 77 61  |atch..update..wa|
+000001e0  74 63 68 32 00 42 00 4a  00 1a 00 22 00           |tch2.B.J...".|
+I0313 02:35:10.766133       1 round_trippers.go:386] curl -k -v -XGET  -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" 'https://127.0.0.1:6443/apis/storage.k8s.io/v1?timeout=32s'
+I0313 02:35:10.766312       1 handler.go:153] kube-aggregator: GET "/apis/storage.k8s.io/v1" satisfied by nonGoRestful
+I0313 02:35:10.766326       1 pathrecorder.go:240] kube-aggregator: "/apis/storage.k8s.io/v1" satisfied by exact match
+I0313 02:35:10.766337       1 handler.go:143] kube-apiserver: GET "/apis/storage.k8s.io/v1" satisfied by gorestful with webservice /apis/storage.k8s.io/v1
+I0313 02:35:10.766458       1 wrap.go:42] GET /apis/storage.k8s.io/v1?timeout=32s: (147.198µs) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.766630       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/storage.k8s.io/v1?timeout=32s 200 OK in 0 milliseconds
+I0313 02:35:10.766642       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.766649       1 round_trippers.go:414]     Content-Length: 166
+I0313 02:35:10.766656       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.766663       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.766693       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 84 01 0a 11  |esourceList.....|
+00000020  73 74 6f 72 61 67 65 2e  6b 38 73 2e 69 6f 2f 76  |storage.k8s.io/v|
+00000030  31 12 6f 0a 0e 73 74 6f  72 61 67 65 63 6c 61 73  |1.o..storageclas|
+00000040  73 65 73 10 00 1a 0c 53  74 6f 72 61 67 65 43 6c  |ses....StorageCl|
+00000050  61 73 73 22 43 0a 06 63  72 65 61 74 65 0a 06 64  |ass"C..create..d|
+00000060  65 6c 65 74 65 0a 10 64  65 6c 65 74 65 63 6f 6c  |elete..deletecol|
+00000070  6c 65 63 74 69 6f 6e 0a  03 67 65 74 0a 04 6c 69  |lection..get..li|
+00000080  73 74 0a 05 70 61 74 63  68 0a 06 75 70 64 61 74  |st..patch..updat|
+00000090  65 0a 05 77 61 74 63 68  2a 02 73 63 32 00 42 00  |e..watch*.sc2.B.|
+000000a0  4a 00 1a 00 22 00                                 |J...".|
+I0313 02:35:10.766778       1 round_trippers.go:386] curl -k -v -XGET  -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" 'https://127.0.0.1:6443/apis/storage.k8s.io/v1beta1?timeout=32s'
+I0313 02:35:10.766893       1 handler.go:153] kube-aggregator: GET "/apis/storage.k8s.io/v1beta1" satisfied by nonGoRestful
+I0313 02:35:10.766903       1 pathrecorder.go:240] kube-aggregator: "/apis/storage.k8s.io/v1beta1" satisfied by exact match
+I0313 02:35:10.766911       1 handler.go:143] kube-apiserver: GET "/apis/storage.k8s.io/v1beta1" satisfied by gorestful with webservice /apis/storage.k8s.io/v1beta1
+I0313 02:35:10.766985       1 wrap.go:42] GET /apis/storage.k8s.io/v1beta1?timeout=32s: (118.713µs) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.767122       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/storage.k8s.io/v1beta1?timeout=32s 200 OK in 0 milliseconds
+I0313 02:35:10.767133       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.767140       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.767148       1 round_trippers.go:414]     Content-Length: 287
+I0313 02:35:10.767152       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.767184       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 fd 01 0a 16  |esourceList.....|
+00000020  73 74 6f 72 61 67 65 2e  6b 38 73 2e 69 6f 2f 76  |storage.k8s.io/v|
+00000030  31 62 65 74 61 31 12 6f  0a 0e 73 74 6f 72 61 67  |1beta1.o..storag|
+00000040  65 63 6c 61 73 73 65 73  10 00 1a 0c 53 74 6f 72  |eclasses....Stor|
+00000050  61 67 65 43 6c 61 73 73  22 43 0a 06 63 72 65 61  |ageClass"C..crea|
+00000060  74 65 0a 06 64 65 6c 65  74 65 0a 10 64 65 6c 65  |te..delete..dele|
+00000070  74 65 63 6f 6c 6c 65 63  74 69 6f 6e 0a 03 67 65  |tecollection..ge|
+00000080  74 0a 04 6c 69 73 74 0a  05 70 61 74 63 68 0a 06  |t..list..patch..|
+00000090  75 70 64 61 74 65 0a 05  77 61 74 63 68 2a 02 73  |update..watch*.s|
+000000a0  63 32 00 42 00 4a 00 12  72 0a 11 76 6f 6c 75 6d  |c2.B.J..r..volum|
+000000b0  65 61 74 74 61 63 68 6d  65 6e 74 73 10 00 1a 10  |eattachments....|
+000000c0  56 6f 6c 75 6d 65 41 74  74 61 63 68 6d 65 6e 74  |VolumeAttachment|
+000000d0  22 43 0a 06 63 72 65 61  74 65 0a 06 64 65 6c 65  |"C..create..dele|
+000000e0  74 65 0a 10 64 65 6c 65  74 65 63 6f 6c 6c 65 63  |te..deletecollec|
+000000f0  74 69 6f 6e 0a 03 67 65  74 0a 04 6c 69 73 74 0a  |tion..get..list.|
+00000100  05 70 61 74 63 68 0a 06  75 70 64 61 74 65 0a 05  |.patch..update..|
+00000110  77 61 74 63 68 32 00 42  00 4a 00 1a 00 22 00     |watch2.B.J...".|
+I0313 02:35:10.767259       1 round_trippers.go:386] curl -k -v -XGET  -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" 'https://127.0.0.1:6443/apis/admissionregistration.k8s.io/v1beta1?timeout=32s'
+I0313 02:35:10.767371       1 handler.go:153] kube-aggregator: GET "/apis/admissionregistration.k8s.io/v1beta1" satisfied by nonGoRestful
+I0313 02:35:10.767382       1 pathrecorder.go:240] kube-aggregator: "/apis/admissionregistration.k8s.io/v1beta1" satisfied by exact match
+I0313 02:35:10.767390       1 handler.go:143] kube-apiserver: GET "/apis/admissionregistration.k8s.io/v1beta1" satisfied by gorestful with webservice /apis/admissionregistration.k8s.io/v1beta1
+I0313 02:35:10.767453       1 wrap.go:42] GET /apis/admissionregistration.k8s.io/v1beta1?timeout=32s: (108.265µs) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.767562       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/admissionregistration.k8s.io/v1beta1?timeout=32s 200 OK in 0 milliseconds
+I0313 02:35:10.767569       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.767573       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.767578       1 round_trippers.go:414]     Content-Length: 358
+I0313 02:35:10.767582       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.767610       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 c4 02 0a 24  |esourceList....$|
+00000020  61 64 6d 69 73 73 69 6f  6e 72 65 67 69 73 74 72  |admissionregistr|
+00000030  61 74 69 6f 6e 2e 6b 38  73 2e 69 6f 2f 76 31 62  |ation.k8s.io/v1b|
+00000040  65 74 61 31 12 8a 01 0a  1d 6d 75 74 61 74 69 6e  |eta1.....mutatin|
+00000050  67 77 65 62 68 6f 6f 6b  63 6f 6e 66 69 67 75 72  |gwebhookconfigur|
+00000060  61 74 69 6f 6e 73 10 00  1a 1c 4d 75 74 61 74 69  |ations....Mutati|
+00000070  6e 67 57 65 62 68 6f 6f  6b 43 6f 6e 66 69 67 75  |ngWebhookConfigu|
+00000080  72 61 74 69 6f 6e 22 43  0a 06 63 72 65 61 74 65  |ration"C..create|
+00000090  0a 06 64 65 6c 65 74 65  0a 10 64 65 6c 65 74 65  |..delete..delete|
+000000a0  63 6f 6c 6c 65 63 74 69  6f 6e 0a 03 67 65 74 0a  |collection..get.|
+000000b0  04 6c 69 73 74 0a 05 70  61 74 63 68 0a 06 75 70  |.list..patch..up|
+000000c0  64 61 74 65 0a 05 77 61  74 63 68 32 00 42 00 4a  |date..watch2.B.J|
+000000d0  00 12 8e 01 0a 1f 76 61  6c 69 64 61 74 69 6e 67  |......validating|
+000000e0  77 65 62 68 6f 6f 6b 63  6f 6e 66 69 67 75 72 61  |webhookconfigura|
+000000f0  74 69 6f 6e 73 10 00 1a  1e 56 61 6c 69 64 61 74  |tions....Validat|
+00000100  69 6e 67 57 65 62 68 6f  6f 6b 43 6f 6e 66 69 67  |ingWebhookConfig|
+00000110  75 72 61 74 69 6f 6e 22  43 0a 06 63 72 65 61 74  |uration"C..creat|
+00000120  65 0a 06 64 65 6c 65 74  65 0a 10 64 65 6c 65 74  |e..delete..delet|
+00000130  65 63 6f 6c 6c 65 63 74  69 6f 6e 0a 03 67 65 74  |ecollection..get|
+00000140  0a 04 6c 69 73 74 0a 05  70 61 74 63 68 0a 06 75  |..list..patch..u|
+00000150  70 64 61 74 65 0a 05 77  61 74 63 68 32 00 42 00  |pdate..watch2.B.|
+00000160  4a 00 1a 00 22 00                                 |J...".|
+I0313 02:35:10.767679       1 round_trippers.go:386] curl -k -v -XGET  -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" 'https://127.0.0.1:6443/apis/apiextensions.k8s.io/v1beta1?timeout=32s'
+I0313 02:35:10.767824       1 handler.go:153] kube-aggregator: GET "/apis/apiextensions.k8s.io/v1beta1" satisfied by nonGoRestful
+I0313 02:35:10.767833       1 pathrecorder.go:240] kube-aggregator: "/apis/apiextensions.k8s.io/v1beta1" satisfied by exact match
+I0313 02:35:10.767844       1 handler.go:153] kube-apiserver: GET "/apis/apiextensions.k8s.io/v1beta1" satisfied by nonGoRestful
+I0313 02:35:10.767854       1 pathrecorder.go:253] kube-apiserver: "/apis/apiextensions.k8s.io/v1beta1" satisfied by NotFoundHandler
+I0313 02:35:10.767865       1 handler.go:143] apiextensions-apiserver: GET "/apis/apiextensions.k8s.io/v1beta1" satisfied by gorestful with webservice /apis/apiextensions.k8s.io/v1beta1
+I0313 02:35:10.767947       1 wrap.go:42] GET /apis/apiextensions.k8s.io/v1beta1?timeout=32s: (145.018µs) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.768092       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/apiextensions.k8s.io/v1beta1?timeout=32s 200 OK in 0 milliseconds
+I0313 02:35:10.768100       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.768104       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.768109       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.768113       1 round_trippers.go:414]     Content-Length: 300
+I0313 02:35:10.768141       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 8a 02 0a 1c  |esourceList.....|
+00000020  61 70 69 65 78 74 65 6e  73 69 6f 6e 73 2e 6b 38  |apiextensions.k8|
+00000030  73 2e 69 6f 2f 76 31 62  65 74 61 31 12 8d 01 0a  |s.io/v1beta1....|
+00000040  19 63 75 73 74 6f 6d 72  65 73 6f 75 72 63 65 64  |.customresourced|
+00000050  65 66 69 6e 69 74 69 6f  6e 73 10 00 1a 18 43 75  |efinitions....Cu|
+00000060  73 74 6f 6d 52 65 73 6f  75 72 63 65 44 65 66 69  |stomResourceDefi|
+00000070  6e 69 74 69 6f 6e 22 43  0a 06 63 72 65 61 74 65  |nition"C..create|
+00000080  0a 06 64 65 6c 65 74 65  0a 10 64 65 6c 65 74 65  |..delete..delete|
+00000090  63 6f 6c 6c 65 63 74 69  6f 6e 0a 03 67 65 74 0a  |collection..get.|
+000000a0  04 6c 69 73 74 0a 05 70  61 74 63 68 0a 06 75 70  |.list..patch..up|
+000000b0  64 61 74 65 0a 05 77 61  74 63 68 2a 03 63 72 64  |date..watch*.crd|
+000000c0  2a 04 63 72 64 73 32 00  42 00 4a 00 12 5a 0a 20  |*.crds2.B.J..Z. |
+000000d0  63 75 73 74 6f 6d 72 65  73 6f 75 72 63 65 64 65  |customresourcede|
+000000e0  66 69 6e 69 74 69 6f 6e  73 2f 73 74 61 74 75 73  |finitions/status|
+000000f0  10 00 1a 18 43 75 73 74  6f 6d 52 65 73 6f 75 72  |....CustomResour|
+00000100  63 65 44 65 66 69 6e 69  74 69 6f 6e 22 14 0a 03  |ceDefinition"...|
+00000110  67 65 74 0a 05 70 61 74  63 68 0a 06 75 70 64 61  |get..patch..upda|
+00000120  74 65 32 00 42 00 4a 00  1a 00 22 00              |te2.B.J...".|
+I0313 02:35:10.768224       1 round_trippers.go:386] curl -k -v -XGET  -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" 'https://127.0.0.1:6443/apis/scheduling.k8s.io/v1beta1?timeout=32s'
+I0313 02:35:10.768351       1 handler.go:153] kube-aggregator: GET "/apis/scheduling.k8s.io/v1beta1" satisfied by nonGoRestful
+I0313 02:35:10.768365       1 pathrecorder.go:240] kube-aggregator: "/apis/scheduling.k8s.io/v1beta1" satisfied by exact match
+I0313 02:35:10.768377       1 handler.go:143] kube-apiserver: GET "/apis/scheduling.k8s.io/v1beta1" satisfied by gorestful with webservice /apis/scheduling.k8s.io/v1beta1
+I0313 02:35:10.768454       1 wrap.go:42] GET /apis/scheduling.k8s.io/v1beta1?timeout=32s: (139.188µs) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.768571       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/scheduling.k8s.io/v1beta1?timeout=32s 200 OK in 0 milliseconds
+I0313 02:35:10.768579       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.768585       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.768592       1 round_trippers.go:414]     Content-Length: 176
+I0313 02:35:10.768599       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.768632       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 8e 01 0a 19  |esourceList.....|
+00000020  73 63 68 65 64 75 6c 69  6e 67 2e 6b 38 73 2e 69  |scheduling.k8s.i|
+00000030  6f 2f 76 31 62 65 74 61  31 12 71 0a 0f 70 72 69  |o/v1beta1.q..pri|
+00000040  6f 72 69 74 79 63 6c 61  73 73 65 73 10 00 1a 0d  |orityclasses....|
+00000050  50 72 69 6f 72 69 74 79  43 6c 61 73 73 22 43 0a  |PriorityClass"C.|
+00000060  06 63 72 65 61 74 65 0a  06 64 65 6c 65 74 65 0a  |.create..delete.|
+00000070  10 64 65 6c 65 74 65 63  6f 6c 6c 65 63 74 69 6f  |.deletecollectio|
+00000080  6e 0a 03 67 65 74 0a 04  6c 69 73 74 0a 05 70 61  |n..get..list..pa|
+00000090  74 63 68 0a 06 75 70 64  61 74 65 0a 05 77 61 74  |tch..update..wat|
+000000a0  63 68 2a 02 70 63 32 00  42 00 4a 00 1a 00 22 00  |ch*.pc2.B.J...".|
+I0313 02:35:10.768722       1 round_trippers.go:386] curl -k -v -XGET  -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" 'https://127.0.0.1:6443/apis/app.example.com/v1?timeout=32s'
+I0313 02:35:10.768901       1 handler.go:153] kube-aggregator: GET "/apis/app.example.com/v1" satisfied by nonGoRestful
+I0313 02:35:10.768912       1 pathrecorder.go:240] kube-aggregator: "/apis/app.example.com/v1" satisfied by exact match
+I0313 02:35:10.768921       1 handler.go:153] kube-apiserver: GET "/apis/app.example.com/v1" satisfied by nonGoRestful
+I0313 02:35:10.768927       1 pathrecorder.go:253] kube-apiserver: "/apis/app.example.com/v1" satisfied by NotFoundHandler
+I0313 02:35:10.768933       1 handler.go:153] apiextensions-apiserver: GET "/apis/app.example.com/v1" satisfied by nonGoRestful
+I0313 02:35:10.768939       1 pathrecorder.go:247] apiextensions-apiserver: "/apis/app.example.com/v1" satisfied by prefix /apis/
+I0313 02:35:10.770646       1 wrap.go:42] GET /apis/app.example.com/v1?timeout=32s: (121.233µs) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.770819       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/app.example.com/v1?timeout=32s 200 OK in 2 milliseconds
+I0313 02:35:10.770830       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.770848       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.770858       1 round_trippers.go:414]     Content-Length: 232
+I0313 02:35:10.770865       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.770894       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 c6 01 0a 12  |esourceList.....|
+00000020  61 70 70 2e 65 78 61 6d  70 6c 65 2e 63 6f 6d 2f  |app.example.com/|
+00000030  76 31 12 70 0a 0b 61 70  70 73 65 72 76 69 63 65  |v1.p..appservice|
+00000040  73 10 01 1a 0a 41 70 70  53 65 72 76 69 63 65 22  |s....AppService"|
+00000050  43 0a 06 64 65 6c 65 74  65 0a 10 64 65 6c 65 74  |C..delete..delet|
+00000060  65 63 6f 6c 6c 65 63 74  69 6f 6e 0a 03 67 65 74  |ecollection..get|
+00000070  0a 04 6c 69 73 74 0a 05  70 61 74 63 68 0a 06 63  |..list..patch..c|
+00000080  72 65 61 74 65 0a 06 75  70 64 61 74 65 0a 05 77  |reate..update..w|
+00000090  61 74 63 68 32 0a 61 70  70 73 65 72 76 69 63 65  |atch2.appservice|
+000000a0  42 00 4a 00 12 3e 0a 12  61 70 70 73 65 72 76 69  |B.J..>..appservi|
+000000b0  63 65 73 2f 73 74 61 74  75 73 10 01 1a 0a 41 70  |ces/status....Ap|
+000000c0  70 53 65 72 76 69 63 65  22 14 0a 03 67 65 74 0a  |pService"...get.|
+000000d0  05 70 61 74 63 68 0a 06  75 70 64 61 74 65 32 00  |.patch..update2.|
+000000e0  42 00 4a 00 1a 00 22 00                           |B.J...".|
+I0313 02:35:10.771002       1 round_trippers.go:386] curl -k -v -XGET  -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" 'https://127.0.0.1:6443/apis/lab.k8s.io/v1?timeout=32s'
+I0313 02:35:10.771129       1 handler.go:153] kube-aggregator: GET "/apis/lab.k8s.io/v1" satisfied by nonGoRestful
+I0313 02:35:10.771140       1 pathrecorder.go:240] kube-aggregator: "/apis/lab.k8s.io/v1" satisfied by exact match
+I0313 02:35:10.771148       1 handler.go:153] kube-apiserver: GET "/apis/lab.k8s.io/v1" satisfied by nonGoRestful
+I0313 02:35:10.771153       1 pathrecorder.go:253] kube-apiserver: "/apis/lab.k8s.io/v1" satisfied by NotFoundHandler
+I0313 02:35:10.771159       1 handler.go:153] apiextensions-apiserver: GET "/apis/lab.k8s.io/v1" satisfied by nonGoRestful
+I0313 02:35:10.771171       1 pathrecorder.go:247] apiextensions-apiserver: "/apis/lab.k8s.io/v1" satisfied by prefix /apis/
+I0313 02:35:10.771222       1 wrap.go:42] GET /apis/lab.k8s.io/v1?timeout=32s: (125.125µs) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.771343       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/lab.k8s.io/v1?timeout=32s 200 OK in 0 milliseconds
+I0313 02:35:10.771350       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.771355       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.771359       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.771364       1 round_trippers.go:414]     Content-Length: 167
+I0313 02:35:10.771388       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 85 01 0a 0d  |esourceList.....|
+00000020  6c 61 62 2e 6b 38 73 2e  69 6f 2f 76 31 12 74 0a  |lab.k8s.io/v1.t.|
+00000030  0b 6e 6f 64 65 63 6f 72  64 6f 6e 73 10 01 1a 0a  |.nodecordons....|
+00000040  4e 6f 64 65 63 6f 72 64  6f 6e 22 43 0a 06 64 65  |Nodecordon"C..de|
+00000050  6c 65 74 65 0a 10 64 65  6c 65 74 65 63 6f 6c 6c  |lete..deletecoll|
+00000060  65 63 74 69 6f 6e 0a 03  67 65 74 0a 04 6c 69 73  |ection..get..lis|
+00000070  74 0a 05 70 61 74 63 68  0a 06 63 72 65 61 74 65  |t..patch..create|
+00000080  0a 06 75 70 64 61 74 65  0a 05 77 61 74 63 68 2a  |..update..watch*|
+00000090  02 6e 63 32 0a 6e 6f 64  65 63 6f 72 64 6f 6e 42  |.nc2.nodecordonB|
+000000a0  00 4a 00 1a 00 22 00                              |.J...".|
+I0313 02:35:10.771454       1 round_trippers.go:386] curl -k -v -XGET  -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" 'https://127.0.0.1:6443/apis/monitoring.coreos.com/v1?timeout=32s'
+I0313 02:35:10.771604       1 handler.go:153] kube-aggregator: GET "/apis/monitoring.coreos.com/v1" satisfied by nonGoRestful
+I0313 02:35:10.771614       1 pathrecorder.go:240] kube-aggregator: "/apis/monitoring.coreos.com/v1" satisfied by exact match
+I0313 02:35:10.771622       1 handler.go:153] kube-apiserver: GET "/apis/monitoring.coreos.com/v1" satisfied by nonGoRestful
+I0313 02:35:10.771628       1 pathrecorder.go:253] kube-apiserver: "/apis/monitoring.coreos.com/v1" satisfied by NotFoundHandler
+I0313 02:35:10.771633       1 handler.go:153] apiextensions-apiserver: GET "/apis/monitoring.coreos.com/v1" satisfied by nonGoRestful
+I0313 02:35:10.771639       1 pathrecorder.go:247] apiextensions-apiserver: "/apis/monitoring.coreos.com/v1" satisfied by prefix /apis/
+I0313 02:35:10.771686       1 wrap.go:42] GET /apis/monitoring.coreos.com/v1?timeout=32s: (109.067µs) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.771795       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/monitoring.coreos.com/v1?timeout=32s 200 OK in 0 milliseconds
+I0313 02:35:10.771802       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.771806       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.771811       1 round_trippers.go:414]     Content-Length: 421
+I0313 02:35:10.771815       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.771846       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 83 03 0a 18  |esourceList.....|
+00000020  6d 6f 6e 69 74 6f 72 69  6e 67 2e 63 6f 72 65 6f  |monitoring.coreo|
+00000030  73 2e 63 6f 6d 2f 76 31  12 71 0a 0c 70 72 6f 6d  |s.com/v1.q..prom|
+00000040  65 74 68 65 75 73 65 73  10 01 1a 0a 50 72 6f 6d  |etheuses....Prom|
+00000050  65 74 68 65 75 73 22 43  0a 06 64 65 6c 65 74 65  |etheus"C..delete|
+00000060  0a 10 64 65 6c 65 74 65  63 6f 6c 6c 65 63 74 69  |..deletecollecti|
+00000070  6f 6e 0a 03 67 65 74 0a  04 6c 69 73 74 0a 05 70  |on..get..list..p|
+00000080  61 74 63 68 0a 06 63 72  65 61 74 65 0a 06 75 70  |atch..create..up|
+00000090  64 61 74 65 0a 05 77 61  74 63 68 32 0a 70 72 6f  |date..watch2.pro|
+000000a0  6d 65 74 68 65 75 73 42  00 4a 00 12 7c 0a 0f 73  |metheusB.J..|..s|
+000000b0  65 72 76 69 63 65 6d 6f  6e 69 74 6f 72 73 10 01  |ervicemonitors..|
+000000c0  1a 0e 53 65 72 76 69 63  65 4d 6f 6e 69 74 6f 72  |..ServiceMonitor|
+000000d0  22 43 0a 06 64 65 6c 65  74 65 0a 10 64 65 6c 65  |"C..delete..dele|
+000000e0  74 65 63 6f 6c 6c 65 63  74 69 6f 6e 0a 03 67 65  |tecollection..ge|
+000000f0  74 0a 04 6c 69 73 74 0a  05 70 61 74 63 68 0a 06  |t..list..patch..|
+00000100  63 72 65 61 74 65 0a 06  75 70 64 61 74 65 0a 05  |create..update..|
+00000110  77 61 74 63 68 32 0e 73  65 72 76 69 63 65 6d 6f  |watch2.servicemo|
+00000120  6e 69 74 6f 72 42 00 4a  00 12 76 0a 0d 61 6c 65  |nitorB.J..v..ale|
+00000130  72 74 6d 61 6e 61 67 65  72 73 10 01 1a 0c 41 6c  |rtmanagers....Al|
+00000140  65 72 74 6d 61 6e 61 67  65 72 22 43 0a 06 64 65  |ertmanager"C..de|
+00000150  6c 65 74 65 0a 10 64 65  6c 65 74 65 63 6f 6c 6c  |lete..deletecoll|
+00000160  65 63 74 69 6f 6e 0a 03  67 65 74 0a 04 6c 69 73  |ection..get..lis|
+00000170  74 0a 05 70 61 74 63 68  0a 06 63 72 65 61 74 65  |t..patch..create|
+00000180  0a 06 75 70 64 61 74 65  0a 05 77 61 74 63 68 32  |..update..watch2|
+00000190  0c 61 6c 65 72 74 6d 61  6e 61 67 65 72 42 00 4a  |.alertmanagerB.J|
+000001a0  00 1a 00 22 00                                    |...".|
+I0313 02:35:10.771943       1 round_trippers.go:386] curl -k -v -XGET  -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" 'https://127.0.0.1:6443/apis/samplecrd.k8s.io/v1?timeout=32s'
+I0313 02:35:10.772113       1 handler.go:153] kube-aggregator: GET "/apis/samplecrd.k8s.io/v1" satisfied by nonGoRestful
+I0313 02:35:10.772129       1 pathrecorder.go:240] kube-aggregator: "/apis/samplecrd.k8s.io/v1" satisfied by exact match
+I0313 02:35:10.772140       1 handler.go:153] kube-apiserver: GET "/apis/samplecrd.k8s.io/v1" satisfied by nonGoRestful
+I0313 02:35:10.772145       1 pathrecorder.go:253] kube-apiserver: "/apis/samplecrd.k8s.io/v1" satisfied by NotFoundHandler
+I0313 02:35:10.772151       1 handler.go:153] apiextensions-apiserver: GET "/apis/samplecrd.k8s.io/v1" satisfied by nonGoRestful
+I0313 02:35:10.772156       1 pathrecorder.go:247] apiextensions-apiserver: "/apis/samplecrd.k8s.io/v1" satisfied by prefix /apis/
+I0313 02:35:10.772216       1 wrap.go:42] GET /apis/samplecrd.k8s.io/v1?timeout=32s: (146.458µs) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.772344       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/samplecrd.k8s.io/v1?timeout=32s 200 OK in 0 milliseconds
+I0313 02:35:10.772351       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.772356       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:10.772360       1 round_trippers.go:414]     Content-Length: 159
+I0313 02:35:10.772364       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.772390       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 15 0a 02  76 31 12 0f 41 50 49 52  |k8s.....v1..APIR|
+00000010  65 73 6f 75 72 63 65 4c  69 73 74 12 7e 0a 13 73  |esourceList.~..s|
+00000020  61 6d 70 6c 65 63 72 64  2e 6b 38 73 2e 69 6f 2f  |amplecrd.k8s.io/|
+00000030  76 31 12 67 0a 08 6e 65  74 77 6f 72 6b 73 10 01  |v1.g..networks..|
+00000040  1a 07 4e 65 74 77 6f 72  6b 22 43 0a 06 64 65 6c  |..Network"C..del|
+00000050  65 74 65 0a 10 64 65 6c  65 74 65 63 6f 6c 6c 65  |ete..deletecolle|
+00000060  63 74 69 6f 6e 0a 03 67  65 74 0a 04 6c 69 73 74  |ction..get..list|
+00000070  0a 05 70 61 74 63 68 0a  06 63 72 65 61 74 65 0a  |..patch..create.|
+00000080  06 75 70 64 61 74 65 0a  05 77 61 74 63 68 32 07  |.update..watch2.|
+00000090  6e 65 74 77 6f 72 6b 42  00 4a 00 1a 00 22 00     |networkB.J...".|
+I0313 02:35:10.772456       1 round_trippers.go:386] curl -k -v -XGET  -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" 'https://127.0.0.1:6443/apis/custom.metrics.k8s.io/v1beta1?timeout=32s'
+I0313 02:35:10.772634       1 handler.go:153] kube-aggregator: GET "/apis/custom.metrics.k8s.io/v1beta1" satisfied by nonGoRestful
+I0313 02:35:10.772649       1 pathrecorder.go:240] kube-aggregator: "/apis/custom.metrics.k8s.io/v1beta1" satisfied by exact match
+I0313 02:35:10.772784       1 wrap.go:42] GET /apis/custom.metrics.k8s.io/v1beta1?timeout=32s: (181.358µs) 500
+goroutine 64278 [running]:
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/httplog.(*respLogger).recordStatus(0xc42135a540, 0x1f4)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/httplog/httplog.go:207 +0xd2
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/httplog.(*respLogger).WriteHeader(0xc42135a540, 0x1f4)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/httplog/httplog.go:186 +0x35
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/filters.(*baseTimeoutWriter).WriteHeader(0xc42bfcb7a0, 0x1f4)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/filters/timeout.go:192 +0xac
+net/http.Error(0x7f58380b6610, 0xc4327cec50, 0xc4336e5810, 0x69, 0x1f4)
+	/usr/local/go/src/net/http/server.go:1959 +0xda
+k8s.io/kubernetes/vendor/k8s.io/kube-aggregator/pkg/apiserver.(*proxyHandler).ServeHTTP(0xc4206d85b0, 0x7f58380b6610, 0xc4327cec50, 0xc42da73800)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/kube-aggregator/pkg/apiserver/handler_proxy.go:101 +0xab4
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/mux.(*pathHandler).ServeHTTP(0xc42bbe6740, 0x7f58380b6610, 0xc4327cec50, 0xc42da73800)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/mux/pathrecorder.go:241 +0x514
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/mux.(*PathRecorderMux).ServeHTTP(0xc424e44e00, 0x7f58380b6610, 0xc4327cec50, 0xc42da73800)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/mux/pathrecorder.go:234 +0x8a
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server.director.ServeHTTP(0x3c731c6, 0xf, 0xc424f4fcb0, 0xc424e44e00, 0x7f58380b6610, 0xc4327cec50, 0xc42da73800)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/handler.go:154 +0x6a8
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/endpoints/filters.WithAuthorization.func1(0x7f58380b6610, 0xc4327cec50, 0xc42da73800)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/endpoints/filters/authorization.go:64 +0x4bd
+net/http.HandlerFunc.ServeHTTP(0xc426e67700, 0x7f58380b6610, 0xc4327cec50, 0xc42da73800)
+	/usr/local/go/src/net/http/server.go:1947 +0x44
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/filters.WithMaxInFlightLimit.func1(0x7f58380b6610, 0xc4327cec50, 0xc42da73800)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/filters/maxinflight.go:160 +0x3fc
+net/http.HandlerFunc.ServeHTTP(0xc4249e5c80, 0x7f58380b6610, 0xc4327cec50, 0xc42da73800)
+	/usr/local/go/src/net/http/server.go:1947 +0x44
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/endpoints/filters.WithImpersonation.func1(0x7f58380b6610, 0xc4327cec50, 0xc42da73800)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/endpoints/filters/impersonation.go:49 +0x1ce4
+net/http.HandlerFunc.ServeHTTP(0xc426e67740, 0x7f58380b6610, 0xc4327cec50, 0xc42da73800)
+	/usr/local/go/src/net/http/server.go:1947 +0x44
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/endpoints/filters.WithAuthentication.func1(0x7f58380b6610, 0xc4327cec50, 0xc42da73800)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/endpoints/filters/authentication.go:75 +0x2b3
+net/http.HandlerFunc.ServeHTTP(0xc426e67780, 0x7f58380b6610, 0xc4327cec50, 0xc42da73700)
+	/usr/local/go/src/net/http/server.go:1947 +0x44
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/filters.(*timeoutHandler).ServeHTTP.func1(0xc4285ae760, 0x512a400, 0xc4327cec50, 0xc42da73700, 0xc42da8a060)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/filters/timeout.go:97 +0x8d
+created by k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/filters.(*timeoutHandler).ServeHTTP
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/filters/timeout.go:96 +0x1b5
+
+logging error output: "unable to set dialer for custom-metrics/api as rest transport is of type *transport.debuggingRoundTripper\n"
+ [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:10.772941       1 round_trippers.go:405] GET https://127.0.0.1:6443/apis/custom.metrics.k8s.io/v1beta1?timeout=32s 500 Internal Server Error in 0 milliseconds
+I0313 02:35:10.772954       1 round_trippers.go:411] Response Headers:
+I0313 02:35:10.772962       1 round_trippers.go:414]     X-Content-Type-Options: nosniff
+I0313 02:35:10.772969       1 round_trippers.go:414]     Content-Length: 106
+I0313 02:35:10.772975       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:10 GMT
+I0313 02:35:10.772981       1 round_trippers.go:414]     Content-Type: text/plain; charset=utf-8
+I0313 02:35:10.773019       1 request.go:897] Response Body: unable to set dialer for custom-metrics/api as rest transport is of type *transport.debuggingRoundTripper
+I0313 02:35:10.773125       1 request.go:1099] body was not decodable (unable to check for Status): couldn't get version/kind; json parse error: json: cannot unmarshal string into Go value of type struct { APIVersion string "json:\"apiVersion,omitempty\""; Kind string "json:\"kind,omitempty\"" }
+E0313 02:35:10.773145       1 memcache.go:147] couldn't get resource list for custom.metrics.k8s.io/v1beta1: an error on the server ("unable to set dialer for custom-metrics/api as rest transport is of type *transport.debuggingRoundTripper") has prevented the request from succeeding
+I0313 02:35:11.591092       1 round_trippers.go:386] curl -k -v -XGET  -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" 'https://127.0.0.1:6443/api/v1/namespaces/kube-system'
+I0313 02:35:11.591406       1 handler.go:153] kube-aggregator: GET "/api/v1/namespaces/kube-system" satisfied by nonGoRestful
+I0313 02:35:11.591428       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/kube-system" satisfied by prefix /api/
+I0313 02:35:11.591442       1 handler.go:143] kube-apiserver: GET "/api/v1/namespaces/kube-system" satisfied by gorestful with webservice /api/v1
+I0313 02:35:11.592810       1 wrap.go:42] GET /api/v1/namespaces/kube-system: (1.460923ms) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:11.593035       1 round_trippers.go:405] GET https://127.0.0.1:6443/api/v1/namespaces/kube-system 200 OK in 1 milliseconds
+I0313 02:35:11.593044       1 round_trippers.go:411] Response Headers:
+I0313 02:35:11.593049       1 round_trippers.go:414]     Content-Length: 159
+I0313 02:35:11.593053       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:11 GMT
+I0313 02:35:11.593057       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:11.593088       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 0f 0a 02  76 31 12 09 4e 61 6d 65  |k8s.....v1..Name|
+00000010  73 70 61 63 65 12 83 01  0a 69 0a 0b 6b 75 62 65  |space....i..kube|
+00000020  2d 73 79 73 74 65 6d 12  00 1a 00 22 1e 2f 61 70  |-system...."./ap|
+00000030  69 2f 76 31 2f 6e 61 6d  65 73 70 61 63 65 73 2f  |i/v1/namespaces/|
+00000040  6b 75 62 65 2d 73 79 73  74 65 6d 2a 24 33 33 35  |kube-system*$335|
+00000050  62 61 35 63 31 2d 32 36  31 62 2d 31 31 65 61 2d  |ba5c1-261b-11ea-|
+00000060  61 35 61 64 2d 35 32 35  34 30 30 38 61 64 65 36  |a5ad-5254008ade6|
+00000070  63 32 02 33 36 38 00 42  08 08 c5 ef 86 f0 05 10  |c2.368.B........|
+00000080  00 7a 00 12 0c 0a 0a 6b  75 62 65 72 6e 65 74 65  |.z.....kubernete|
+00000090  73 1a 08 0a 06 41 63 74  69 76 65 1a 00 22 00     |s....Active..".|
+I0313 02:35:11.593184       1 round_trippers.go:386] curl -k -v -XGET  -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" 'https://127.0.0.1:6443/api/v1/namespaces/kube-public'
+I0313 02:35:11.593320       1 handler.go:153] kube-aggregator: GET "/api/v1/namespaces/kube-public" satisfied by nonGoRestful
+I0313 02:35:11.593332       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/kube-public" satisfied by prefix /api/
+I0313 02:35:11.593339       1 handler.go:143] kube-apiserver: GET "/api/v1/namespaces/kube-public" satisfied by gorestful with webservice /api/v1
+I0313 02:35:11.594326       1 wrap.go:42] GET /api/v1/namespaces/kube-public: (1.03615ms) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:11.594472       1 round_trippers.go:405] GET https://127.0.0.1:6443/api/v1/namespaces/kube-public 200 OK in 1 milliseconds
+I0313 02:35:11.594480       1 round_trippers.go:411] Response Headers:
+I0313 02:35:11.594485       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:11.594490       1 round_trippers.go:414]     Content-Length: 159
+I0313 02:35:11.594494       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:11 GMT
+I0313 02:35:11.594517       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 0f 0a 02  76 31 12 09 4e 61 6d 65  |k8s.....v1..Name|
+00000010  73 70 61 63 65 12 83 01  0a 69 0a 0b 6b 75 62 65  |space....i..kube|
+00000020  2d 70 75 62 6c 69 63 12  00 1a 00 22 1e 2f 61 70  |-public...."./ap|
+00000030  69 2f 76 31 2f 6e 61 6d  65 73 70 61 63 65 73 2f  |i/v1/namespaces/|
+00000040  6b 75 62 65 2d 70 75 62  6c 69 63 2a 24 33 33 35  |kube-public*$335|
+00000050  63 64 65 35 35 2d 32 36  31 62 2d 31 31 65 61 2d  |cde55-261b-11ea-|
+00000060  61 35 61 64 2d 35 32 35  34 30 30 38 61 64 65 36  |a5ad-5254008ade6|
+00000070  63 32 02 33 38 38 00 42  08 08 c5 ef 86 f0 05 10  |c2.388.B........|
+00000080  00 7a 00 12 0c 0a 0a 6b  75 62 65 72 6e 65 74 65  |.z.....kubernete|
+00000090  73 1a 08 0a 06 41 63 74  69 76 65 1a 00 22 00     |s....Active..".|
+I0313 02:35:11.668169       1 handler.go:153] kube-aggregator: GET "/api/v1/nodes/k8s-master.com" satisfied by nonGoRestful
+I0313 02:35:11.668202       1 pathrecorder.go:247] kube-aggregator: "/api/v1/nodes/k8s-master.com" satisfied by prefix /api/
+I0313 02:35:11.668212       1 handler.go:143] kube-apiserver: GET "/api/v1/nodes/k8s-master.com" satisfied by gorestful with webservice /api/v1
+I0313 02:35:11.668709       1 wrap.go:42] GET /api/v1/nodes/k8s-master.com?resourceVersion=0&timeout=10s: (835.367µs) 200 [[kubelet/v0.0.0 (linux/amd64) kubernetes/$Format] 172.16.0.2:60872]
+I0313 02:35:11.674643       1 handler.go:153] kube-aggregator: PATCH "/api/v1/nodes/k8s-master.com/status" satisfied by nonGoRestful
+I0313 02:35:11.674664       1 pathrecorder.go:247] kube-aggregator: "/api/v1/nodes/k8s-master.com/status" satisfied by prefix /api/
+I0313 02:35:11.674677       1 handler.go:143] kube-apiserver: PATCH "/api/v1/nodes/k8s-master.com/status" satisfied by gorestful with webservice /api/v1
+I0313 02:35:11.691307       1 wrap.go:42] PATCH /api/v1/nodes/k8s-master.com/status?timeout=10s: (16.920983ms) 200 [[kubelet/v0.0.0 (linux/amd64) kubernetes/$Format] 172.16.0.2:60872]
+I0313 02:35:12.190595       1 handler.go:153] kube-aggregator: GET "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by nonGoRestful
+I0313 02:35:12.190620       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by prefix /api/
+I0313 02:35:12.190630       1 handler.go:143] kube-apiserver: GET "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by gorestful with webservice /api/v1
+I0313 02:35:12.192196       1 wrap.go:42] GET /api/v1/namespaces/kube-system/endpoints/kube-scheduler: (1.939233ms) 200 [[kube-scheduler/v1.11.1 (linux/amd64) kubernetes/b1b2997/leader-election] 172.16.0.2:60938]
+I0313 02:35:12.193132       1 handler.go:153] kube-aggregator: PUT "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by nonGoRestful
+I0313 02:35:12.193144       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by prefix /api/
+I0313 02:35:12.193152       1 handler.go:143] kube-apiserver: PUT "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by gorestful with webservice /api/v1
+I0313 02:35:12.196379       1 wrap.go:42] PUT /api/v1/namespaces/kube-system/endpoints/kube-scheduler: (3.501823ms) 200 [[kube-scheduler/v1.11.1 (linux/amd64) kubernetes/b1b2997/leader-election] 172.16.0.2:60938]
+I0313 02:35:12.817167       1 round_trippers.go:386] curl -k -v -XGET  -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" 'https://127.0.0.1:6443/api/v1/namespaces/default'
+I0313 02:35:12.817532       1 handler.go:153] kube-aggregator: GET "/api/v1/namespaces/default" satisfied by nonGoRestful
+I0313 02:35:12.817553       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/default" satisfied by prefix /api/
+I0313 02:35:12.817565       1 handler.go:143] kube-apiserver: GET "/api/v1/namespaces/default" satisfied by gorestful with webservice /api/v1
+I0313 02:35:12.819126       1 wrap.go:42] GET /api/v1/namespaces/default: (1.6647ms) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:12.819363       1 round_trippers.go:405] GET https://127.0.0.1:6443/api/v1/namespaces/default 200 OK in 2 milliseconds
+I0313 02:35:12.819373       1 round_trippers.go:411] Response Headers:
+I0313 02:35:12.819380       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:12.819386       1 round_trippers.go:414]     Content-Length: 150
+I0313 02:35:12.819392       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:12 GMT
+I0313 02:35:12.819429       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 0f 0a 02  76 31 12 09 4e 61 6d 65  |k8s.....v1..Name|
+00000010  73 70 61 63 65 12 7b 0a  61 0a 07 64 65 66 61 75  |space.{.a..defau|
+00000020  6c 74 12 00 1a 00 22 1a  2f 61 70 69 2f 76 31 2f  |lt...."./api/v1/|
+00000030  6e 61 6d 65 73 70 61 63  65 73 2f 64 65 66 61 75  |namespaces/defau|
+00000040  6c 74 2a 24 33 33 35 36  62 32 31 30 2d 32 36 31  |lt*$3356b210-261|
+00000050  62 2d 31 31 65 61 2d 61  35 61 64 2d 35 32 35 34  |b-11ea-a5ad-5254|
+00000060  30 30 38 61 64 65 36 63  32 02 33 31 38 00 42 08  |008ade6c2.318.B.|
+00000070  08 c5 ef 86 f0 05 10 00  7a 00 12 0c 0a 0a 6b 75  |........z.....ku|
+00000080  62 65 72 6e 65 74 65 73  1a 08 0a 06 41 63 74 69  |bernetes....Acti|
+00000090  76 65 1a 00 22 00                                 |ve..".|
+I0313 02:35:12.819523       1 round_trippers.go:386] curl -k -v -XGET  -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" 'https://127.0.0.1:6443/api/v1/namespaces/default/services/kubernetes'
+I0313 02:35:12.819723       1 handler.go:153] kube-aggregator: GET "/api/v1/namespaces/default/services/kubernetes" satisfied by nonGoRestful
+I0313 02:35:12.819742       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/default/services/kubernetes" satisfied by prefix /api/
+I0313 02:35:12.819753       1 handler.go:143] kube-apiserver: GET "/api/v1/namespaces/default/services/kubernetes" satisfied by gorestful with webservice /api/v1
+I0313 02:35:12.820934       1 wrap.go:42] GET /api/v1/namespaces/default/services/kubernetes: (1.25273ms) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:12.821148       1 round_trippers.go:405] GET https://127.0.0.1:6443/api/v1/namespaces/default/services/kubernetes 200 OK in 1 milliseconds
+I0313 02:35:12.821159       1 round_trippers.go:411] Response Headers:
+I0313 02:35:12.821166       1 round_trippers.go:414]     Content-Length: 276
+I0313 02:35:12.821172       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:12 GMT
+I0313 02:35:12.821178       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:12.821216       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 0d 0a 02  76 31 12 07 53 65 72 76  |k8s.....v1..Serv|
+00000010  69 63 65 12 fa 01 0a af  01 0a 0a 6b 75 62 65 72  |ice........kuber|
+00000020  6e 65 74 65 73 12 00 1a  07 64 65 66 61 75 6c 74  |netes....default|
+00000030  22 2e 2f 61 70 69 2f 76  31 2f 6e 61 6d 65 73 70  |"./api/v1/namesp|
+00000040  61 63 65 73 2f 64 65 66  61 75 6c 74 2f 73 65 72  |aces/default/ser|
+00000050  76 69 63 65 73 2f 6b 75  62 65 72 6e 65 74 65 73  |vices/kubernetes|
+00000060  2a 24 33 33 35 39 34 34  36 33 2d 32 36 31 62 2d  |*$33594463-261b-|
+00000070  31 31 65 61 2d 61 35 61  64 2d 35 32 35 34 30 30  |11ea-a5ad-525400|
+00000080  38 61 64 65 36 63 32 02  33 33 38 00 42 08 08 c5  |8ade6c2.338.B...|
+00000090  ef 86 f0 05 10 00 5a 16  0a 09 63 6f 6d 70 6f 6e  |......Z...compon|
+000000a0  65 6e 74 12 09 61 70 69  73 65 72 76 65 72 5a 16  |ent..apiserverZ.|
+000000b0  0a 08 70 72 6f 76 69 64  65 72 12 0a 6b 75 62 65  |..provider..kube|
+000000c0  72 6e 65 74 65 73 7a 00  12 42 0a 1a 0a 05 68 74  |rnetesz..B....ht|
+000000d0  74 70 73 12 03 54 43 50  18 bb 03 22 07 08 00 10  |tps..TCP..."....|
+000000e0  ab 32 1a 00 28 00 1a 09  31 30 2e 39 36 2e 30 2e  |.2..(...10.96.0.|
+000000f0  31 22 09 43 6c 75 73 74  65 72 49 50 3a 04 4e 6f  |1".ClusterIP:.No|
+00000100  6e 65 42 00 52 00 5a 00  60 00 68 00 1a 02 0a 00  |neB.R.Z.`.h.....|
+00000110  1a 00 22 00                                       |..".|
+I0313 02:35:12.823011       1 lease.go:101] Resetting TTL on master IP "172.16.0.2" listed in storage to 15
+I0313 02:35:12.828411       1 lease.go:75] Current master IPs listed in storage are [172.16.0.2]
+I0313 02:35:14.197541       1 handler.go:153] kube-aggregator: GET "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by nonGoRestful
+I0313 02:35:14.197575       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by prefix /api/
+I0313 02:35:14.197586       1 handler.go:143] kube-apiserver: GET "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by gorestful with webservice /api/v1
+I0313 02:35:14.199159       1 wrap.go:42] GET /api/v1/namespaces/kube-system/endpoints/kube-scheduler: (1.995808ms) 200 [[kube-scheduler/v1.11.1 (linux/amd64) kubernetes/b1b2997/leader-election] 172.16.0.2:60938]
+I0313 02:35:14.200194       1 handler.go:153] kube-aggregator: PUT "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by nonGoRestful
+I0313 02:35:14.200214       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by prefix /api/
+I0313 02:35:14.200225       1 handler.go:143] kube-apiserver: PUT "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by gorestful with webservice /api/v1
+I0313 02:35:14.202472       1 wrap.go:42] PUT /api/v1/namespaces/kube-system/endpoints/kube-scheduler: (2.610125ms) 200 [[kube-scheduler/v1.11.1 (linux/amd64) kubernetes/b1b2997/leader-election] 172.16.0.2:60938]
+I0313 02:35:15.931161       1 handler.go:153] kube-aggregator: GET "/healthz" satisfied by nonGoRestful
+I0313 02:35:15.931187       1 pathrecorder.go:240] kube-aggregator: "/healthz" satisfied by exact match
+I0313 02:35:15.931473       1 wrap.go:42] GET /healthz: (435.537µs) 200 [[kube-probe/.] 172.16.0.2:38134]
+I0313 02:35:16.201440       1 handler.go:153] kube-aggregator: GET "/api/v1/namespaces/prometheus/secrets/prometheus-operator-token-8frvv" satisfied by nonGoRestful
+I0313 02:35:16.201475       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/prometheus/secrets/prometheus-operator-token-8frvv" satisfied by prefix /api/
+I0313 02:35:16.201492       1 handler.go:143] kube-apiserver: GET "/api/v1/namespaces/prometheus/secrets/prometheus-operator-token-8frvv" satisfied by gorestful with webservice /api/v1
+I0313 02:35:16.201902       1 wrap.go:42] GET /api/v1/namespaces/prometheus/secrets/prometheus-operator-token-8frvv?resourceVersion=0: (788.846µs) 200 [[kubelet/v1.11.1 (linux/amd64) kubernetes/b1b2997] 172.16.0.12:43814]
+I0313 02:35:16.204403       1 handler.go:153] kube-aggregator: GET "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by nonGoRestful
+I0313 02:35:16.204419       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by prefix /api/
+I0313 02:35:16.204428       1 handler.go:143] kube-apiserver: GET "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by gorestful with webservice /api/v1
+I0313 02:35:16.205737       1 wrap.go:42] GET /api/v1/namespaces/kube-system/endpoints/kube-scheduler: (1.6733ms) 200 [[kube-scheduler/v1.11.1 (linux/amd64) kubernetes/b1b2997/leader-election] 172.16.0.2:60938]
+I0313 02:35:16.206616       1 handler.go:153] kube-aggregator: PUT "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by nonGoRestful
+I0313 02:35:16.206629       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by prefix /api/
+I0313 02:35:16.206637       1 handler.go:143] kube-apiserver: PUT "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by gorestful with webservice /api/v1
+I0313 02:35:16.208515       1 wrap.go:42] PUT /api/v1/namespaces/kube-system/endpoints/kube-scheduler: (2.15092ms) 200 [[kube-scheduler/v1.11.1 (linux/amd64) kubernetes/b1b2997/leader-election] 172.16.0.2:60938]
+I0313 02:35:18.210365       1 handler.go:153] kube-aggregator: GET "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by nonGoRestful
+I0313 02:35:18.210390       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by prefix /api/
+I0313 02:35:18.210400       1 handler.go:143] kube-apiserver: GET "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by gorestful with webservice /api/v1
+I0313 02:35:18.211885       1 wrap.go:42] GET /api/v1/namespaces/kube-system/endpoints/kube-scheduler: (1.914752ms) 200 [[kube-scheduler/v1.11.1 (linux/amd64) kubernetes/b1b2997/leader-election] 172.16.0.2:60938]
+I0313 02:35:18.212875       1 handler.go:153] kube-aggregator: PUT "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by nonGoRestful
+I0313 02:35:18.212891       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by prefix /api/
+I0313 02:35:18.212900       1 handler.go:143] kube-apiserver: PUT "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by gorestful with webservice /api/v1
+I0313 02:35:18.215130       1 wrap.go:42] PUT /api/v1/namespaces/kube-system/endpoints/kube-scheduler: (2.574163ms) 200 [[kube-scheduler/v1.11.1 (linux/amd64) kubernetes/b1b2997/leader-election] 172.16.0.2:60938]
+I0313 02:35:20.217185       1 handler.go:153] kube-aggregator: GET "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by nonGoRestful
+I0313 02:35:20.217210       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by prefix /api/
+I0313 02:35:20.217222       1 handler.go:143] kube-apiserver: GET "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by gorestful with webservice /api/v1
+I0313 02:35:20.218688       1 wrap.go:42] GET /api/v1/namespaces/kube-system/endpoints/kube-scheduler: (1.897791ms) 200 [[kube-scheduler/v1.11.1 (linux/amd64) kubernetes/b1b2997/leader-election] 172.16.0.2:60938]
+I0313 02:35:20.219722       1 handler.go:153] kube-aggregator: PUT "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by nonGoRestful
+I0313 02:35:20.219739       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by prefix /api/
+I0313 02:35:20.219748       1 handler.go:143] kube-apiserver: PUT "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by gorestful with webservice /api/v1
+I0313 02:35:20.221961       1 wrap.go:42] PUT /api/v1/namespaces/kube-system/endpoints/kube-scheduler: (2.530237ms) 200 [[kube-scheduler/v1.11.1 (linux/amd64) kubernetes/b1b2997/leader-election] 172.16.0.2:60938]
+I0313 02:35:20.441550       1 handler.go:153] kube-aggregator: GET "/api/v1/nodes/k8s-node01.com" satisfied by nonGoRestful
+I0313 02:35:20.441576       1 pathrecorder.go:247] kube-aggregator: "/api/v1/nodes/k8s-node01.com" satisfied by prefix /api/
+I0313 02:35:20.441587       1 handler.go:143] kube-apiserver: GET "/api/v1/nodes/k8s-node01.com" satisfied by gorestful with webservice /api/v1
+I0313 02:35:20.442194       1 wrap.go:42] GET /api/v1/nodes/k8s-node01.com?resourceVersion=0&timeout=10s: (968.805µs) 200 [[kubelet/v1.11.1 (linux/amd64) kubernetes/b1b2997] 172.16.0.12:43814]
+I0313 02:35:20.447946       1 handler.go:153] kube-aggregator: PATCH "/api/v1/nodes/k8s-node01.com/status" satisfied by nonGoRestful
+I0313 02:35:20.447984       1 pathrecorder.go:247] kube-aggregator: "/api/v1/nodes/k8s-node01.com/status" satisfied by prefix /api/
+I0313 02:35:20.448023       1 handler.go:143] kube-apiserver: PATCH "/api/v1/nodes/k8s-node01.com/status" satisfied by gorestful with webservice /api/v1
+I0313 02:35:20.454293       1 wrap.go:42] PATCH /api/v1/nodes/k8s-node01.com/status?timeout=10s: (6.774642ms) 200 [[kubelet/v1.11.1 (linux/amd64) kubernetes/b1b2997] 172.16.0.12:43814]
+I0313 02:35:21.693757       1 handler.go:153] kube-aggregator: GET "/api/v1/nodes/k8s-master.com" satisfied by nonGoRestful
+I0313 02:35:21.693789       1 pathrecorder.go:247] kube-aggregator: "/api/v1/nodes/k8s-master.com" satisfied by prefix /api/
+I0313 02:35:21.693800       1 handler.go:143] kube-apiserver: GET "/api/v1/nodes/k8s-master.com" satisfied by gorestful with webservice /api/v1
+I0313 02:35:21.694420       1 wrap.go:42] GET /api/v1/nodes/k8s-master.com?resourceVersion=0&timeout=10s: (944.599µs) 200 [[kubelet/v0.0.0 (linux/amd64) kubernetes/$Format] 172.16.0.2:60872]
+I0313 02:35:21.701126       1 handler.go:153] kube-aggregator: PATCH "/api/v1/nodes/k8s-master.com/status" satisfied by nonGoRestful
+I0313 02:35:21.701151       1 pathrecorder.go:247] kube-aggregator: "/api/v1/nodes/k8s-master.com/status" satisfied by prefix /api/
+I0313 02:35:21.701161       1 handler.go:143] kube-apiserver: PATCH "/api/v1/nodes/k8s-master.com/status" satisfied by gorestful with webservice /api/v1
+I0313 02:35:21.706836       1 wrap.go:42] PATCH /api/v1/nodes/k8s-master.com/status?timeout=10s: (6.025499ms) 200 [[kubelet/v0.0.0 (linux/amd64) kubernetes/$Format] 172.16.0.2:60872]
+I0313 02:35:22.225690       1 handler.go:153] kube-aggregator: GET "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by nonGoRestful
+I0313 02:35:22.225713       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by prefix /api/
+I0313 02:35:22.225723       1 handler.go:143] kube-apiserver: GET "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by gorestful with webservice /api/v1
+I0313 02:35:22.226867       1 wrap.go:42] GET /api/v1/namespaces/kube-system/endpoints/kube-scheduler: (1.486112ms) 200 [[kube-scheduler/v1.11.1 (linux/amd64) kubernetes/b1b2997/leader-election] 172.16.0.2:60938]
+I0313 02:35:22.228050       1 handler.go:153] kube-aggregator: PUT "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by nonGoRestful
+I0313 02:35:22.228070       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by prefix /api/
+I0313 02:35:22.228082       1 handler.go:143] kube-apiserver: PUT "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by gorestful with webservice /api/v1
+I0313 02:35:22.230801       1 wrap.go:42] PUT /api/v1/namespaces/kube-system/endpoints/kube-scheduler: (3.123857ms) 200 [[kube-scheduler/v1.11.1 (linux/amd64) kubernetes/b1b2997/leader-election] 172.16.0.2:60938]
+I0313 02:35:22.349389       1 wrap.go:42] GET /apis/monitoring.coreos.com/v1/watch/prometheuses: (1m39.335916072s) 200 [[Go-http-client/2.0] 172.16.0.12:50818]
+I0313 02:35:22.350657       1 round_trippers.go:386] curl -k -v -XGET  -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" 'https://127.0.0.1:6443/api/v1/namespaces/prometheus/secrets/prometheus-operator-token-8frvv'
+I0313 02:35:22.350835       1 handler.go:153] kube-aggregator: GET "/api/v1/namespaces/prometheus/secrets/prometheus-operator-token-8frvv" satisfied by nonGoRestful
+I0313 02:35:22.350851       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/prometheus/secrets/prometheus-operator-token-8frvv" satisfied by prefix /api/
+I0313 02:35:22.350863       1 handler.go:143] kube-apiserver: GET "/api/v1/namespaces/prometheus/secrets/prometheus-operator-token-8frvv" satisfied by gorestful with webservice /api/v1
+I0313 02:35:22.352245       1 wrap.go:42] GET /api/v1/namespaces/prometheus/secrets/prometheus-operator-token-8frvv: (1.442488ms) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:22.352471       1 round_trippers.go:405] GET https://127.0.0.1:6443/api/v1/namespaces/prometheus/secrets/prometheus-operator-token-8frvv 200 OK in 1 milliseconds
+I0313 02:35:22.352481       1 round_trippers.go:411] Response Headers:
+I0313 02:35:22.352486       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:22.352490       1 round_trippers.go:414]     Content-Length: 2353
+I0313 02:35:22.352495       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:22 GMT
+I0313 02:35:22.352608       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 0c 0a 02  76 31 12 06 53 65 63 72  |k8s.....v1..Secr|
+00000010  65 74 12 98 12 0a b9 02  0a 1f 70 72 6f 6d 65 74  |et........promet|
+00000020  68 65 75 73 2d 6f 70 65  72 61 74 6f 72 2d 74 6f  |heus-operator-to|
+00000030  6b 65 6e 2d 38 66 72 76  76 12 00 1a 0a 70 72 6f  |ken-8frvv....pro|
+00000040  6d 65 74 68 65 75 73 22  45 2f 61 70 69 2f 76 31  |metheus"E/api/v1|
+00000050  2f 6e 61 6d 65 73 70 61  63 65 73 2f 70 72 6f 6d  |/namespaces/prom|
+00000060  65 74 68 65 75 73 2f 73  65 63 72 65 74 73 2f 70  |etheus/secrets/p|
+00000070  72 6f 6d 65 74 68 65 75  73 2d 6f 70 65 72 61 74  |rometheus-operat|
+00000080  6f 72 2d 74 6f 6b 65 6e  2d 38 66 72 76 76 2a 24  |or-token-8frvv*$|
+00000090  34 30 63 65 63 37 33 32  2d 35 61 39 66 2d 31 31  |40cec732-5a9f-11|
+000000a0  65 61 2d 39 63 30 35 2d  35 32 35 34 30 30 38 61  |ea-9c05-5254008a|
+000000b0  64 65 36 63 32 07 35 36  33 36 39 33 33 38 00 42  |de6c2.56369338.B|
+000000c0  08 08 a6 a6 e7 f2 05 10  00 62 39 0a 22 6b 75 62  |.........b9."kub|
+000000d0  65 72 6e 65 74 65 73 2e  69 6f 2f 73 65 72 76 69  |ernetes.io/servi|
+000000e0  63 65 2d 61 63 63 6f 75  6e 74 2e 6e 61 6d 65 12  |ce-account.name.|
+000000f0  13 70 72 6f 6d 65 74 68  65 75 73 2d 6f 70 65 72  |.prometheus-oper|
+00000100  61 74 6f 72 62 49 0a 21  6b 75 62 65 72 6e 65 74  |atorbI.!kubernet|
+00000110  65 73 2e 69 6f 2f 73 65  72 76 69 63 65 2d 61 63  |es.io/service-ac|
+00000120  63 6f 75 6e 74 2e 75 69  64 12 24 34 30 63 63 37  |count.uid.$40cc7|
+00000130  61 37 35 2d 35 61 39 66  2d 31 31 65 61 2d 39 63  |a75-5a9f-11ea-9c|
+00000140  30 35 2d 35 32 35 34 30  30 38 61 64 65 36 63 7a  |05-5254008ade6cz|
+00000150  00 12 8c 08 0a 06 63 61  2e 63 72 74 12 81 08 2d  |......ca.crt...-|
+00000160  2d 2d 2d 2d 42 45 47 49  4e 20 43 45 52 54 49 46  |----BEGIN CERTIF|
+00000170  49 43 41 54 45 2d 2d 2d  2d 2d 0a 4d 49 49 43 79  |ICATE-----.MIICy|
+00000180  44 43 43 41 62 43 67 41  77 49 42 41 67 49 42 41  |DCCAbCgAwIBAgIBA|
+00000190  44 41 4e 42 67 6b 71 68  6b 69 47 39 77 30 42 41  |DANBgkqhkiG9w0BA|
+000001a0  51 73 46 41 44 41 56 4d  52 4d 77 45 51 59 44 56  |QsFADAVMRMwEQYDV|
+000001b0  51 51 44 45 77 70 72 64  57 4a 6c 0a 63 6d 35 6c  |QQDEwprdWJl.cm5l|
+000001c0  64 47 56 7a 4d 42 34 58  44 54 45 35 4d 54 49 79  |dGVzMB4XDTE5MTIy|
+000001d0  4e 44 41 33 4d 44 41 30  4d 46 6f 58 44 54 49 35  |NDA3MDA0MFoXDTI5|
+000001e0  4d 54 49 79 4d 54 41 33  4d 44 41 30 4d 46 6f 77  |MTIyMTA3MDA0MFow|
+000001f0  46 54 45 54 4d 42 45 47  41 31 55 45 0a 41 78 4d  |FTETMBEGA1UE.AxM|
+00000200  4b 61 33 56 69 5a 58 4a  75 5a 58 52 6c 63 7a 43  |Ka3ViZXJuZXRlczC|
+00000210  43 41 53 49 77 44 51 59  4a 4b 6f 5a 49 68 76 63  |CASIwDQYJKoZIhvc|
+00000220  4e 41 51 45 42 42 51 41  44 67 67 45 50 41 44 43  |NAQEBBQADggEPADC|
+00000230  43 41 51 6f 43 67 67 45  42 41 4d 31 50 0a 6a 69  |CAQoCggEBAM1P.ji|
+00000240  7a 69 6b 42 53 53 44 4e  34 50 6b 74 33 51 38 69  |zikBSSDN4Pkt3Q8i|
+00000250  62 63 75 48 49 56 50 59  66 5a 51 6b 41 58 37 41  |bcuHIVPYfZQkAX7A|
+00000260  44 6a 62 41 34 42 2b 53  68 4e 7a 7a 48 48 6b 4d  |DjbA4B+ShNzzHHkM|
+00000270  72 63 4d 6c 76 69 6e 58  75 31 2b 2b 31 37 0a 64  |rcMlvinXu1++17.d|
+00000280  51 69 62 64 37 78 78 4b  57 73 37 38 77 76 51 6d  |Qibd7xxKWs78wvQm|
+00000290  64 67 41 57 4a 36 51 32  4c 44 39 34 4a 33 47 34  |dgAWJ6Q2LD94J3G4|
+000002a0  30 64 72 4c 54 63 45 4a  34 53 70 6f 79 6d 78 73  |0drLTcEJ4Spoymxs|
+000002b0  4e 74 2b 6c 43 35 36 54  52 56 36 41 62 67 34 0a  |Nt+lC56TRV6Abg4.|
+000002c0  34 4f 33 2b 66 50 5a 74  54 62 49 52 41 64 54 31  |4O3+fPZtTbIRAdT1|
+000002d0  69 48 43 76 51 65 2f 62  71 56 4f 43 6b 6f 6d 2f  |iHCvQe/bqVOCkom/|
+000002e0  4f 58 6e 47 37 4b 39 73  6e 6f 30 4f 68 79 7a 56  |OXnG7K9sno0OhyzV|
+000002f0  56 37 4e 6f 31 68 39 75  2f 61 5a 76 68 64 4d 50  |V7No1h9u/aZvhdMP|
+00000300  0a 6a 37 32 73 56 75 43  79 56 78 57 41 45 34 67  |.j72sVuCyVxWAE4g|
+00000310  57 41 68 72 61 6c 45 36  39 66 77 54 4c 72 52 2f  |WAhralE69fwTLrR/|
+00000320  68 62 52 75 71 5a 36 52  41 34 63 6f 72 74 6d 56  |hbRuqZ6RA4cortmV|
+00000330  57 72 75 45 31 41 31 48  35 6d 78 48 6c 54 41 51  |WruE1A1H5mxHlTAQ|
+00000340  44 0a 45 55 7a 4d 79 70  4b 34 4c 50 70 31 2b 73  |D.EUzMypK4LPp1+s|
+00000350  6d 41 69 6f 4f 32 36 50  5a 6f 43 32 53 56 2f 5a  |mAioO26PZoC2SV/Z|
+00000360  43 6c 61 38 59 71 55 4a  45 34 77 6d 79 61 52 36  |Cla8YqUJE4wmyaR6|
+00000370  34 5a 44 5a 48 74 35 4c  6d 52 57 7a 5a 50 4f 6c  |4ZDZHt5LmRWzZPOl|
+00000380  69 6b 0a 41 47 6b 32 39  52 58 69 78 55 38 4f 4e  |ik.AGk29RXixU8ON|
+00000390  50 71 45 4e 6c 63 43 41  77 45 41 41 61 4d 6a 4d  |PqENlcCAwEAAaMjM|
+000003a0  43 45 77 44 67 59 44 56  52 30 50 41 51 48 2f 42  |CEwDgYDVR0PAQH/B|
+000003b0  41 51 44 41 67 4b 6b 4d  41 38 47 41 31 55 64 45  |AQDAgKkMA8GA1UdE|
+000003c0  77 45 42 0a 2f 77 51 46  4d 41 4d 42 41 66 38 77  |wEB./wQFMAMBAf8w|
+000003d0  44 51 59 4a 4b 6f 5a 49  68 76 63 4e 41 51 45 4c  |DQYJKoZIhvcNAQEL|
+000003e0  42 51 41 44 67 67 45 42  41 4d 45 74 6a 78 43 4b  |BQADggEBAMEtjxCK|
+000003f0  68 6a 42 31 35 56 6d 67  4f 34 6a 39 54 43 71 36  |hjB15VmgO4j9TCq6|
+00000400  4a 62 54 65 0a 53 31 66  48 44 7a 68 32 53 61 78  |JbTe.S1fHDzh2Sax|
+00000410  36 2f 47 4b 44 67 31 6e  34 7a 30 34 65 41 74 43  |6/GKDg1n4z04eAtC|
+00000420  53 45 47 46 38 42 48 39  74 65 55 59 58 53 70 6e  |SEGF8BH9teUYXSpn|
+00000430  61 4c 39 79 43 35 35 69  4f 42 53 38 55 41 64 76  |aL9yC55iOBS8UAdv|
+00000440  74 6d 6a 36 63 0a 6d 33  7a 56 58 7a 32 54 32 67  |tmj6c.m3zVXz2T2g|
+00000450  4a 4f 33 5a 6d 6d 68 76  72 73 42 30 39 73 6f 5a  |JO3ZmmhvrsB09soZ|
+00000460  53 65 43 64 58 4a 61 39  5a 69 68 75 33 65 5a 49  |SeCdXJa9Zihu3eZI|
+00000470  6b 48 43 71 67 70 41 4f  71 79 6c 78 4a 51 35 37  |kHCqgpAOqylxJQ57|
+00000480  65 32 37 6f 74 51 0a 6c  56 51 63 72 70 47 33 7a  |e27otQ.lVQcrpG3z|
+00000490  37 2b 70 32 4a 63 37 67  68 36 54 51 43 4d 58 4a  |7+p2Jc7gh6TQCMXJ|
+000004a0  31 39 42 6f 74 57 79 42  64 48 44 76 66 2f 59 71  |19BotWyBdHDvf/Yq|
+000004b0  68 79 73 43 77 66 57 62  4f 58 43 70 73 39 46 4a  |hysCwfWbOXCps9FJ|
+000004c0  57 6a 52 51 76 61 43 0a  48 55 36 43 61 67 46 6c  |WjRQvaC.HU6CagFl|
+000004d0  6c 4f 4b 50 75 59 4a 36  43 42 65 65 6e 4d 57 41  |lOKPuYJ6CBeenMWA|
+000004e0  41 6e 63 30 59 2f 33 47  56 30 70 67 63 6b 61 33  |Anc0Y/3GV0pgcka3|
+000004f0  4c 2f 7a 58 4b 46 31 55  36 51 58 37 4a 63 36 5a  |L/zXKF1U6QX7Jc6Z|
+00000500  4c 31 4b 2b 65 69 79 2f  0a 58 43 32 2f 53 59 6f  |L1K+eiy/.XC2/SYo|
+00000510  46 73 78 72 39 53 31 79  57 58 2f 73 32 4f 68 51  |Fsxr9S1yWX/s2OhQ|
+00000520  68 4f 4f 5a 4d 38 6b 44  6e 73 4e 5a 76 59 6d 42  |hOOZM8kDnsNZvYmB|
+00000530  49 58 63 66 36 6d 47 4d  57 73 74 6c 51 6b 59 63  |IXcf6mGMWstlQkYc|
+00000540  79 5a 31 6f 3d 0a 2d 2d  2d 2d 2d 45 4e 44 20 43  |yZ1o=.-----END C|
+00000550  45 52 54 49 46 49 43 41  54 45 2d 2d 2d 2d 2d 0a  |ERTIFICATE-----.|
+00000560  12 17 0a 09 6e 61 6d 65  73 70 61 63 65 12 0a 70  |....namespace..p|
+00000570  72 6f 6d 65 74 68 65 75  73 12 8c 07 0a 05 74 6f  |rometheus.....to|
+00000580  6b 65 6e 12 82 07 65 79  4a 68 62 47 63 69 4f 69  |ken...eyJhbGciOi|
+00000590  4a 53 55 7a 49 31 4e 69  49 73 49 6d 74 70 5a 43  |JSUzI1NiIsImtpZC|
+000005a0  49 36 49 69 4a 39 2e 65  79 4a 70 63 33 4d 69 4f  |I6IiJ9.eyJpc3MiO|
+000005b0  69 4a 72 64 57 4a 6c 63  6d 35 6c 64 47 56 7a 4c  |iJrdWJlcm5ldGVzL|
+000005c0  33 4e 6c 63 6e 5a 70 59  32 56 68 59 32 4e 76 64  |3NlcnZpY2VhY2Nvd|
+000005d0  57 35 30 49 69 77 69 61  33 56 69 5a 58 4a 75 5a  |W50Iiwia3ViZXJuZ|
+000005e0  58 52 6c 63 79 35 70 62  79 39 7a 5a 58 4a 32 61  |XRlcy5pby9zZXJ2a|
+000005f0  57 4e 6c 59 57 4e 6a 62  33 56 75 64 43 39 75 59  |WNlYWNjb3VudC9uY|
+00000600  57 31 6c 63 33 42 68 59  32 55 69 4f 69 4a 77 63  |W1lc3BhY2UiOiJwc|
+00000610  6d 39 74 5a 58 52 6f 5a  58 56 7a 49 69 77 69 61  |m9tZXRoZXVzIiwia|
+00000620  33 56 69 5a 58 4a 75 5a  58 52 6c 63 79 35 70 62  |3ViZXJuZXRlcy5pb|
+00000630  79 39 7a 5a 58 4a 32 61  57 4e 6c 59 57 4e 6a 62  |y9zZXJ2aWNlYWNjb|
+00000640  33 56 75 64 43 39 7a 5a  57 4e 79 5a 58 51 75 62  |3VudC9zZWNyZXQub|
+00000650  6d 46 74 5a 53 49 36 49  6e 42 79 62 32 31 6c 64  |mFtZSI6InByb21ld|
+00000660  47 68 6c 64 58 4d 74 62  33 42 6c 63 6d 46 30 62  |GhldXMtb3BlcmF0b|
+00000670  33 49 74 64 47 39 72 5a  57 34 74 4f 47 5a 79 64  |3ItdG9rZW4tOGZyd|
+00000680  6e 59 69 4c 43 4a 72 64  57 4a 6c 63 6d 35 6c 64  |nYiLCJrdWJlcm5ld|
+00000690  47 56 7a 4c 6d 6c 76 4c  33 4e 6c 63 6e 5a 70 59  |GVzLmlvL3NlcnZpY|
+000006a0  32 56 68 59 32 4e 76 64  57 35 30 4c 33 4e 6c 63  |2VhY2NvdW50L3Nlc|
+000006b0  6e 5a 70 59 32 55 74 59  57 4e 6a 62 33 56 75 64  |nZpY2UtYWNjb3Vud|
+000006c0  43 35 75 59 57 31 6c 49  6a 6f 69 63 48 4a 76 62  |C5uYW1lIjoicHJvb|
+000006d0  57 56 30 61 47 56 31 63  79 31 76 63 47 56 79 59  |WV0aGV1cy1vcGVyY|
+000006e0  58 52 76 63 69 49 73 49  6d 74 31 59 6d 56 79 62  |XRvciIsImt1YmVyb|
+000006f0  6d 56 30 5a 58 4d 75 61  57 38 76 63 32 56 79 64  |mV0ZXMuaW8vc2Vyd|
+00000700  6d 6c 6a 5a 57 46 6a 59  32 39 31 62 6e 51 76 63  |mljZWFjY291bnQvc|
+00000710  32 56 79 64 6d 6c 6a 5a  53 31 68 59 32 4e 76 64  |2VydmljZS1hY2Nvd|
+00000720  57 35 30 4c 6e 56 70 5a  43 49 36 49 6a 51 77 59  |W50LnVpZCI6IjQwY|
+00000730  32 4d 33 59 54 63 31 4c  54 56 68 4f 57 59 74 4d  |2M3YTc1LTVhOWYtM|
+00000740  54 46 6c 59 53 30 35 59  7a 41 31 4c 54 55 79 4e  |TFlYS05YzA1LTUyN|
+00000750  54 51 77 4d 44 68 68 5a  47 55 32 59 79 49 73 49  |TQwMDhhZGU2YyIsI|
+00000760  6e 4e 31 59 69 49 36 49  6e 4e 35 63 33 52 6c 62  |nN1YiI6InN5c3Rlb|
+00000770  54 70 7a 5a 58 4a 32 61  57 4e 6c 59 57 4e 6a 62  |TpzZXJ2aWNlYWNjb|
+00000780  33 56 75 64 44 70 77 63  6d 39 74 5a 58 52 6f 5a  |3VudDpwcm9tZXRoZ|
+00000790  58 56 7a 4f 6e 42 79 62  32 31 6c 64 47 68 6c 64  |XVzOnByb21ldGhld|
+000007a0  58 4d 74 62 33 42 6c 63  6d 46 30 62 33 49 69 66  |XMtb3BlcmF0b3Iif|
+000007b0  51 2e 57 35 71 75 52 5a  4a 57 2d 6a 2d 5a 64 74  |Q.W5quRZJW-j-Zdt|
+000007c0  65 78 54 49 4b 69 6f 55  59 6a 5a 5a 6d 75 45 53  |exTIKioUYjZZmuES|
+000007d0  78 70 56 49 5f 62 39 55  58 55 4e 5f 39 31 48 49  |xpVI_b9UXUN_91HI|
+000007e0  33 73 46 6e 54 45 52 6f  61 4a 71 48 35 57 43 70  |3sFnTERoaJqH5WCp|
+000007f0  79 62 67 43 30 66 4d 46  34 64 72 65 39 49 6a 79  |ybgC0fMF4dre9Ijy|
+00000800  34 43 62 79 6c 53 73 31  59 5a 44 5f 6d 34 4f 39  |4CbylSs1YZD_m4O9|
+00000810  6c 66 75 58 52 52 6b 7a  5a 6c 4f 4d 4a 53 35 4a  |lfuXRRkzZlOMJS5J|
+00000820  7a 49 37 6d 35 74 66 47  71 51 66 6a 42 58 53 4e  |zI7m5tfGqQfjBXSN|
+00000830  4f 74 5f 51 47 4d 6d 58  41 72 33 67 4a 52 75 76  |Ot_QGMmXAr3gJRuv|
+00000840  7a 58 4c 50 4d 5a 57 55  5a 45 76 58 62 50 35 54  |zXLPMZWUZEvXbP5T|
+00000850  55 72 44 37 66 6f 76 62  6e 58 5a 4d 63 4c 50 52  |UrD7fovbnXZMcLPR|
+00000860  61 67 56 6e 59 4c 77 78  4d 55 65 53 48 5a 68 5f  |agVnYLwxMUeSHZh_|
+00000870  58 6e 5f 47 6b 34 6f 77  58 71 62 79 5f 56 36 4d  |Xn_Gk4owXqby_V6M|
+00000880  42 50 41 51 36 4f 75 71  39 75 6c 53 6f 66 33 68  |BPAQ6Ouq9ulSof3h|
+00000890  42 6c 59 48 67 74 5f 5f  69 64 6f 47 46 65 48 46  |BlYHgt__idoGFeHF|
+000008a0  42 4a 47 5a 34 63 39 71  7a 65 43 54 63 59 6d 76  |BJGZ4c9qzeCTcYmv|
+000008b0  53 48 38 43 38 6c 7a 52  5f 62 49 57 59 5f 6c 31  |SH8C8lzR_bIWY_l1|
+000008c0  76 44 6e 54 46 34 41 61  58 6b 62 56 6c 71 4d 6e  |vDnTF4AaXkbVlqMn|
+000008d0  33 6a 59 31 71 4d 6c 33  33 4b 31 75 43 35 64 6e  |3jY1qMl33K1uC5dn|
+000008e0  71 37 63 73 5a 76 4f 39  67 6e 57 62 79 33 6e 79  |q7csZvO9gnWby3ny|
+000008f0  51 35 52 32 4d 31 68 30  5a 79 4f 4d 44 36 6f 62  |Q5R2M1h0ZyOMD6ob|
+00000900  6c 36 62 44 50 4b 56 51  1a 23 6b 75 62 65 72 6e  |l6bDPKVQ.#kubern|
+00000910  65 74 65 73 2e 69 6f 2f  73 65 72 76 69 63 65 2d  |etes.io/service-|
+00000920  61 63 63 6f 75 6e 74 2d  74 6f 6b 65 6e 1a 00 22  |account-token.."|
+00000930  00                                                |.|
+I0313 02:35:22.352692       1 round_trippers.go:386] curl -k -v -XGET  -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" 'https://127.0.0.1:6443/api/v1/namespaces/prometheus/serviceaccounts/prometheus-operator'
+I0313 02:35:22.352818       1 handler.go:153] kube-aggregator: GET "/api/v1/namespaces/prometheus/serviceaccounts/prometheus-operator" satisfied by nonGoRestful
+I0313 02:35:22.352830       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/prometheus/serviceaccounts/prometheus-operator" satisfied by prefix /api/
+I0313 02:35:22.352838       1 handler.go:143] kube-apiserver: GET "/api/v1/namespaces/prometheus/serviceaccounts/prometheus-operator" satisfied by gorestful with webservice /api/v1
+I0313 02:35:22.353837       1 wrap.go:42] GET /api/v1/namespaces/prometheus/serviceaccounts/prometheus-operator: (1.043734ms) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:22.354000       1 round_trippers.go:405] GET https://127.0.0.1:6443/api/v1/namespaces/prometheus/serviceaccounts/prometheus-operator 200 OK in 1 milliseconds
+I0313 02:35:22.354011       1 round_trippers.go:411] Response Headers:
+I0313 02:35:22.354019       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:22.354027       1 round_trippers.go:414]     Content-Length: 430
+I0313 02:35:22.354034       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:22 GMT
+I0313 02:35:22.354074       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 14 0a 02  76 31 12 0e 53 65 72 76  |k8s.....v1..Serv|
+00000010  69 63 65 41 63 63 6f 75  6e 74 12 8d 03 0a db 02  |iceAccount......|
+00000020  0a 13 70 72 6f 6d 65 74  68 65 75 73 2d 6f 70 65  |..prometheus-ope|
+00000030  72 61 74 6f 72 12 00 1a  0a 70 72 6f 6d 65 74 68  |rator....prometh|
+00000040  65 75 73 22 41 2f 61 70  69 2f 76 31 2f 6e 61 6d  |eus"A/api/v1/nam|
+00000050  65 73 70 61 63 65 73 2f  70 72 6f 6d 65 74 68 65  |espaces/promethe|
+00000060  75 73 2f 73 65 72 76 69  63 65 61 63 63 6f 75 6e  |us/serviceaccoun|
+00000070  74 73 2f 70 72 6f 6d 65  74 68 65 75 73 2d 6f 70  |ts/prometheus-op|
+00000080  65 72 61 74 6f 72 2a 24  34 30 63 63 37 61 37 35  |erator*$40cc7a75|
+00000090  2d 35 61 39 66 2d 31 31  65 61 2d 39 63 30 35 2d  |-5a9f-11ea-9c05-|
+000000a0  35 32 35 34 30 30 38 61  64 65 36 63 32 07 35 36  |5254008ade6c2.56|
+000000b0  33 36 39 33 35 38 00 42  08 08 a6 a6 e7 f2 05 10  |369358.B........|
+000000c0  00 62 b5 01 0a 30 6b 75  62 65 63 74 6c 2e 6b 75  |.b...0kubectl.ku|
+000000d0  62 65 72 6e 65 74 65 73  2e 69 6f 2f 6c 61 73 74  |bernetes.io/last|
+000000e0  2d 61 70 70 6c 69 65 64  2d 63 6f 6e 66 69 67 75  |-applied-configu|
+000000f0  72 61 74 69 6f 6e 12 80  01 7b 22 61 70 69 56 65  |ration...{"apiVe|
+00000100  72 73 69 6f 6e 22 3a 22  76 31 22 2c 22 6b 69 6e  |rsion":"v1","kin|
+00000110  64 22 3a 22 53 65 72 76  69 63 65 41 63 63 6f 75  |d":"ServiceAccou|
+00000120  6e 74 22 2c 22 6d 65 74  61 64 61 74 61 22 3a 7b  |nt","metadata":{|
+00000130  22 61 6e 6e 6f 74 61 74  69 6f 6e 73 22 3a 7b 7d  |"annotations":{}|
+00000140  2c 22 6e 61 6d 65 22 3a  22 70 72 6f 6d 65 74 68  |,"name":"prometh|
+00000150  65 75 73 2d 6f 70 65 72  61 74 6f 72 22 2c 22 6e  |eus-operator","n|
+00000160  61 6d 65 73 70 61 63 65  22 3a 22 70 72 6f 6d 65  |amespace":"prome|
+00000170  74 68 65 75 73 22 7d 7d  0a 7a 00 12 2d 0a 00 12  |theus"}}.z..-...|
+00000180  00 1a 1f 70 72 6f 6d 65  74 68 65 75 73 2d 6f 70  |...prometheus-op|
+00000190  65 72 61 74 6f 72 2d 74  6f 6b 65 6e 2d 38 66 72  |erator-token-8fr|
+000001a0  76 76 22 00 2a 00 32 00  3a 00 1a 00 22 00        |vv".*.2.:...".|
+I0313 02:35:22.354175       1 handler.go:153] kube-aggregator: GET "/apis/monitoring.coreos.com/v1/watch/prometheuses" satisfied by nonGoRestful
+I0313 02:35:22.354188       1 pathrecorder.go:247] kube-aggregator: "/apis/monitoring.coreos.com/v1/watch/prometheuses" satisfied by prefix /apis/monitoring.coreos.com/v1/
+I0313 02:35:22.354199       1 handler.go:153] kube-apiserver: GET "/apis/monitoring.coreos.com/v1/watch/prometheuses" satisfied by nonGoRestful
+I0313 02:35:22.354205       1 pathrecorder.go:253] kube-apiserver: "/apis/monitoring.coreos.com/v1/watch/prometheuses" satisfied by NotFoundHandler
+I0313 02:35:22.354212       1 handler.go:153] apiextensions-apiserver: GET "/apis/monitoring.coreos.com/v1/watch/prometheuses" satisfied by nonGoRestful
+I0313 02:35:22.354218       1 pathrecorder.go:247] apiextensions-apiserver: "/apis/monitoring.coreos.com/v1/watch/prometheuses" satisfied by prefix /apis/
+I0313 02:35:22.354243       1 get.go:245] Starting watch for /apis/monitoring.coreos.com/v1/watch/prometheuses, rv= labels=%!s(<nil>) fields=%!s(<nil>) timeout=1m55.399257209s
+I0313 02:35:22.356008       1 handler.go:153] kube-aggregator: GET "/api/v1/namespaces/prometheus/secrets" satisfied by nonGoRestful
+I0313 02:35:22.356027       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/prometheus/secrets" satisfied by prefix /api/
+I0313 02:35:22.356040       1 handler.go:143] kube-apiserver: GET "/api/v1/namespaces/prometheus/secrets" satisfied by gorestful with webservice /api/v1
+I0313 02:35:22.357386       1 wrap.go:42] GET /api/v1/namespaces/prometheus/secrets: (1.470031ms) 200 [[operator/v1.8.1+$Format:%h$ (linux/amd64) kubernetes/$Format] 172.16.0.12:50818]
+I0313 02:35:22.358442       1 handler.go:153] kube-aggregator: GET "/api/v1/namespaces/prometheus/secrets/prometheus-sample-metrics-prom" satisfied by nonGoRestful
+I0313 02:35:22.358457       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/prometheus/secrets/prometheus-sample-metrics-prom" satisfied by prefix /api/
+I0313 02:35:22.358465       1 handler.go:143] kube-apiserver: GET "/api/v1/namespaces/prometheus/secrets/prometheus-sample-metrics-prom" satisfied by gorestful with webservice /api/v1
+I0313 02:35:22.359555       1 wrap.go:42] GET /api/v1/namespaces/prometheus/secrets/prometheus-sample-metrics-prom: (1.18821ms) 200 [[operator/v1.8.1+$Format:%h$ (linux/amd64) kubernetes/$Format] 172.16.0.12:50818]
+I0313 02:35:22.360347       1 handler.go:153] kube-aggregator: POST "/api/v1/namespaces/prometheus/secrets" satisfied by nonGoRestful
+I0313 02:35:22.360362       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/prometheus/secrets" satisfied by prefix /api/
+I0313 02:35:22.360369       1 handler.go:143] kube-apiserver: POST "/api/v1/namespaces/prometheus/secrets" satisfied by gorestful with webservice /api/v1
+I0313 02:35:22.366359       1 wrap.go:42] POST /api/v1/namespaces/prometheus/secrets: (6.072288ms) 409 [[operator/v1.8.1+$Format:%h$ (linux/amd64) kubernetes/$Format] 172.16.0.12:50818]
+I0313 02:35:22.367252       1 handler.go:153] kube-aggregator: GET "/api/v1/namespaces/prometheus/services/prometheus-operated" satisfied by nonGoRestful
+I0313 02:35:22.367271       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/prometheus/services/prometheus-operated" satisfied by prefix /api/
+I0313 02:35:22.367280       1 handler.go:143] kube-apiserver: GET "/api/v1/namespaces/prometheus/services/prometheus-operated" satisfied by gorestful with webservice /api/v1
+I0313 02:35:22.368357       1 wrap.go:42] GET /api/v1/namespaces/prometheus/services/prometheus-operated: (1.224607ms) 200 [[operator/v1.8.1+$Format:%h$ (linux/amd64) kubernetes/$Format] 172.16.0.12:50818]
+I0313 02:35:22.369153       1 handler.go:153] kube-aggregator: PUT "/api/v1/namespaces/prometheus/services/prometheus-operated" satisfied by nonGoRestful
+I0313 02:35:22.369168       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/prometheus/services/prometheus-operated" satisfied by prefix /api/
+I0313 02:35:22.369177       1 handler.go:143] kube-apiserver: PUT "/api/v1/namespaces/prometheus/services/prometheus-operated" satisfied by gorestful with webservice /api/v1
+I0313 02:35:22.371494       1 wrap.go:42] PUT /api/v1/namespaces/prometheus/services/prometheus-operated: (2.398583ms) 200 [[operator/v1.8.1+$Format:%h$ (linux/amd64) kubernetes/$Format] 172.16.0.12:50818]
+I0313 02:35:22.372356       1 handler.go:153] kube-aggregator: PUT "/apis/apps/v1beta1/namespaces/prometheus/statefulsets/prometheus-sample-metrics-prom" satisfied by nonGoRestful
+I0313 02:35:22.372372       1 pathrecorder.go:247] kube-aggregator: "/apis/apps/v1beta1/namespaces/prometheus/statefulsets/prometheus-sample-metrics-prom" satisfied by prefix /apis/apps/v1beta1/
+I0313 02:35:22.372382       1 handler.go:143] kube-apiserver: PUT "/apis/apps/v1beta1/namespaces/prometheus/statefulsets/prometheus-sample-metrics-prom" satisfied by gorestful with webservice /apis/apps/v1beta1
+I0313 02:35:22.374926       1 wrap.go:42] PUT /apis/apps/v1beta1/namespaces/prometheus/statefulsets/prometheus-sample-metrics-prom: (2.66176ms) 200 [[operator/v1.8.1+$Format:%h$ (linux/amd64) kubernetes/$Format] 172.16.0.12:50818]
+I0313 02:35:22.829369       1 round_trippers.go:386] curl -k -v -XGET  -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" 'https://127.0.0.1:6443/api/v1/namespaces/default'
+I0313 02:35:22.829722       1 handler.go:153] kube-aggregator: GET "/api/v1/namespaces/default" satisfied by nonGoRestful
+I0313 02:35:22.829745       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/default" satisfied by prefix /api/
+I0313 02:35:22.829759       1 handler.go:143] kube-apiserver: GET "/api/v1/namespaces/default" satisfied by gorestful with webservice /api/v1
+I0313 02:35:22.830947       1 wrap.go:42] GET /api/v1/namespaces/default: (1.290038ms) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:22.831208       1 round_trippers.go:405] GET https://127.0.0.1:6443/api/v1/namespaces/default 200 OK in 1 milliseconds
+I0313 02:35:22.831221       1 round_trippers.go:411] Response Headers:
+I0313 02:35:22.831229       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:22.831236       1 round_trippers.go:414]     Content-Length: 150
+I0313 02:35:22.831243       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:22 GMT
+I0313 02:35:22.831281       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 0f 0a 02  76 31 12 09 4e 61 6d 65  |k8s.....v1..Name|
+00000010  73 70 61 63 65 12 7b 0a  61 0a 07 64 65 66 61 75  |space.{.a..defau|
+00000020  6c 74 12 00 1a 00 22 1a  2f 61 70 69 2f 76 31 2f  |lt...."./api/v1/|
+00000030  6e 61 6d 65 73 70 61 63  65 73 2f 64 65 66 61 75  |namespaces/defau|
+00000040  6c 74 2a 24 33 33 35 36  62 32 31 30 2d 32 36 31  |lt*$3356b210-261|
+00000050  62 2d 31 31 65 61 2d 61  35 61 64 2d 35 32 35 34  |b-11ea-a5ad-5254|
+00000060  30 30 38 61 64 65 36 63  32 02 33 31 38 00 42 08  |008ade6c2.318.B.|
+00000070  08 c5 ef 86 f0 05 10 00  7a 00 12 0c 0a 0a 6b 75  |........z.....ku|
+00000080  62 65 72 6e 65 74 65 73  1a 08 0a 06 41 63 74 69  |bernetes....Acti|
+00000090  76 65 1a 00 22 00                                 |ve..".|
+I0313 02:35:22.831389       1 round_trippers.go:386] curl -k -v -XGET  -H "Accept: application/vnd.kubernetes.protobuf, */*" -H "User-Agent: kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997" -H "Authorization: Bearer ea237299-e50b-40af-a824-41952ca82aa3" 'https://127.0.0.1:6443/api/v1/namespaces/default/services/kubernetes'
+I0313 02:35:22.831516       1 handler.go:153] kube-aggregator: GET "/api/v1/namespaces/default/services/kubernetes" satisfied by nonGoRestful
+I0313 02:35:22.831527       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/default/services/kubernetes" satisfied by prefix /api/
+I0313 02:35:22.831535       1 handler.go:143] kube-apiserver: GET "/api/v1/namespaces/default/services/kubernetes" satisfied by gorestful with webservice /api/v1
+I0313 02:35:22.832569       1 wrap.go:42] GET /api/v1/namespaces/default/services/kubernetes: (1.083885ms) 200 [[kube-apiserver/v1.11.1 (linux/amd64) kubernetes/b1b2997] 127.0.0.1:37118]
+I0313 02:35:22.832830       1 round_trippers.go:405] GET https://127.0.0.1:6443/api/v1/namespaces/default/services/kubernetes 200 OK in 1 milliseconds
+I0313 02:35:22.832843       1 round_trippers.go:411] Response Headers:
+I0313 02:35:22.832851       1 round_trippers.go:414]     Content-Length: 276
+I0313 02:35:22.832859       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:22 GMT
+I0313 02:35:22.832866       1 round_trippers.go:414]     Content-Type: application/vnd.kubernetes.protobuf
+I0313 02:35:22.832904       1 request.go:895] Response Body:
+00000000  6b 38 73 00 0a 0d 0a 02  76 31 12 07 53 65 72 76  |k8s.....v1..Serv|
+00000010  69 63 65 12 fa 01 0a af  01 0a 0a 6b 75 62 65 72  |ice........kuber|
+00000020  6e 65 74 65 73 12 00 1a  07 64 65 66 61 75 6c 74  |netes....default|
+00000030  22 2e 2f 61 70 69 2f 76  31 2f 6e 61 6d 65 73 70  |"./api/v1/namesp|
+00000040  61 63 65 73 2f 64 65 66  61 75 6c 74 2f 73 65 72  |aces/default/ser|
+00000050  76 69 63 65 73 2f 6b 75  62 65 72 6e 65 74 65 73  |vices/kubernetes|
+00000060  2a 24 33 33 35 39 34 34  36 33 2d 32 36 31 62 2d  |*$33594463-261b-|
+00000070  31 31 65 61 2d 61 35 61  64 2d 35 32 35 34 30 30  |11ea-a5ad-525400|
+00000080  38 61 64 65 36 63 32 02  33 33 38 00 42 08 08 c5  |8ade6c2.338.B...|
+00000090  ef 86 f0 05 10 00 5a 16  0a 09 63 6f 6d 70 6f 6e  |......Z...compon|
+000000a0  65 6e 74 12 09 61 70 69  73 65 72 76 65 72 5a 16  |ent..apiserverZ.|
+000000b0  0a 08 70 72 6f 76 69 64  65 72 12 0a 6b 75 62 65  |..provider..kube|
+000000c0  72 6e 65 74 65 73 7a 00  12 42 0a 1a 0a 05 68 74  |rnetesz..B....ht|
+000000d0  74 70 73 12 03 54 43 50  18 bb 03 22 07 08 00 10  |tps..TCP..."....|
+000000e0  ab 32 1a 00 28 00 1a 09  31 30 2e 39 36 2e 30 2e  |.2..(...10.96.0.|
+000000f0  31 22 09 43 6c 75 73 74  65 72 49 50 3a 04 4e 6f  |1".ClusterIP:.No|
+00000100  6e 65 42 00 52 00 5a 00  60 00 68 00 1a 02 0a 00  |neB.R.Z.`.h.....|
+00000110  1a 00 22 00                                       |..".|
+I0313 02:35:22.833858       1 lease.go:101] Resetting TTL on master IP "172.16.0.2" listed in storage to 15
+I0313 02:35:22.841285       1 lease.go:75] Current master IPs listed in storage are [172.16.0.2]
+I0313 02:35:24.232655       1 handler.go:153] kube-aggregator: GET "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by nonGoRestful
+I0313 02:35:24.232682       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by prefix /api/
+I0313 02:35:24.232693       1 handler.go:143] kube-apiserver: GET "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by gorestful with webservice /api/v1
+I0313 02:35:24.234088       1 wrap.go:42] GET /api/v1/namespaces/kube-system/endpoints/kube-scheduler: (1.782099ms) 200 [[kube-scheduler/v1.11.1 (linux/amd64) kubernetes/b1b2997/leader-election] 172.16.0.2:60938]
+I0313 02:35:24.235042       1 handler.go:153] kube-aggregator: PUT "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by nonGoRestful
+I0313 02:35:24.235058       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by prefix /api/
+I0313 02:35:24.235066       1 handler.go:143] kube-apiserver: PUT "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by gorestful with webservice /api/v1
+I0313 02:35:24.237918       1 wrap.go:42] PUT /api/v1/namespaces/kube-system/endpoints/kube-scheduler: (3.158123ms) 200 [[kube-scheduler/v1.11.1 (linux/amd64) kubernetes/b1b2997/leader-election] 172.16.0.2:60938]
+I0313 02:35:25.931477       1 handler.go:153] kube-aggregator: GET "/healthz" satisfied by nonGoRestful
+I0313 02:35:25.931506       1 pathrecorder.go:240] kube-aggregator: "/healthz" satisfied by exact match
+I0313 02:35:25.931797       1 wrap.go:42] GET /healthz: (452.289µs) 200 [[kube-probe/.] 172.16.0.2:38196]
+I0313 02:35:26.239840       1 handler.go:153] kube-aggregator: GET "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by nonGoRestful
+I0313 02:35:26.239865       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by prefix /api/
+I0313 02:35:26.239875       1 handler.go:143] kube-apiserver: GET "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by gorestful with webservice /api/v1
+I0313 02:35:26.241114       1 wrap.go:42] GET /api/v1/namespaces/kube-system/endpoints/kube-scheduler: (1.614905ms) 200 [[kube-scheduler/v1.11.1 (linux/amd64) kubernetes/b1b2997/leader-election] 172.16.0.2:60938]
+I0313 02:35:26.242000       1 handler.go:153] kube-aggregator: PUT "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by nonGoRestful
+I0313 02:35:26.242014       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by prefix /api/
+I0313 02:35:26.242023       1 handler.go:143] kube-apiserver: PUT "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by gorestful with webservice /api/v1
+I0313 02:35:26.245532       1 wrap.go:42] PUT /api/v1/namespaces/kube-system/endpoints/kube-scheduler: (3.775581ms) 200 [[kube-scheduler/v1.11.1 (linux/amd64) kubernetes/b1b2997/leader-election] 172.16.0.2:60938]
+I0313 02:35:26.948410       1 wrap.go:42] GET /api/v1/secrets?resourceVersion=6539570&timeoutSeconds=394&watch=true: (6m34.000690374s) 200 [[operator/v1.8.1+$Format:%h$ (linux/amd64) kubernetes/$Format] 172.16.0.12:50818]
+I0313 02:35:26.949458       1 handler.go:153] kube-aggregator: GET "/api/v1/secrets" satisfied by nonGoRestful
+I0313 02:35:26.949480       1 pathrecorder.go:247] kube-aggregator: "/api/v1/secrets" satisfied by prefix /api/
+I0313 02:35:26.949493       1 handler.go:143] kube-apiserver: GET "/api/v1/secrets" satisfied by gorestful with webservice /api/v1
+I0313 02:35:26.949680       1 get.go:245] Starting watch for /api/v1/secrets, rv=6539570 labels= fields= timeout=6m44s
+I0313 02:35:28.247292       1 handler.go:153] kube-aggregator: GET "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by nonGoRestful
+I0313 02:35:28.247318       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by prefix /api/
+I0313 02:35:28.247328       1 handler.go:143] kube-apiserver: GET "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by gorestful with webservice /api/v1
+I0313 02:35:28.248729       1 wrap.go:42] GET /api/v1/namespaces/kube-system/endpoints/kube-scheduler: (1.812102ms) 200 [[kube-scheduler/v1.11.1 (linux/amd64) kubernetes/b1b2997/leader-election] 172.16.0.2:60938]
+I0313 02:35:28.249735       1 handler.go:153] kube-aggregator: PUT "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by nonGoRestful
+I0313 02:35:28.249752       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by prefix /api/
+I0313 02:35:28.249761       1 handler.go:143] kube-apiserver: PUT "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by gorestful with webservice /api/v1
+I0313 02:35:28.252721       1 wrap.go:42] PUT /api/v1/namespaces/kube-system/endpoints/kube-scheduler: (3.272055ms) 200 [[kube-scheduler/v1.11.1 (linux/amd64) kubernetes/b1b2997/leader-election] 172.16.0.2:60938]
+I0313 02:35:28.718702       1 wrap.go:42] GET /api/v1/nodes?resourceVersion=6539989&timeoutSeconds=465&watch=true: (7m45.000848741s) 200 [[kube-scheduler/v1.11.1 (linux/amd64) kubernetes/b1b2997/scheduler] 172.16.0.2:60938]
+I0313 02:35:28.719597       1 handler.go:153] kube-aggregator: GET "/api/v1/nodes" satisfied by nonGoRestful
+I0313 02:35:28.719611       1 pathrecorder.go:247] kube-aggregator: "/api/v1/nodes" satisfied by prefix /api/
+I0313 02:35:28.719620       1 handler.go:143] kube-apiserver: GET "/api/v1/nodes" satisfied by gorestful with webservice /api/v1
+I0313 02:35:28.719795       1 get.go:245] Starting watch for /api/v1/nodes, rv=6540367 labels= fields= timeout=5m56s
+I0313 02:35:30.142641       1 handler.go:153] kube-aggregator: GET "/api/v1/namespaces/kube-system/secrets/kube-proxy-token-c4bll" satisfied by nonGoRestful
+I0313 02:35:30.142678       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/kube-system/secrets/kube-proxy-token-c4bll" satisfied by prefix /api/
+I0313 02:35:30.142693       1 handler.go:143] kube-apiserver: GET "/api/v1/namespaces/kube-system/secrets/kube-proxy-token-c4bll" satisfied by gorestful with webservice /api/v1
+I0313 02:35:30.143127       1 wrap.go:42] GET /api/v1/namespaces/kube-system/secrets/kube-proxy-token-c4bll?resourceVersion=0: (815.515µs) 200 [[kubelet/v1.11.1 (linux/amd64) kubernetes/b1b2997] 172.16.0.12:43814]
+I0313 02:35:30.143583       1 handler.go:153] kube-aggregator: GET "/api/v1/namespaces/kube-system/configmaps/kube-proxy" satisfied by nonGoRestful
+I0313 02:35:30.143600       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/kube-system/configmaps/kube-proxy" satisfied by prefix /api/
+I0313 02:35:30.143610       1 handler.go:143] kube-apiserver: GET "/api/v1/namespaces/kube-system/configmaps/kube-proxy" satisfied by gorestful with webservice /api/v1
+I0313 02:35:30.143822       1 wrap.go:42] GET /api/v1/namespaces/kube-system/configmaps/kube-proxy?resourceVersion=0: (557.317µs) 200 [[kubelet/v1.11.1 (linux/amd64) kubernetes/b1b2997] 172.16.0.12:43814]
+I0313 02:35:30.254678       1 handler.go:153] kube-aggregator: GET "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by nonGoRestful
+I0313 02:35:30.254704       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by prefix /api/
+I0313 02:35:30.254715       1 handler.go:143] kube-apiserver: GET "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by gorestful with webservice /api/v1
+I0313 02:35:30.256183       1 wrap.go:42] GET /api/v1/namespaces/kube-system/endpoints/kube-scheduler: (1.904457ms) 200 [[kube-scheduler/v1.11.1 (linux/amd64) kubernetes/b1b2997/leader-election] 172.16.0.2:60938]
+I0313 02:35:30.257401       1 handler.go:153] kube-aggregator: PUT "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by nonGoRestful
+I0313 02:35:30.257420       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by prefix /api/
+I0313 02:35:30.257429       1 handler.go:143] kube-apiserver: PUT "/api/v1/namespaces/kube-system/endpoints/kube-scheduler" satisfied by gorestful with webservice /api/v1
+I0313 02:35:30.259985       1 wrap.go:42] PUT /api/v1/namespaces/kube-system/endpoints/kube-scheduler: (2.91367ms) 200 [[kube-scheduler/v1.11.1 (linux/amd64) kubernetes/b1b2997/leader-election] 172.16.0.2:60938]
+I0313 02:35:30.457042       1 handler.go:153] kube-aggregator: GET "/api/v1/nodes/k8s-node01.com" satisfied by nonGoRestful
+I0313 02:35:30.457078       1 pathrecorder.go:247] kube-aggregator: "/api/v1/nodes/k8s-node01.com" satisfied by prefix /api/
+I0313 02:35:30.457094       1 handler.go:143] kube-apiserver: GET "/api/v1/nodes/k8s-node01.com" satisfied by gorestful with webservice /api/v1
+I0313 02:35:30.457739       1 wrap.go:42] GET /api/v1/nodes/k8s-node01.com?resourceVersion=0&timeout=10s: (993.361µs) 200 [[kubelet/v1.11.1 (linux/amd64) kubernetes/b1b2997] 172.16.0.12:43814]
+I0313 02:35:30.462001       1 handler.go:153] kube-aggregator: PATCH "/api/v1/nodes/k8s-node01.com/status" satisfied by nonGoRestful
+I0313 02:35:30.462023       1 pathrecorder.go:247] kube-aggregator: "/api/v1/nodes/k8s-node01.com/status" satisfied by prefix /api/
+I0313 02:35:30.462033       1 handler.go:143] kube-apiserver: PATCH "/api/v1/nodes/k8s-node01.com/status" satisfied by gorestful with webservice /api/v1
+I0313 02:35:30.469017       1 wrap.go:42] PATCH /api/v1/nodes/k8s-node01.com/status?timeout=10s: (7.279533ms) 200 [[kubelet/v1.11.1 (linux/amd64) kubernetes/b1b2997] 172.16.0.12:43814]
+I0313 02:35:31.509619       1 handler.go:153] kube-aggregator: GET "/apis/custom.metrics.k8s.io/v1beta1" satisfied by nonGoRestful
+I0313 02:35:31.509642       1 pathrecorder.go:240] kube-aggregator: "/apis/custom.metrics.k8s.io/v1beta1" satisfied by exact match
+I0313 02:35:31.509733       1 wrap.go:42] GET /apis/custom.metrics.k8s.io/v1beta1?timeout=32s: (366.026µs) 500
+goroutine 64736 [running]:
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/httplog.(*respLogger).recordStatus(0xc42f06c380, 0x1f4)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/httplog/httplog.go:207 +0xd2
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/httplog.(*respLogger).WriteHeader(0xc42f06c380, 0x1f4)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/httplog/httplog.go:186 +0x35
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/filters.(*baseTimeoutWriter).WriteHeader(0xc43277c9a0, 0x1f4)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/filters/timeout.go:192 +0xac
+net/http.Error(0x7f58380b6610, 0xc433843858, 0xc4336e5810, 0x69, 0x1f4)
+	/usr/local/go/src/net/http/server.go:1959 +0xda
+k8s.io/kubernetes/vendor/k8s.io/kube-aggregator/pkg/apiserver.(*proxyHandler).ServeHTTP(0xc4206d85b0, 0x7f58380b6610, 0xc433843858, 0xc42eaacc00)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/kube-aggregator/pkg/apiserver/handler_proxy.go:101 +0xab4
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/mux.(*pathHandler).ServeHTTP(0xc42bbe6740, 0x7f58380b6610, 0xc433843858, 0xc42eaacc00)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/mux/pathrecorder.go:241 +0x514
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/mux.(*PathRecorderMux).ServeHTTP(0xc424e44e00, 0x7f58380b6610, 0xc433843858, 0xc42eaacc00)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/mux/pathrecorder.go:234 +0x8a
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server.director.ServeHTTP(0x3c731c6, 0xf, 0xc424f4fcb0, 0xc424e44e00, 0x7f58380b6610, 0xc433843858, 0xc42eaacc00)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/handler.go:154 +0x6a8
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/endpoints/filters.WithAuthorization.func1(0x7f58380b6610, 0xc433843858, 0xc42eaacc00)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/endpoints/filters/authorization.go:64 +0x4bd
+net/http.HandlerFunc.ServeHTTP(0xc426e67700, 0x7f58380b6610, 0xc433843858, 0xc42eaacc00)
+	/usr/local/go/src/net/http/server.go:1947 +0x44
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/filters.WithMaxInFlightLimit.func1(0x7f58380b6610, 0xc433843858, 0xc42eaacc00)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/filters/maxinflight.go:160 +0x3fc
+net/http.HandlerFunc.ServeHTTP(0xc4249e5c80, 0x7f58380b6610, 0xc433843858, 0xc42eaacc00)
+	/usr/local/go/src/net/http/server.go:1947 +0x44
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/endpoints/filters.WithImpersonation.func1(0x7f58380b6610, 0xc433843858, 0xc42eaacc00)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/endpoints/filters/impersonation.go:49 +0x1ce4
+net/http.HandlerFunc.ServeHTTP(0xc426e67740, 0x7f58380b6610, 0xc433843858, 0xc42eaacc00)
+	/usr/local/go/src/net/http/server.go:1947 +0x44
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/endpoints/filters.WithAuthentication.func1(0x7f58380b6610, 0xc433843858, 0xc42eaacc00)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/endpoints/filters/authentication.go:75 +0x2b3
+net/http.HandlerFunc.ServeHTTP(0xc426e67780, 0x7f58380b6610, 0xc433843858, 0xc42eaaca00)
+	/usr/local/go/src/net/http/server.go:1947 +0x44
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/filters.(*timeoutHandler).ServeHTTP.func1(0xc4285ae760, 0x512a400, 0xc433843858, 0xc42eaaca00, 0xc42f066d20)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/filters/timeout.go:97 +0x8d
+created by k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/filters.(*timeoutHandler).ServeHTTP
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/filters/timeout.go:96 +0x1b5
+
+logging error output: "unable to set dialer for custom-metrics/api as rest transport is of type *transport.debuggingRoundTripper\n"
+ [[kubectl/v1.11.1 (linux/amd64) kubernetes/b1b2997] 172.16.0.2:38232]
+I0313 02:35:31.526100       1 handler.go:153] kube-aggregator: GET "/apis/custom.metrics.k8s.io/v1beta1" satisfied by nonGoRestful
+I0313 02:35:31.526136       1 pathrecorder.go:240] kube-aggregator: "/apis/custom.metrics.k8s.io/v1beta1" satisfied by exact match
+I0313 02:35:31.526251       1 wrap.go:42] GET /apis/custom.metrics.k8s.io/v1beta1?timeout=32s: (477.676µs) 500
+goroutine 64741 [running]:
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/httplog.(*respLogger).recordStatus(0xc42f06c5b0, 0x1f4)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/httplog/httplog.go:207 +0xd2
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/httplog.(*respLogger).WriteHeader(0xc42f06c5b0, 0x1f4)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/httplog/httplog.go:186 +0x35
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/filters.(*baseTimeoutWriter).WriteHeader(0xc43277cba0, 0x1f4)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/filters/timeout.go:192 +0xac
+net/http.Error(0x7f58380b6610, 0xc433843878, 0xc4336e5810, 0x69, 0x1f4)
+	/usr/local/go/src/net/http/server.go:1959 +0xda
+k8s.io/kubernetes/vendor/k8s.io/kube-aggregator/pkg/apiserver.(*proxyHandler).ServeHTTP(0xc4206d85b0, 0x7f58380b6610, 0xc433843878, 0xc42eaad100)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/kube-aggregator/pkg/apiserver/handler_proxy.go:101 +0xab4
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/mux.(*pathHandler).ServeHTTP(0xc42bbe6740, 0x7f58380b6610, 0xc433843878, 0xc42eaad100)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/mux/pathrecorder.go:241 +0x514
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/mux.(*PathRecorderMux).ServeHTTP(0xc424e44e00, 0x7f58380b6610, 0xc433843878, 0xc42eaad100)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/mux/pathrecorder.go:234 +0x8a
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server.director.ServeHTTP(0x3c731c6, 0xf, 0xc424f4fcb0, 0xc424e44e00, 0x7f58380b6610, 0xc433843878, 0xc42eaad100)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/handler.go:154 +0x6a8
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/endpoints/filters.WithAuthorization.func1(0x7f58380b6610, 0xc433843878, 0xc42eaad100)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/endpoints/filters/authorization.go:64 +0x4bd
+net/http.HandlerFunc.ServeHTTP(0xc426e67700, 0x7f58380b6610, 0xc433843878, 0xc42eaad100)
+	/usr/local/go/src/net/http/server.go:1947 +0x44
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/filters.WithMaxInFlightLimit.func1(0x7f58380b6610, 0xc433843878, 0xc42eaad100)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/filters/maxinflight.go:160 +0x3fc
+net/http.HandlerFunc.ServeHTTP(0xc4249e5c80, 0x7f58380b6610, 0xc433843878, 0xc42eaad100)
+	/usr/local/go/src/net/http/server.go:1947 +0x44
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/endpoints/filters.WithImpersonation.func1(0x7f58380b6610, 0xc433843878, 0xc42eaad100)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/endpoints/filters/impersonation.go:49 +0x1ce4
+net/http.HandlerFunc.ServeHTTP(0xc426e67740, 0x7f58380b6610, 0xc433843878, 0xc42eaad100)
+	/usr/local/go/src/net/http/server.go:1947 +0x44
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/endpoints/filters.WithAuthentication.func1(0x7f58380b6610, 0xc433843878, 0xc42eaad100)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/endpoints/filters/authentication.go:75 +0x2b3
+net/http.HandlerFunc.ServeHTTP(0xc426e67780, 0x7f58380b6610, 0xc433843878, 0xc42eaad000)
+	/usr/local/go/src/net/http/server.go:1947 +0x44
+k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/filters.(*timeoutHandler).ServeHTTP.func1(0xc4285ae760, 0x512a400, 0xc433843878, 0xc42eaad000, 0xc42f066e40)
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/filters/timeout.go:97 +0x8d
+created by k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/filters.(*timeoutHandler).ServeHTTP
+	/workspace/anago-v1.11.1-beta.0.115+b1b29978270dc2/src/k8s.io/kubernetes/_output/dockerized/go/src/k8s.io/kubernetes/vendor/k8s.io/apiserver/pkg/server/filters/timeout.go:96 +0x1b5
+
+logging error output: "unable to set dialer for custom-metrics/api as rest transport is of type *transport.debuggingRoundTripper\n"
+ [[kubectl/v1.11.1 (linux/amd64) kubernetes/b1b2997] 172.16.0.2:38232]
+I0313 02:35:31.546983       1 handler.go:153] kube-aggregator: GET "/api/v1/namespaces/kube-system/pods/kube-apiserver-k8s-master.com" satisfied by nonGoRestful
+I0313 02:35:31.547027       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/kube-system/pods/kube-apiserver-k8s-master.com" satisfied by prefix /api/
+I0313 02:35:31.547038       1 handler.go:143] kube-apiserver: GET "/api/v1/namespaces/kube-system/pods/kube-apiserver-k8s-master.com" satisfied by gorestful with webservice /api/v1
+I0313 02:35:31.548949       1 wrap.go:42] GET /api/v1/namespaces/kube-system/pods/kube-apiserver-k8s-master.com: (2.245265ms) 200 [[kubectl/v1.11.1 (linux/amd64) kubernetes/b1b2997] 172.16.0.2:38232]
+I0313 02:35:31.563631       1 handler.go:153] kube-aggregator: GET "/api/v1/namespaces/kube-system/pods/kube-apiserver-k8s-master.com/log" satisfied by nonGoRestful
+I0313 02:35:31.563676       1 pathrecorder.go:247] kube-aggregator: "/api/v1/namespaces/kube-system/pods/kube-apiserver-k8s-master.com/log" satisfied by prefix /api/
+I0313 02:35:31.563693       1 handler.go:143] kube-apiserver: GET "/api/v1/namespaces/kube-system/pods/kube-apiserver-k8s-master.com/log" satisfied by gorestful with webservice /api/v1
+I0313 02:35:31.566019       1 round_trippers.go:386] curl -k -v -XGET  'https://172.16.0.2:10250/containerLogs/kube-system/kube-apiserver-k8s-master.com/kube-apiserver'
+I0313 02:35:31.571189       1 round_trippers.go:405] GET https://172.16.0.2:10250/containerLogs/kube-system/kube-apiserver-k8s-master.com/kube-apiserver 200 OK in 5 milliseconds
+I0313 02:35:31.571221       1 round_trippers.go:411] Response Headers:
+I0313 02:35:31.571232       1 round_trippers.go:414]     Date: Fri, 13 Mar 2020 02:35:31 GMT

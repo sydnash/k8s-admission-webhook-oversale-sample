@@ -1,0 +1,13 @@
+{
+"image": "xxx:v1",
+"tools": [
+    {
+	"name": "faketime",
+	"path": "/tmp/tools/faketime"
+    },
+    {
+	"name": "tcpdump",
+	"path": "/tmp/tools/tcpdump"
+    }
+  ]
+}
