@@ -16,7 +16,6 @@ limitations under the License.
 package main
 
 import (
-	"toolcase.demo.com/cmd/config"
 	"encoding/json"
 	"errors"
 	"fmt"
@@ -27,6 +26,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/serializer"
 	"log"
 	"net/http"
+	"toolcase.demo.com/admission-webhook-demo/cmd/config"
 )
 
 const (
@@ -153,4 +153,3 @@ func admitFuncHandler(admit admitFunc, config *config.ToolConfig) http.Handler {
 		serveAdmitFunc(w, r, admit, config)
 	})
 }
-

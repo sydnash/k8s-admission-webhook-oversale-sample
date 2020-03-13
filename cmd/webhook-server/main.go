@@ -16,7 +16,6 @@ limitations under the License.
 package main
 
 import (
-	"toolcase.demo.com/cmd/config"
 	"fmt"
 	"k8s.io/api/admission/v1beta1"
 	corev1 "k8s.io/api/core/v1"
@@ -25,14 +24,14 @@ import (
 	"net/http"
 	"path/filepath"
 	"strings"
+	"toolcase.demo.com/admission-webhook-demo/cmd/config"
 )
 
 const (
-	tlsDir      = `/run/secrets/tls`
-	tlsCertFile = `cert.pem`
-	tlsKeyFile  = `key.pem`
+	tlsDir         = `/run/secrets/tls`
+	tlsCertFile    = `cert.pem`
+	tlsKeyFile     = `key.pem`
 	toolAnnotation = `webhook.citiccard.com`
-
 )
 
 var (
@@ -40,7 +39,7 @@ var (
 )
 
 func getPatchItem(op string, path string, val interface{}) patchOperation {
-	return patchOperation {
+	return patchOperation{
 		Op:    op,
 		Path:  path,
 		Value: val,
@@ -65,25 +64,24 @@ func initPatch(toolConfig *config.ToolConfig, toolKeyList []string, pod corev1.P
 	var patches []patchOperation
 	initContainers := pod.Spec.InitContainers
 	volumeMount := corev1.VolumeMount{
-		Name:             "tool-volume",
-		ReadOnly:         true,
-		MountPath:        "/tools",
+		Name:      "tool-volume",
+		ReadOnly:  true,
+		MountPath: "/tools",
 	}
 	tmpContainer := corev1.Container{
-		Name:                     "tool",
-		Image:                    toolConfig.Image,
-		Command:                  constructCmd(toolConfig, toolKeyList),
-		Resources:                corev1.ResourceRequirements{},
-		VolumeMounts:             []corev1.VolumeMount{volumeMount},
-		ImagePullPolicy:          "Always",
+		Name:            "tool",
+		Image:           toolConfig.Image,
+		Command:         constructCmd(toolConfig, toolKeyList),
+		Resources:       corev1.ResourceRequirements{},
+		VolumeMounts:    []corev1.VolumeMount{volumeMount},
+		ImagePullPolicy: "Always",
 	}
 	volume := corev1.Volume{
-		Name:         "tool-volume",
+		Name: "tool-volume",
 		VolumeSource: corev1.VolumeSource{
-			EmptyDir:              &corev1.EmptyDirVolumeSource{},
+			EmptyDir: &corev1.EmptyDirVolumeSource{},
 		},
 	}
-
 
 	if initContainers != nil {
 		patches = append(patches, getPatchItem("add", "/spec/initContainers/-", tmpContainer))
@@ -96,7 +94,7 @@ func initPatch(toolConfig *config.ToolConfig, toolKeyList []string, pod corev1.P
 
 }
 
-func applyToolConfig(req *v1beta1.AdmissionRequest, toolConfig *config.ToolConfig) ([]patchOperation, error)  {
+func applyToolConfig(req *v1beta1.AdmissionRequest, toolConfig *config.ToolConfig) ([]patchOperation, error) {
 
 	if req.Resource != podResource {
 		log.Printf("expect resource to be %s", podResource)
