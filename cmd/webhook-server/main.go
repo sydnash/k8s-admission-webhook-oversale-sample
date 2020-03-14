@@ -16,7 +16,9 @@ limitations under the License.
 package main
 
 import (
+	"encoding/json"
 	"fmt"
+	"io/ioutil"
 	"k8s.io/api/admission/v1beta1"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -61,28 +63,34 @@ func constructCmd(toolConfig *config.ToolConfig, toolKeyList []string) []string 
 }
 
 func initPatch(toolConfig *config.ToolConfig, toolKeyList []string, pod corev1.Pod) []patchOperation {
+	//读取配置文件
+	initContainerConfigBytes, cerr := ioutil.ReadFile("./json/initContainerConfig.json")
+	if cerr != nil {
+		fmt.Errorf("could not read from initContainerConfig.json: %v", cerr)
+	}
+	initContainerConifg := config.InitContainerConfig{}
+	json.Unmarshal(initContainerConfigBytes, &initContainerConifg)
+	//获取工具列表
+	toolKeyList = getPodEnv(pod)
+	//配置volumeMount
+	volumeMount := configVolumeMount(
+		initContainerConifg.VolumeMount.Name,
+		initContainerConifg.VolumeMount.ReadOnly,
+		"/tools",
+	)
+	//配置container
+	tmpContainer := configContainer(
+		initContainerConifg.Container.Name,
+		toolConfig.Image,
+		constructCmd(toolConfig, toolKeyList),
+		volumeMount,
+		corev1.PullPolicy(initContainerConifg.Container.ImagePullPolicy),
+	)
+	//配置volume
+	volume := configVolume(initContainerConifg.Volume.Name)
+
 	var patches []patchOperation
 	initContainers := pod.Spec.InitContainers
-	volumeMount := corev1.VolumeMount{
-		Name:      "tool-volume",
-		ReadOnly:  true,
-		MountPath: "/tools",
-	}
-	tmpContainer := corev1.Container{
-		Name:            "tool",
-		Image:           toolConfig.Image,
-		Command:         constructCmd(toolConfig, toolKeyList),
-		Resources:       corev1.ResourceRequirements{},
-		VolumeMounts:    []corev1.VolumeMount{volumeMount},
-		ImagePullPolicy: "Always",
-	}
-	volume := corev1.Volume{
-		Name: "tool-volume",
-		VolumeSource: corev1.VolumeSource{
-			EmptyDir: &corev1.EmptyDirVolumeSource{},
-		},
-	}
-
 	if initContainers != nil {
 		patches = append(patches, getPatchItem("add", "/spec/initContainers/-", tmpContainer))
 	} else {
@@ -92,6 +100,51 @@ func initPatch(toolConfig *config.ToolConfig, toolKeyList []string, pod corev1.P
 	patches = append(patches, getPatchItem("add", "/spec/volumes/-", volume))
 	return patches
 
+}
+
+func configVolumeMount(name string, readOnly bool, mountPath string) corev1.VolumeMount {
+	return corev1.VolumeMount{
+		Name:      name,
+		ReadOnly:  readOnly,
+		MountPath: mountPath,
+	}
+}
+
+func configContainer(name string, image string, command []string, volumeMount corev1.VolumeMount, imagePullPolicy corev1.PullPolicy) corev1.Container {
+	return corev1.Container{
+		Name:            name,
+		Image:           image,
+		Command:         command,
+		Resources:       corev1.ResourceRequirements{},
+		VolumeMounts:    []corev1.VolumeMount{volumeMount},
+		ImagePullPolicy: imagePullPolicy,
+	}
+}
+
+func configVolume(name string) corev1.Volume {
+	return corev1.Volume{
+		Name: name,
+		VolumeSource: corev1.VolumeSource{
+			EmptyDir: &corev1.EmptyDirVolumeSource{},
+		},
+	}
+}
+
+func getPodEnv(pod corev1.Pod) []string {
+	toolSet := make([]string, 0)
+	if pod.Spec.Containers != nil {
+		for _, c := range pod.Spec.Containers {
+			for _, e := range c.Env {
+				if e.Name == "tools" {
+					toolSet = strings.Split(e.Value, ",")
+				}
+			}
+			fmt.Printf("Container %v ,toolSet is %v", c.Name, toolSet)
+		}
+	} else {
+		fmt.Printf("There is no container in this pod")
+	}
+	return toolSet
 }
 
 func applyToolConfig(req *v1beta1.AdmissionRequest, toolConfig *config.ToolConfig) ([]patchOperation, error) {

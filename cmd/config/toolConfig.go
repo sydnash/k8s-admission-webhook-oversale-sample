@@ -13,9 +13,9 @@ type Tool struct {
 
 type toolsList []Tool
 type ToolConfig struct {
-	Image string `json:"image"`
+	Image string    `json:"image"`
 	Tools toolsList `json:"tools"`
-	dist map[string]Tool
+	dist  map[string]Tool
 }
 
 const (
@@ -24,12 +24,12 @@ const (
 	VOLUMEMOUNTS_TEMPLATE  = `"volumeMounts": [{"mountPath": "/tools","name": "tool-volume"}]`
 )
 
-func (me *ToolConfig) GetTool(name string) (Tool) {
+func (me *ToolConfig) GetTool(name string) Tool {
 	v := me.dist[name]
 	return v
 }
 func NewToolConfig() ToolConfig {
-	data, err := ioutil.ReadFile("/etc/tool/tool.config")
+	data, err := ioutil.ReadFile("./json/toolConfig.config")
 	if err != nil {
 		log.Fatal("can not read config file /etc/tool/tool.config: no such file error")
 	}
@@ -46,4 +46,3 @@ func NewToolConfig() ToolConfig {
 	}
 	return config
 }
-

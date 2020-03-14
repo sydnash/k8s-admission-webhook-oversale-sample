@@ -1,0 +1,13 @@
+{
+  "VolumeMount": {
+    "Name": "tool-volume",
+    "ReadOnly":  true
+  },
+  "Container": {
+    "Name": "tool",
+    "ImagePullPolicy": "Always"
+  },
+  "Volume": {
+    "Name": "tool-volume"
+  }
+}
