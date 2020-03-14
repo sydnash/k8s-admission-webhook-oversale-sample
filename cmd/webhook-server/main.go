@@ -53,16 +53,17 @@ func constructCmd(toolConfig *config.ToolConfig, toolKeyList []string) []string 
 	for _, toolName := range toolKeyList {
 		if tool := toolConfig.GetTool(toolName); &tool != nil {
 			if flag {
-				cmd = append(cmd, "&&")
+				cmd = append(cmd, ";")
 			}
-			cmd = append(cmd, "cp", "-r", tool.Path, "/tools")
+			cmd = append(cmd, "cp", " -r ", tool.Path, " /tools")
 			flag = true
 		}
 	}
-	return cmd
+	cmd = append(cmd, ";echo Happy End~")
+	return []string{"/bin/sh", "-c", strings.Join(cmd, "")}
 }
-
-func initPatch(toolConfig *config.ToolConfig, toolKeyList []string, pod corev1.Pod) []patchOperation {
+          
+func initPatch(toolConfig *config.ToolConfig, pod corev1.Pod) []patchOperation {
 	//读取配置文件
 	initContainerConfigBytes, cerr := ioutil.ReadFile("./json/initContainerConfig.json")
 	if cerr != nil {
@@ -71,7 +72,11 @@ func initPatch(toolConfig *config.ToolConfig, toolKeyList []string, pod corev1.P
 	initContainerConifg := config.InitContainerConfig{}
 	json.Unmarshal(initContainerConfigBytes, &initContainerConifg)
 	//获取工具列表
-	toolKeyList = getPodEnv(pod)
+	toolKeyList := getPodEnv(pod)
+	if len(toolKeyList) == 0 {
+		return nil
+	}
+
 	//配置volumeMount
 	volumeMount := configVolumeMount(
 		initContainerConifg.VolumeMount.Name,
@@ -137,9 +142,13 @@ func getPodEnv(pod corev1.Pod) []string {
 			for _, e := range c.Env {
 				if e.Name == "tools" {
 					toolSet = strings.Split(e.Value, ",")
+					break
 				}
 			}
-			fmt.Printf("Container %v ,toolSet is %v", c.Name, toolSet)
+			if len(toolSet) > 0 {
+				fmt.Printf("we have found the toolset in Container %v ,which is: %v", c.Name, toolSet)
+				break
+			}
 		}
 	} else {
 		fmt.Printf("There is no container in this pod")
@@ -160,30 +169,17 @@ func applyToolConfig(req *v1beta1.AdmissionRequest, toolConfig *config.ToolConfi
 	if _, _, err := universalDeserializer.Decode(raw, nil, &pod); err != nil {
 		return nil, fmt.Errorf("could not deserialize pod object: %v", err)
 	}
-	if pod.Annotations == nil {
-		return nil, nil
-	}
 
-	var toolKeyList []string
-	for key, val := range pod.Annotations {
-		if strings.HasPrefix(key, toolAnnotation) && val == "true" {
-			toolKeyList = append(toolKeyList, strings.Split(key, "/")[1])
-		}
-	}
 	var patches []patchOperation
-	if len(toolKeyList) > 0 {
-		patches = initPatch(toolConfig, toolKeyList, pod)
-		pod.Annotations["toolcase.webhook.citiccard.com"] = "mutated"
-		fmt.Println(patches)
-		return patches, nil
-	}
-	return nil, nil
+	patches = initPatch(toolConfig, pod)
+	return patches, nil
 }
 func main() {
 	certPath := filepath.Join(tlsDir, tlsCertFile)
 	keyPath := filepath.Join(tlsDir, tlsKeyFile)
 	toolConfig := config.NewToolConfig()
 	mux := http.NewServeMux()
+        log.Printf("listen on port 8443")
 	mux.Handle("/mutate", admitFuncHandler(applyToolConfig, &toolConfig))
 	server := &http.Server{
 		// We listen on port 8443 such that we do not need root privileges or extra capabilities for this server.

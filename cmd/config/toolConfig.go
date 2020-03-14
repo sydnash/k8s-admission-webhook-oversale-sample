@@ -29,16 +29,16 @@ func (me *ToolConfig) GetTool(name string) Tool {
 	return v
 }
 func NewToolConfig() ToolConfig {
-	data, err := ioutil.ReadFile("./json/toolConfig.config")
+	data, err := ioutil.ReadFile("./json/toolConfig.json")
 	if err != nil {
-		log.Fatal("can not read config file /etc/tool/tool.config: no such file error")
+		log.Fatal("can not read config file ./json/toolConfig.json: no such file error")
 	}
 	var config = ToolConfig{
 		dist: make(map[string]Tool),
 	}
 	err = json.Unmarshal(data, &config)
 	if err != nil {
-		log.Fatal("can not convert the config file /etc/tool/tool.config")
+		log.Fatal("can not convert the config file ./json/toolConfig.json")
 	}
 	config.dist = make(map[string]Tool)
 	for _, item := range config.Tools {
