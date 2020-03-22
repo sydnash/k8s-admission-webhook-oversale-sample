@@ -2,16 +2,13 @@ package main
 
 import (
 	"admission-webhook-oversale-sample/cmd/config"
-	"encoding/json"
 	"fmt"
-	"io/ioutil"
 	"k8s.io/api/admission/v1beta1"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"log"
 	"net/http"
 	"path/filepath"
-	"strings"
 )
 
 const (
@@ -22,7 +19,7 @@ const (
 )
 
 var (
-	podResource = metav1.GroupVersionResource{Version: "v1", Resource: "pods"}
+	nodeResource = metav1.GroupVersionResource{Version: "v1", Resource: "nodes"}
 )
 
 func getPatchItem(op string, path string, val interface{}) patchOperation {
@@ -32,131 +29,26 @@ func getPatchItem(op string, path string, val interface{}) patchOperation {
 		Value: val,
 	}
 }
-func constructCmd(toolConfig *config.ToolConfig, toolKeyList []string) []string {
-	var cmd []string
-	var flag = false
-	for _, toolName := range toolKeyList {
-		if tool := toolConfig.GetTool(toolName); &tool != nil {
-			if flag {
-				cmd = append(cmd, ";")
-			}
-			cmd = append(cmd, "cp", " -r ", tool.Path, " /tools")
-			flag = true
-		}
-	}
-	cmd = append(cmd, ";echo Happy End~")
-	return []string{"/bin/sh", "-c", strings.Join(cmd, "")}
-}
 
-func initPatch(toolConfig *config.ToolConfig, pod corev1.Pod) []patchOperation {
-	//读取配置文件
-	initContainerConfigBytes, cerr := ioutil.ReadFile("./json/initContainerConfig.json")
-	if cerr != nil {
-		fmt.Errorf("could not read from initContainerConfig.json: %v", cerr)
-	}
-	initContainerConifg := config.InitContainerConfig{}
-	json.Unmarshal(initContainerConfigBytes, &initContainerConifg)
-	//获取工具列表
-	toolKeyList := getPodEnv(pod)
-	if len(toolKeyList) == 0 {
-		return nil
-	}
-
-	//配置volumeMount
-	volumeMount := configVolumeMount(
-		initContainerConifg.VolumeMount.Name,
-		initContainerConifg.VolumeMount.ReadOnly,
-		"/tools",
-	)
-	//配置container
-	tmpContainer := configContainer(
-		initContainerConifg.Container.Name,
-		toolConfig.Image,
-		constructCmd(toolConfig, toolKeyList),
-		volumeMount,
-		corev1.PullPolicy(initContainerConifg.Container.ImagePullPolicy),
-	)
-	//配置volume
-	volume := configVolume(initContainerConifg.Volume.Name)
-
+func initPatch(node corev1.Node) []patchOperation {
 	var patches []patchOperation
-	initContainers := pod.Spec.InitContainers
-	if initContainers != nil {
-		patches = append(patches, getPatchItem("add", "/spec/initContainers/-", tmpContainer))
-	} else {
-		patches = append(patches, getPatchItem("add", "/spec/initContainers", []corev1.Container{tmpContainer}))
-	}
-	patches = append(patches, getPatchItem("add", "/spec/containers/0/volumeMounts/-", volumeMount))
-	patches = append(patches, getPatchItem("add", "/spec/volumes/-", volume))
+	patches = append(patches, getPatchItem("replace", "/status/allocatable/cpu", "12"))
 	return patches
-
 }
 
-func configVolumeMount(name string, readOnly bool, mountPath string) corev1.VolumeMount {
-	return corev1.VolumeMount{
-		Name:      name,
-		ReadOnly:  readOnly,
-		MountPath: mountPath,
-	}
-}
-
-func configContainer(name string, image string, command []string, volumeMount corev1.VolumeMount, imagePullPolicy corev1.PullPolicy) corev1.Container {
-	return corev1.Container{
-		Name:            name,
-		Image:           image,
-		Command:         command,
-		Resources:       corev1.ResourceRequirements{},
-		VolumeMounts:    []corev1.VolumeMount{volumeMount},
-		ImagePullPolicy: imagePullPolicy,
-	}
-}
-
-func configVolume(name string) corev1.Volume {
-	return corev1.Volume{
-		Name: name,
-		VolumeSource: corev1.VolumeSource{
-			EmptyDir: &corev1.EmptyDirVolumeSource{},
-		},
-	}
-}
-
-func getPodEnv(pod corev1.Pod) []string {
-	toolSet := make([]string, 0)
-	if pod.Spec.Containers != nil {
-		for _, c := range pod.Spec.Containers {
-			for _, e := range c.Env {
-				if e.Name == "tools" {
-					toolSet = strings.Split(e.Value, ",")
-					break
-				}
-			}
-			if len(toolSet) > 0 {
-				fmt.Printf("we have found the toolset in Container %v ,which is: %v", c.Name, toolSet)
-				break
-			}
-		}
-	} else {
-		fmt.Printf("There is no container in this pod")
-	}
-	return toolSet
-}
-
-func applyToolConfig(req *v1beta1.AdmissionRequest, toolConfig *config.ToolConfig) ([]patchOperation, error) {
-
-	if req.Resource != podResource {
-		log.Printf("expect resource to be %s", podResource)
+func applyNodeConfig(req *v1beta1.AdmissionRequest, toolConfig *config.ToolConfig) ([]patchOperation, error) {
+	if req.Resource != nodeResource {
+		log.Printf("expect resource to be %s", nodeResource)
 		return nil, nil
 	}
-
-	// Parse the Pod object.
+	// Parse the Node object.
 	raw := req.Object.Raw
-	pod := corev1.Pod{}
-	if _, _, err := universalDeserializer.Decode(raw, nil, &pod); err != nil {
-		return nil, fmt.Errorf("could not deserialize pod object: %v", err)
+	node := corev1.Node{}
+	if _, _, err := universalDeserializer.Decode(raw, nil, &node); err != nil {
+		return nil, fmt.Errorf("could not deserialize node object: %v", err)
 	}
-
 	var patches []patchOperation
-	patches = initPatch(toolConfig, pod)
+	patches = initPatch(node)
 	return patches, nil
 }
 func main() {
@@ -165,7 +57,7 @@ func main() {
 	toolConfig := config.NewToolConfig()
 	mux := http.NewServeMux()
 	log.Printf("listen on port 8443")
-	mux.Handle("/mutate", admitFuncHandler(applyToolConfig, &toolConfig))
+	mux.Handle("/mutate", admitFuncHandler(applyNodeConfig, &toolConfig))
 	server := &http.Server{
 		// We listen on port 8443 such that we do not need root privileges or extra capabilities for this server.
 		// The Service object will take care of mapping this port to the HTTPS port 443.
